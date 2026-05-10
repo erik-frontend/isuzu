@@ -2855,6 +2855,44 @@ html:not(.v-mobile) .footer__dev a:focus-visible {
 
 
 
+.catalog-breadcrumbs {
+    margin-top: 34px;
+
+    &__list {
+        display: flex;
+        align-items: center;
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1; // 71%
+
+
+        &::after {
+            content: "/";
+            margin: 0 9px;
+            color: var(--color-grey-150);
+             font-size: 8px;
+
+        }
+
+        &:last-child::after {
+            display: none;
+        }
+
+        span {
+            color: var(--color-grey-100);
+        }
+    }
+
+    &__link {
+
+        color: var(--color-grey-150);
+    }
+}
 
 .catalog-layout__content {
     max-width: 1050px;
@@ -2879,7 +2917,7 @@ html:not(.v-mobile) .footer__dev a:focus-visible {
     &__name {
         font-weight: 400;
         font-size: 18px;
-        line-height: 122%;
+        line-height: 1.2; // 122%
         color: #010101;
         text-align: center;
         width: 120px;
@@ -2919,7 +2957,7 @@ html:not(.v-mobile) .footer__dev a:focus-visible {
 
     font-weight: 400;
     font-size: 15px;
-    line-height: 120%;
+    line-height: 1.2; // 120%
     color: var(--color-grey-100);
 
     span {
@@ -2928,10 +2966,9 @@ html:not(.v-mobile) .footer__dev a:focus-visible {
     }
 
     select {
-        font-family: var(--font-family);
         font-weight: 400;
         font-size: 15px;
-        line-height: 120%;
+        line-height: 1.2; // 120%
         color: var(--color-black);
     }
 }
@@ -2965,7 +3002,18 @@ html:not(.v-mobile) .footer__dev a:focus-visible {
             position: absolute;
             top: 9.5px;
             left: 8px;
+
+
         }
+
+        span {
+            &:not(.badge) {
+                display: none;
+            }
+        }
+
+
+
     }
 
 
@@ -2975,12 +3023,12 @@ html:not(.v-mobile) .footer__dev a:focus-visible {
 
         font-weight: 400;
         font-size: 12px;
-        line-height: 117%;
+        line-height: 1; //117%
     }
 
     &__title {
         font-size: 15px;
-        line-height: 133%;
+        line-height: 1.3; //133%
     }
 
     &__meta {
@@ -2990,7 +3038,7 @@ html:not(.v-mobile) .footer__dev a:focus-visible {
 
         font-weight: 400;
         font-size: 12px;
-        line-height: 117%;
+        line-height: 1.2; // 117%
         color: var(--color-grey-100);
     }
 
@@ -3003,7 +3051,7 @@ html:not(.v-mobile) .footer__dev a:focus-visible {
     &__price {
         font-weight: 600;
         font-size: 18px;
-        line-height: 100%;
+        line-height: 1; //100%
         color: var(--color-red);
     }
 
@@ -3017,7 +3065,7 @@ html:not(.v-mobile) .footer__dev a:focus-visible {
         background: var(--color-black);
         font-weight: 500;
         font-size: 12px;
-        line-height: 150%;
+        line-height: 1; // 150 %
         color: var(--color-white);
 
         &::before {
