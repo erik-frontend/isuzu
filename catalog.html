@@ -333,224 +333,351 @@
                     </a>
                 </li>
                 <li class="catalog-breadcrumbs__item">
-                        <span class="catalog-breadcrumbs__current">Двигун та система охолодження</span>
+                    <span class="catalog-breadcrumbs__current">Двигун та система охолодження</span>
                 </li>
             </ol>
         </nav>
+        <h1 class="catalog-title">Назва категорії 1</h1>
 
+        <div class="catalog-layout__sidebar">
+            <aside class="catalog-sidebar">
+                <div class="catalog-sidebar__inner">
+                    <div class="filter-group active">
+                        <button class="filter-group__header active">
+                            <span class="filter-group__title">Каталог</span>
+                            <span class="filter-group__arrow"></span>
+                        </button>
+                        <div class="filter-group__body">
+                            <ul class="category-list">
+                                <li class="category-list__item">
+                                    <a href="#" class="category-list__link active">
+                                        <span class="category-list__text">Категория 1</span>
+                                        <span class="category-list__icon"></span>
+                                    </a>
+                                </li>
+                                <li class="category-list__item">
+                                    <a href="#" class="category-list__link">
+                                        <span class="category-list__text">
+                                            Категория 2
+                                        </span>
 
-        <div class="catalog-layout">
-            <div class="catalog-layout__sidebar"></div>
+                                        <span class="category-list__icon"></span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
 
+                    <div class="filter-group active">
+                        <button class="filter-group__header">
+                            <span class="filter-group__title">Ціна</span>
+                            <span class="filter-group__arrow"></span>
+                        </button>
+                        <div class="filter-group__body">
 
-            <div class="catalog-layout__content">
-                <div class="catalog-subcategories">
-                    <ul class="catalog-subcategories__list">
-                        <li class="catalog-subcategories__item ">
-                            <a href="" class="catalog-subcategories__link ">
-                                <img src="./assets/category.png" alt="" class="catalog-subcategories__img">
-                                <span class="catalog-subcategories__name">Назва підкатегорії 1</span>
-                            </a>
-                        </li>
-                        <li class="catalog-subcategories__item ">
-                            <a href="" class="catalog-subcategories__link active">
-                                <img src="./assets/category.png" alt="" class="catalog-subcategories__img">
-                                <span class="catalog-subcategories__name">Назва підкатегорії 2</span>
-                            </a>
-                        </li>
-                        <li class="catalog-subcategories__item">
-                            <a href="" class="catalog-subcategories__link">
-                                <img src="./assets/category.png" alt="" class="catalog-subcategories__img">
-                                <span class="catalog-subcategories__name">Назва підкатегорії 3</span>
-                            </a>
-                        </li>
-                        <li class="catalog-subcategories__item">
-                            <a href="" class="catalog-subcategories__link">
-                                <img src="./assets/category.png" alt="" class="catalog-subcategories__img">
-                                <span class="catalog-subcategories__name">Назва підкатегорії 4</span>
-                            </a>
-                        </li>
-                        <li class="catalog-subcategories__item">
-                            <a href="" class="catalog-subcategories__link">
-                                <img src="./assets/category.png" alt="" class="catalog-subcategories__img">
-                                <span class="catalog-subcategories__name">Назва підкатегорії 5</span>
-                            </a>
-                        </li>
-                    </ul>
+                            <div class="price-filter">
+
+                                <div class="price-filter__range">
+                                    <!-- range slider -->
+                                </div>
+
+                                <div class="price-filter__values">
+
+                                    <span class="price-filter__min">
+                                        0 грн
+                                    </span>
+
+                                    <input type="text" value="2500 грн" class="price-filter__input">
+
+                                    <span class="price-filter__max">
+                                        5000 грн
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="filter-group active">
+                        <button class="filter-group__header">
+                            <span class="filter-group__title">Країна-виробник товару</span>
+                            <span class="filter-group__arrow"></span>
+                        </button>
+                        <div class="filter-group__body">
+                            <div class="filter-checkboxes">
+                                <label class="filter-checkbox">
+                                    <input type="checkbox" class="filter-checkbox__input">
+                                    <span class="filter-checkbox__box"></span>
+                                    <span class="filter-checkbox__text">Китай</span>
+                                </label>
+                                <label class="filter-checkbox">
+                                    <input type="checkbox" class="filter-checkbox__input">
+                                    <span class="filter-checkbox__box"></span>
+                                    <span class="filter-checkbox__text">Тайвань</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="filter-group active">
+                        <button class="filter-group__header">
+                            <span class="filter-group__title">Статус в наявності</span>
+                            <span class="filter-group__arrow"></span>
+                        </button>
+                        <div class="filter-group__body">
+                            <div class="filter-checkboxes">
+                                <label class="filter-checkbox">
+                                    <input type="checkbox" class="filter-checkbox__input">
+                                    <span class="filter-checkbox__box"></span>
+                                    <span class="filter-checkbox__text">В наявності</span>
+                                </label>
+                                <label class="filter-checkbox">
+                                    <input type="checkbox" class="filter-checkbox__input">
+                                    <span class="filter-checkbox__box"></span>
+                                    <span class="filter-checkbox__text">Немає в наявності</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="filter-group active">
+                        <button class="filter-group__header">
+                            <span class="filter-group__title">Бренди</span>
+                            <span class="filter-group__arrow"></span>
+                        </button>
+                    </div>
+
+                    <div class="catalog-sidebar__actions">
+                        <button class="catalog-sidebar__apply">Застосувати фільтр</button>
+                        <button class="catalog-sidebar__reset">Очистити</button>
+                    </div>
                 </div>
-                <div class="catalog-sorting">
-                    <span>Сортування:</span>
-                    <select class="catalog-sorting__select">
-                        <option value="price-asc">Ціна за зростанням</option>
-                    </select>
-                </div>
-                <div class="catalog-grid">
-                    <article class="product-card">
-                        <div class="product-card__image-wrapper">
-                            <img src="./assets/product.jpg" alt="product" class="img">
-                            <span class="badge">Топ продажів</span>
-                        </div>
-                        <span class="product-card__in-stock">В наявності</span>
-                        <div class="product-card__content">
-                            <h3 class="product-card__title">8982738210 Мост диодный с реле регулятором 90А NPR75</h3>
-                            <div class="product-card__meta">
-                                <p class="product-card__info">Артикул: 920</p>
-                                <span>Япония</span>
-                            </div>
-                            <div class="product-card__footer">
-                                <span class="product-card__price">180 грн.</span>
-                                <button class="product-card__buy">Купити</button>
-                            </div>
-                        </div>
-                    </article>
-                    <article class="product-card">
-                        <div class="product-card__image-wrapper">
-                            <img src="./assets/product.jpg" alt="product" class="img">
-                            <span class="">Топ продажів</span>
-                        </div>
-                        <span class="product-card__in-stock">В наявності</span>
-                        <div class="product-card__content">
-                            <h3 class="product-card__title">8982738210 Мост диодный с реле регулятором 90А NPR75</h3>
-                            <div class="product-card__meta">
-                                <p class="product-card__info">Артикул: 920</p>
-                                <span>Япония</span>
-                            </div>
-                            <div class="product-card__footer">
-                                <span class="product-card__price">180 грн.</span>
-                                <button class="product-card__buy">Купити</button>
-                            </div>
-                        </div>
-                    </article>
-                    <article class="product-card">
-                        <div class="product-card__image-wrapper">
-                            <img src="./assets/product.jpg" alt="product" class="img">
-                            <span class="">Топ продажів</span>
-                        </div>
-                        <span class="product-card__in-stock">В наявності</span>
-                        <div class="product-card__content">
-                            <h3 class="product-card__title">8982738210 Мост диодный с реле регулятором 90А NPR75</h3>
-                            <div class="product-card__meta">
-                                <p class="product-card__info">Артикул: 920</p>
-                                <span>Япония</span>
-                            </div>
-                            <div class="product-card__footer">
-                                <span class="product-card__price">180 грн.</span>
-                                <button class="product-card__buy">Купити</button>
-                            </div>
-                        </div>
-                    </article>
-                    <article class="product-card">
-                        <div class="product-card__image-wrapper">
-                            <img src="./assets/product.jpg" alt="product" class="img">
-                            <span class="">Топ продажів</span>
-                        </div>
-                        <span class="product-card__in-stock">В наявності</span>
-                        <div class="product-card__content">
-                            <h3 class="product-card__title">8982738210 Мост диодный с реле регулятором 90А NPR75</h3>
-                            <div class="product-card__meta">
-                                <p class="product-card__info">Артикул: 920</p>
-                                <span>Япония</span>
-                            </div>
-                            <div class="product-card__footer">
-                                <span class="product-card__price">180 грн.</span>
-                                <button class="product-card__buy">Купити</button>
-                            </div>
-                        </div>
-                    </article>
-                    <article class="product-card">
-                        <div class="product-card__image-wrapper">
-                            <img src="./assets/product.jpg" alt="product" class="img">
-                            <span class="">Топ продажів</span>
-                        </div>
-                        <span class="product-card__in-stock">В наявності</span>
-                        <div class="product-card__content">
-                            <h3 class="product-card__title">8982738210 Мост диодный с реле регулятором 90А NPR75</h3>
-                            <div class="product-card__meta">
-                                <p class="product-card__info">Артикул: 920</p>
-                                <span>Япония</span>
-                            </div>
-                            <div class="product-card__footer">
-                                <span class="product-card__price">180 грн.</span>
-                                <button class="product-card__buy">Купити</button>
-                            </div>
-                        </div>
-                    </article>
-                    <article class="product-card">
-                        <div class="product-card__image-wrapper">
-                            <img src="./assets/product.jpg" alt="product" class="img">
-                            <span class="">Топ продажів</span>
-                        </div>
-                        <span class="product-card__in-stock">В наявності</span>
-                        <div class="product-card__content">
-                            <h3 class="product-card__title">8982738210 Мост диодный с реле регулятором 90А NPR75</h3>
-                            <div class="product-card__meta">
-                                <p class="product-card__info">Артикул: 920</p>
-                                <span>Япония</span>
-                            </div>
-                            <div class="product-card__footer">
-                                <span class="product-card__price">180 грн.</span>
-                                <button class="product-card__buy">Купити</button>
-                            </div>
-                        </div>
-                    </article>
-                    <article class="product-card">
-                        <div class="product-card__image-wrapper">
-                            <img src="./assets/product.jpg" alt="product" class="img">
-                            <span class="badge">Топ продажів</span>
-                        </div>
-                        <span class="product-card__in-stock">В наявності</span>
-                        <div class="product-card__content">
-                            <h3 class="product-card__title">8982738210 Мост диодный с реле регулятором 90А NPR75</h3>
-                            <div class="product-card__meta">
-                                <p class="product-card__info">Артикул: 920</p>
-                                <span>Япония</span>
-                            </div>
-                            <div class="product-card__footer">
-                                <span class="product-card__price">180 грн.</span>
-                                <button class="product-card__buy">Купити</button>
-                            </div>
-                        </div>
-                    </article>
-                    <article class="product-card">
-                        <div class="product-card__image-wrapper">
-                            <img src="./assets/product.jpg" alt="product" class="img">
-                            <span class="">Топ продажів</span>
-                        </div>
-                        <span class="product-card__in-stock">В наявності</span>
-                        <div class="product-card__content">
-                            <h3 class="product-card__title">8982738210 Мост диодный с реле регулятором 90А NPR75</h3>
-                            <div class="product-card__meta">
-                                <p class="product-card__info">Артикул: 920</p>
-                                <span>Япония</span>
-                            </div>
-                            <div class="product-card__footer">
-                                <span class="product-card__price">180 грн.</span>
-                                <button class="product-card__buy">Купити</button>
-                            </div>
-                        </div>
-                    </article>
-                    <article class="product-card">
-                        <div class="product-card__image-wrapper">
-                            <img src="./assets/product.jpg" alt="product" class="img">
-                            <span class="">Топ продажів</span>
-                        </div>
-                        <span class="product-card__in-stock">В наявності</span>
-                        <div class="product-card__content">
-                            <h3 class="product-card__title">8982738210 Мост диодный с реле регулятором 90А NPR75</h3>
-                            <div class="product-card__meta">
-                                <p class="product-card__info">Артикул: 920</p>
-                                <span>Япония</span>
-                            </div>
-                            <div class="product-card__footer">
-                                <span class="product-card__price">180 грн.</span>
-                                <button class="product-card__buy">Купити</button>
-                            </div>
-                        </div>
-                    </article>
+            </aside>
 
+
+            <div class="catalog-layout">
+                <div class="catalog-layout__content">
+                    <div class="catalog-subcategories">
+                        <ul class="catalog-subcategories__list">
+                            <li class="catalog-subcategories__item ">
+                                <a href="" class="catalog-subcategories__link ">
+                                    <img src="./assets/category.png" alt="" class="catalog-subcategories__img">
+                                    <span class="catalog-subcategories__name">Назва підкатегорії 1</span>
+                                </a>
+                            </li>
+                            <li class="catalog-subcategories__item ">
+                                <a href="" class="catalog-subcategories__link active">
+                                    <img src="./assets/category.png" alt="" class="catalog-subcategories__img">
+                                    <span class="catalog-subcategories__name">Назва підкатегорії 2</span>
+                                </a>
+                            </li>
+                            <li class="catalog-subcategories__item">
+                                <a href="" class="catalog-subcategories__link">
+                                    <img src="./assets/category.png" alt="" class="catalog-subcategories__img">
+                                    <span class="catalog-subcategories__name">Назва підкатегорії 3</span>
+                                </a>
+                            </li>
+                            <li class="catalog-subcategories__item">
+                                <a href="" class="catalog-subcategories__link">
+                                    <img src="./assets/category.png" alt="" class="catalog-subcategories__img">
+                                    <span class="catalog-subcategories__name">Назва підкатегорії 4</span>
+                                </a>
+                            </li>
+                            <li class="catalog-subcategories__item">
+                                <a href="" class="catalog-subcategories__link">
+                                    <img src="./assets/category.png" alt="" class="catalog-subcategories__img">
+                                    <span class="catalog-subcategories__name">Назва підкатегорії 5</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="catalog-sorting">
+                        <span>Сортування:</span>
+                        <select class="catalog-sorting__select">
+                            <option value="price-asc">Ціна за зростанням</option>
+                        </select>
+                    </div>
+                    <div class="catalog-grid">
+                        <article class="product-card">
+                            <div class="product-card__image-wrapper">
+                                <img src="./assets/product.jpg" alt="product" class="img">
+                                <span class="badge">Топ продажів</span>
+                            </div>
+                            <span class="product-card__in-stock">В наявності</span>
+                            <div class="product-card__content">
+                                <h3 class="product-card__title">8982738210 Мост диодный с реле регулятором 90А NPR75
+                                </h3>
+                                <div class="product-card__meta">
+                                    <p class="product-card__info">Артикул: 920</p>
+                                    <span>Япония</span>
+                                </div>
+                                <div class="product-card__footer">
+                                    <span class="product-card__price">180 грн.</span>
+                                    <button class="product-card__buy">Купити</button>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="product-card">
+                            <div class="product-card__image-wrapper">
+                                <img src="./assets/product.jpg" alt="product" class="img">
+                                <span class="">Топ продажів</span>
+                            </div>
+                            <span class="product-card__in-stock">В наявності</span>
+                            <div class="product-card__content">
+                                <h3 class="product-card__title">8982738210 Мост диодный с реле регулятором 90А NPR75
+                                </h3>
+                                <div class="product-card__meta">
+                                    <p class="product-card__info">Артикул: 920</p>
+                                    <span>Япония</span>
+                                </div>
+                                <div class="product-card__footer">
+                                    <span class="product-card__price">180 грн.</span>
+                                    <button class="product-card__buy">Купити</button>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="product-card">
+                            <div class="product-card__image-wrapper">
+                                <img src="./assets/product.jpg" alt="product" class="img">
+                                <span class="">Топ продажів</span>
+                            </div>
+                            <span class="product-card__in-stock">В наявності</span>
+                            <div class="product-card__content">
+                                <h3 class="product-card__title">8982738210 Мост диодный с реле регулятором 90А NPR75
+                                </h3>
+                                <div class="product-card__meta">
+                                    <p class="product-card__info">Артикул: 920</p>
+                                    <span>Япония</span>
+                                </div>
+                                <div class="product-card__footer">
+                                    <span class="product-card__price">180 грн.</span>
+                                    <button class="product-card__buy">Купити</button>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="product-card">
+                            <div class="product-card__image-wrapper">
+                                <img src="./assets/product.jpg" alt="product" class="img">
+                                <span class="">Топ продажів</span>
+                            </div>
+                            <span class="product-card__in-stock">В наявності</span>
+                            <div class="product-card__content">
+                                <h3 class="product-card__title">8982738210 Мост диодный с реле регулятором 90А NPR75
+                                </h3>
+                                <div class="product-card__meta">
+                                    <p class="product-card__info">Артикул: 920</p>
+                                    <span>Япония</span>
+                                </div>
+                                <div class="product-card__footer">
+                                    <span class="product-card__price">180 грн.</span>
+                                    <button class="product-card__buy">Купити</button>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="product-card">
+                            <div class="product-card__image-wrapper">
+                                <img src="./assets/product.jpg" alt="product" class="img">
+                                <span class="">Топ продажів</span>
+                            </div>
+                            <span class="product-card__in-stock">В наявності</span>
+                            <div class="product-card__content">
+                                <h3 class="product-card__title">8982738210 Мост диодный с реле регулятором 90А NPR75
+                                </h3>
+                                <div class="product-card__meta">
+                                    <p class="product-card__info">Артикул: 920</p>
+                                    <span>Япония</span>
+                                </div>
+                                <div class="product-card__footer">
+                                    <span class="product-card__price">180 грн.</span>
+                                    <button class="product-card__buy">Купити</button>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="product-card">
+                            <div class="product-card__image-wrapper">
+                                <img src="./assets/product.jpg" alt="product" class="img">
+                                <span class="">Топ продажів</span>
+                            </div>
+                            <span class="product-card__in-stock">В наявності</span>
+                            <div class="product-card__content">
+                                <h3 class="product-card__title">8982738210 Мост диодный с реле регулятором 90А NPR75
+                                </h3>
+                                <div class="product-card__meta">
+                                    <p class="product-card__info">Артикул: 920</p>
+                                    <span>Япония</span>
+                                </div>
+                                <div class="product-card__footer">
+                                    <span class="product-card__price">180 грн.</span>
+                                    <button class="product-card__buy">Купити</button>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="product-card">
+                            <div class="product-card__image-wrapper">
+                                <img src="./assets/product.jpg" alt="product" class="img">
+                                <span class="badge">Топ продажів</span>
+                            </div>
+                            <span class="product-card__in-stock">В наявності</span>
+                            <div class="product-card__content">
+                                <h3 class="product-card__title">8982738210 Мост диодный с реле регулятором 90А NPR75
+                                </h3>
+                                <div class="product-card__meta">
+                                    <p class="product-card__info">Артикул: 920</p>
+                                    <span>Япония</span>
+                                </div>
+                                <div class="product-card__footer">
+                                    <span class="product-card__price">180 грн.</span>
+                                    <button class="product-card__buy">Купити</button>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="product-card">
+                            <div class="product-card__image-wrapper">
+                                <img src="./assets/product.jpg" alt="product" class="img">
+                                <span class="">Топ продажів</span>
+                            </div>
+                            <span class="product-card__in-stock">В наявності</span>
+                            <div class="product-card__content">
+                                <h3 class="product-card__title">8982738210 Мост диодный с реле регулятором 90А NPR75
+                                </h3>
+                                <div class="product-card__meta">
+                                    <p class="product-card__info">Артикул: 920</p>
+                                    <span>Япония</span>
+                                </div>
+                                <div class="product-card__footer">
+                                    <span class="product-card__price">180 грн.</span>
+                                    <button class="product-card__buy">Купити</button>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="product-card">
+                            <div class="product-card__image-wrapper">
+                                <img src="./assets/product.jpg" alt="product" class="img">
+                                <span class="">Топ продажів</span>
+                            </div>
+                            <span class="product-card__in-stock">В наявності</span>
+                            <div class="product-card__content">
+                                <h3 class="product-card__title">8982738210 Мост диодный с реле регулятором 90А NPR75
+                                </h3>
+                                <div class="product-card__meta">
+                                    <p class="product-card__info">Артикул: 920</p>
+                                    <span>Япония</span>
+                                </div>
+                                <div class="product-card__footer">
+                                    <span class="product-card__price">180 грн.</span>
+                                    <button class="product-card__buy">Купити</button>
+                                </div>
+                            </div>
+                        </article>
+
+                    </div>
                 </div>
             </div>
         </div>
+
+
     </div>
     <footer class="footer">
         <div class="container">
