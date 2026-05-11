@@ -343,7 +343,7 @@
             <aside class="catalog-sidebar">
                 <div class="catalog-sidebar__inner">
                     <div class="filter-group active">
-                        <button class="filter-group__header active">
+                        <button class="filter-group__header">
                             <span class="filter-group__title">Каталог</span>
                             <span class="filter-group__arrow"></span>
                         </button>
@@ -357,10 +357,25 @@
                                 </li>
                                 <li class="category-list__item">
                                     <a href="#" class="category-list__link">
-                                        <span class="category-list__text">
-                                            Категория 2
-                                        </span>
-
+                                        <span class="category-list__text">Категория 2</span>
+                                        <span class="category-list__icon"></span>
+                                    </a>
+                                </li>
+                                <li class="category-list__item">
+                                    <a href="#" class="category-list__link">
+                                        <span class="category-list__text">Категория 3</span>
+                                        <span class="category-list__icon"></span>
+                                    </a>
+                                </li>
+                                <li class="category-list__item">
+                                    <a href="#" class="category-list__link">
+                                        <span class="category-list__text">Категория 4</span>
+                                        <span class="category-list__icon"></span>
+                                    </a>
+                                </li>
+                                <li class="category-list__item">
+                                    <a href="#" class="category-list__link">
+                                        <span class="category-list__text">Категория 5</span>
                                         <span class="category-list__icon"></span>
                                     </a>
                                 </li>
@@ -368,86 +383,95 @@
                         </div>
                     </div>
 
-                    <div class="filter-group active">
-                        <button class="filter-group__header">
-                            <span class="filter-group__title">Ціна</span>
-                            <span class="filter-group__arrow"></span>
-                        </button>
-                        <div class="filter-group__body">
 
-                            <div class="price-filter">
+                    <div class="catalog-sidebar__filters">
+                        <div class="filter-group filters active">
+                            <button class="filter-group__header">
+                                <span class="filter-group__title">Ціна</span>
+                                <span class="filter-group__arrow"></span>
+                            </button>
+                            <div class="filter-group__body">
 
-                                <div class="price-filter__range">
-                                    <!-- range slider -->
+                                <div class="price-filter">
+
+                                    <div class="price-filter__range">
+                                        <!-- range slider -->
+                                    </div>
+
+                                    <div class="price-filter__values">
+
+                                        <span class="price-filter__min">
+                                            0 грн
+                                        </span>
+
+                                        <input type="text" value="2500 грн" class="price-filter__input">
+
+                                        <span class="price-filter__max">
+                                            5000 грн
+                                        </span>
+
+                                    </div>
+
                                 </div>
 
-                                <div class="price-filter__values">
+                            </div>
+                        </div>
 
-                                    <span class="price-filter__min">
-                                        0 грн
-                                    </span>
 
-                                    <input type="text" value="2500 грн" class="price-filter__input">
-
-                                    <span class="price-filter__max">
-                                        5000 грн
-                                    </span>
-
+                        <div class="filter-group filters active">
+                            <button class="filter-group__header">
+                                <span class="filter-group__title">Країна-виробник товару</span>
+                                <span class="filter-group__arrow"></span>
+                            </button>
+                            <div class="filter-group__body">
+                                <div class="filter-checkboxes">
+                                    <label class="filter-checkbox">
+                                        <input type="checkbox" class="filter-checkbox__input">
+                                        <span class="filter-checkbox__box"></span>
+                                        <span class="filter-checkbox__text">Китай</span>
+                                    </label>
+                                    <label class="filter-checkbox">
+                                        <input type="checkbox" class="filter-checkbox__input">
+                                        <span class="filter-checkbox__box"></span>
+                                        <span class="filter-checkbox__text">Тайвань</span>
+                                    </label>
                                 </div>
-
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <div class="filter-group active">
-                        <button class="filter-group__header">
-                            <span class="filter-group__title">Країна-виробник товару</span>
-                            <span class="filter-group__arrow"></span>
-                        </button>
-                        <div class="filter-group__body">
-                            <div class="filter-checkboxes">
-                                <label class="filter-checkbox">
-                                    <input type="checkbox" class="filter-checkbox__input">
-                                    <span class="filter-checkbox__box"></span>
-                                    <span class="filter-checkbox__text">Китай</span>
-                                </label>
-                                <label class="filter-checkbox">
-                                    <input type="checkbox" class="filter-checkbox__input">
-                                    <span class="filter-checkbox__box"></span>
-                                    <span class="filter-checkbox__text">Тайвань</span>
-                                </label>
                             </div>
                         </div>
-                    </div>
 
-                    <div class="filter-group active">
-                        <button class="filter-group__header">
-                            <span class="filter-group__title">Статус в наявності</span>
-                            <span class="filter-group__arrow"></span>
-                        </button>
-                        <div class="filter-group__body">
-                            <div class="filter-checkboxes">
-                                <label class="filter-checkbox">
-                                    <input type="checkbox" class="filter-checkbox__input">
-                                    <span class="filter-checkbox__box"></span>
-                                    <span class="filter-checkbox__text">В наявності</span>
-                                </label>
-                                <label class="filter-checkbox">
-                                    <input type="checkbox" class="filter-checkbox__input">
-                                    <span class="filter-checkbox__box"></span>
-                                    <span class="filter-checkbox__text">Немає в наявності</span>
-                                </label>
+
+                        <div class="filter-group filters active">
+                            <button class="filter-group__header">
+                                <span class="filter-group__title">Статус в наявності</span>
+                                <span class="filter-group__arrow"></span>
+                            </button>
+                            <div class="filter-group__body">
+                                <div class="filter-checkboxes">
+                                    <label class="filter-checkbox">
+                                        <input type="checkbox" class="filter-checkbox__input">
+                                        <span class="filter-checkbox__box"></span>
+                                        <span class="filter-checkbox__text">В наявності</span>
+                                    </label>
+                                    <label class="filter-checkbox">
+                                        <input type="checkbox" class="filter-checkbox__input">
+                                        <span class="filter-checkbox__box"></span>
+                                        <span class="filter-checkbox__text">Немає в наявності</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="filter-group filters">
+                            <button class="filter-group__header">
+                                <span class="filter-group__title">Бренди</span>
+                                <span class="filter-group__arrow"></span>
+                            </button>
+                            <div class="filter-group__body">
                             </div>
                         </div>
                     </div>
 
-                    <div class="filter-group active">
-                        <button class="filter-group__header">
-                            <span class="filter-group__title">Бренди</span>
-                            <span class="filter-group__arrow"></span>
-                        </button>
-                    </div>
 
                     <div class="catalog-sidebar__actions">
                         <button class="catalog-sidebar__apply">Застосувати фільтр</button>
@@ -495,9 +519,11 @@
                     </div>
                     <div class="catalog-sorting">
                         <span>Сортування:</span>
-                        <select class="catalog-sorting__select">
-                            <option value="price-asc">Ціна за зростанням</option>
-                        </select>
+                            <select class="catalog-sorting__select">
+                                <option value="price-asc">Ціна за зростанням</option>
+                                <option value="price-asc">Ціна за спаданням</option>
+                            </select>
+
                     </div>
                     <div class="catalog-grid">
                         <article class="product-card">
@@ -858,4 +884,8 @@
             </div>
         </div>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="./js/catalog.js"></script>
 </body>
