@@ -3185,7 +3185,7 @@ html:not(.v-mobile) .footer__dev a:focus-visible {
 .catalog-layout__content {
     max-width: 1050px;
     width: 100%;
-    
+
 
     .load-more-btn {
         display: flex;
@@ -3204,7 +3204,7 @@ html:not(.v-mobile) .footer__dev a:focus-visible {
         justify-content: center;
         color: var(--color-black);
         background: transparent;
-        
+
 
         &::before {
             content: "";
@@ -3321,6 +3321,47 @@ html:not(.v-mobile) .footer__dev a:focus-visible {
     border-radius: 5px;
     padding: 19px 17px;
 
+
+
+
+    .rating-container {
+        display: flex;
+        gap: 10px;
+
+        .rating {
+            display: flex;
+            align-items: center;
+            transition: 2s;
+
+            .star {
+                background: url(../assets/grey_star.svg) no-repeat center;
+                width: 16px;
+                height: 16px;
+
+                &:hover {
+                    scale: 1.1;
+                }
+
+                &.active {
+                    background: url(../assets/yellow-star.svg) no-repeat center;
+                }
+            }
+        }
+
+        .in-stock {
+            color: #24b76e;
+            padding: 15px 0 13px;
+
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 1; //117%
+        }
+    }
+
+
+
+
+
     &__image-wrapper {
         position: relative;
 
@@ -3352,14 +3393,7 @@ html:not(.v-mobile) .footer__dev a:focus-visible {
     }
 
 
-    &__in-stock {
-        color: #24b76e;
-        padding: 15px 0 13px;
 
-        font-weight: 400;
-        font-size: 12px;
-        line-height: 1; //117%
-    }
 
     &__title {
         font-size: 15px;
