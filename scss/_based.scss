@@ -3014,21 +3014,6 @@ html:not(.v-mobile) .footer__dev a:focus-visible {
 
     &__item {
         border-bottom: 1px solid var(--color-grey-150);
-    }
-
-    &__link {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 14px 16px;
-
-        transition:
-            background .2s ease,
-            color .2s ease;
-
-        &:hover {
-            background: #f5f5f5;
-        }
 
         &.active {
             background: var(--color-black);
@@ -3042,6 +3027,18 @@ html:not(.v-mobile) .footer__dev a:focus-visible {
                 color: var(--color-white);
             }
         }
+    }
+
+    &__link {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 14px 16px;
+
+        transition:
+            background .2s ease,
+            color .2s ease;
+
     }
 
     &__text {
@@ -3188,6 +3185,34 @@ html:not(.v-mobile) .footer__dev a:focus-visible {
 .catalog-layout__content {
     max-width: 1050px;
     width: 100%;
+    
+
+    .load-more-btn {
+        display: flex;
+        width: 160px;
+        gap: 5px;
+        padding: 8px 19px;
+        margin: 39px auto 54px;
+        align-items: center;
+        cursor: pointer;
+        border-radius: 5px;
+        border: 1px solid black;
+
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 1.5;
+        justify-content: center;
+        color: var(--color-black);
+        background: transparent;
+        
+
+        &::before {
+            content: "";
+            width: 16px;
+            height: 16px;
+            background: url(../assets/load-morebtn-icon.svg);
+        }
+    }
 }
 
 .catalog-subcategories {
@@ -3223,6 +3248,8 @@ html:not(.v-mobile) .footer__dev a:focus-visible {
         border-radius: 5px;
         padding: 30px 0 14px;
         gap: 12px;
+
+        transition: .2s;
 
         &.active {
             border: 1px solid var(--color-red);
@@ -3271,6 +3298,10 @@ html:not(.v-mobile) .footer__dev a:focus-visible {
         width: 170px;
         outline: none;
         background: url(../assets/arrow-grey-bottom.svg) no-repeat right center;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 1.2;
+        color: var(--color-black);
     }
 
 }
