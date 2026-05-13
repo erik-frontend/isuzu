@@ -25,33 +25,26 @@ $('.catalog-subcategories__link').click(function (e) {
 
 
 
-// const ratings = document.querySelectorAll(".rating")
+$(".star").on("click", function () {
 
-// ratings.forEach((rating) => {
-//     const value = Number(rating.dataset.rating)
+    const currentStar = $(this);
 
-//     for(let i = 1; i <= 5; i++){
-//         const star = document.createElement('span')
-//         star.classList.add("rating__star")
+    const currentRating =
+        currentStar.parent();
 
-//         if(i <= value) {
-//             star.classList.add("active")
-//         }
+    const stars =
+        currentRating.find(".star");
 
-//         rating.append(star);
-//     }
-// })
+    const index =
+        currentStar.index();
 
+    stars.removeClass("active");
 
-const $stars = $(".star");
-
-$stars.on('click', function () {
-    let index = $(this).index();
-    $stars.removeClass('active')
+    stars
         .slice(0, index + 1)
-        .addClass('active')
-})
+        .addClass("active");
 
+});
 
 
 
