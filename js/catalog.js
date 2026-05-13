@@ -1,3 +1,4 @@
+
 $('.category-list__item').click(function () {
     $(".category-list__item").removeClass("active")
     $(this).addClass('active');
@@ -52,4 +53,33 @@ $stars.on('click', function () {
 })
 
 
+
+
+const range =
+    document.querySelector('.price-filter__range');
+
+const input =
+    document.querySelector('.price-filter__input');
+
+
+noUiSlider.create(range, {
+
+    start: [0, 2500],
+
+    connect: true,
+
+    range: {
+        min: 0,
+        max: 5000
+    }
+
+});
+
+
+range.noUiSlider.on('update', function (values) {
+
+    input.value =
+        Math.round(values[1]) + ' грн';
+
+});
 

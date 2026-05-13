@@ -2935,7 +2935,74 @@ html:not(.v-mobile) .footer__dev a:focus-visible {
     }
 }
 
+
 .filter-group {
+
+
+    .price-filter {
+
+        &__range {
+            margin-bottom: 20px;
+        }
+
+        &__values {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 1;
+            color: var(--color-grey-100);
+        }
+
+        &__input {
+            width: 97px;
+            border: 1px solid #444;
+            border-radius: 6px;
+            text-align: center;
+            padding: 8.5px 0;
+
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 1;
+
+            color: var(--color-black);
+        }
+    }
+
+
+
+    .noUi-target {
+        height: 3px;
+        border: none;
+        background: #d2d2d2;
+        box-shadow: none;
+    }
+
+    .noUi-connect {
+        background: #d62d20;
+    }
+
+    .noUi-handle {
+
+        width: 15px !important;
+        height: 15px !important;
+        top: -6px !important;
+        right: -9px !important;
+
+        background: url(../assets/price-filter-icon.svg) no-repeat center;
+        border: none;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+
+    .noUi-handle::before,
+    .noUi-handle::after {
+        display: none;
+    }
+
+
 
     &.filters {
         border-bottom: 1px solid var(--color-grey-150);
@@ -3218,13 +3285,31 @@ html:not(.v-mobile) .footer__dev a:focus-visible {
 .catalog-subcategories {
     padding-bottom: 30px;
 
+
+
     &__list {
         display: flex;
+        flex-wrap: wrap;
         gap: 20px;
+
+       @media (max-width: 1650px) {
+       justify-content: center;
+            
+        }
     }
 
     &__item {
-        flex: 1;
+        // flex: 1;
+        flex: 0 0 calc(20% - 16px);
+
+        @media (max-width: 1650px) {
+            flex: 0 0 calc(30% - 10px);
+        }
+
+        @media (max-width: 375px) {
+            flex: 0 0 calc(51% - 10px);
+            gap: 10px;
+        }
 
 
     }
