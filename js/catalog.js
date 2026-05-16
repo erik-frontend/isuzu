@@ -25,26 +25,6 @@ $('.catalog-subcategories__link').click(function (e) {
 
 
 
-$(".star").on("click", function () {
-
-    const currentStar = $(this);
-
-    const currentRating =
-        currentStar.parent();
-
-    const stars =
-        currentRating.find(".star");
-
-    const index =
-        currentStar.index();
-
-    stars.removeClass("active");
-
-    stars
-        .slice(0, index + 1)
-        .addClass("active");
-
-});
 
 
 

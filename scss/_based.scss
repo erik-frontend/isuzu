@@ -3306,29 +3306,25 @@ html:not(.v-mobile) .footer__dev a:focus-visible {
 
     &__list {
         display: flex;
-        flex-wrap: wrap;
         gap: 20px;
 
-        @media (max-width: 1650px) {
-            justify-content: center;
 
+        @media (max-width: 1330px) {
+            flex-wrap: wrap;
         }
+
     }
 
     &__item {
-        // flex: 1;
-        flex: 0 0 calc(20% - 16px);
+        max-width: 194px;
+        width: 100%;
+        min-width: 170px;
 
-        @media (max-width: 1650px) {
-            flex: 0 0 calc(30% - 10px);
+
+        @media (max-width: 1100px) {
+            max-width: 170px;
+            width: 100%;
         }
-
-        @media (max-width: 375px) {
-            flex: 0 0 calc(51% - 10px);
-            gap: 10px;
-        }
-
-
     }
 
 
