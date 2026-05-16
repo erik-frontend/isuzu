@@ -13,6 +13,25 @@ $('.filter-group__header').click(function () {
 
 
 
+const subcategories = {
+    subcategoriesItem: document.getElementsByClassName(".catalog-subcategories__link"),
+
+    subcategoriesActiveBtn(e) {
+        e.preventDefault()
+
+        const clickedBtn = e.currentTarget;
+
+        if(clickedBtn.classList.contains("active")){
+            clickedBtn.classList.remove("active");
+        }else{
+            subcategories.subcategoriesItem.forEach
+        }
+    },
+}
+
+
+
+
 $('.catalog-subcategories__link').click(function (e) {
     e.preventDefault();
     if ($(this).hasClass("active")) {
