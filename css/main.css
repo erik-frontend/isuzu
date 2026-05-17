@@ -2513,6 +2513,9 @@ html:not(.v-mobile) .footer__dev a:focus-visible {
 .filter-group__body {
   display: none;
 }
+.filter-group__filter {
+  display: flex;
+}
 .filter-group.active .filter-group__header {
   padding: 0;
 }
@@ -2536,6 +2539,15 @@ html:not(.v-mobile) .footer__dev a:focus-visible {
 }
 .filter-group__header:hover .filter-group__title {
   color: var(--color-red);
+}
+.filter-group__reset {
+  border: none;
+  background: rgba(0, 0, 0, 0);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1;
+  color: var(--color-red);
+  cursor: pointer;
 }
 .filter-group__title {
   font-weight: 600;

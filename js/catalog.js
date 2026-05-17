@@ -29,7 +29,7 @@ const filterGroup = {
     init() {
         this.headers.forEach(header => {
             header.addEventListener('click', () => {
-                header.parentElement.classList.toggle('active');
+                header.closest('.filter-group').classList.toggle('active');
             })
         })
     }

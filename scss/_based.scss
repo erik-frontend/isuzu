@@ -2961,6 +2961,8 @@ html:not(.v-mobile) .footer__dev a:focus-visible {
 .filter-group {
 
 
+
+
     .price-filter {
 
         &__range {
@@ -3033,7 +3035,11 @@ html:not(.v-mobile) .footer__dev a:focus-visible {
 
     &__body {
         display: none;
-        
+
+    }
+
+    &__filter {
+        display: flex;
     }
 
     &.active {
@@ -3062,7 +3068,7 @@ html:not(.v-mobile) .footer__dev a:focus-visible {
         background: transparent;
         border: none;
         cursor: pointer;
-        
+
         @include transition;
 
         &:hover {
@@ -3072,6 +3078,16 @@ html:not(.v-mobile) .footer__dev a:focus-visible {
             }
         }
 
+    }
+
+    &__reset {
+        border: none;
+        background: rgba(0, 0, 0, 0);
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1;
+        color: var(--color-red);
+        cursor: pointer;
     }
 
     &__title {
@@ -3126,7 +3142,7 @@ html:not(.v-mobile) .footer__dev a:focus-visible {
         justify-content: space-between;
         padding: 14px 16px;
 
-        
+
         transition:
             background .2s linear,
             color .2s linear;
