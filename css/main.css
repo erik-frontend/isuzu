@@ -2410,13 +2410,14 @@ html:not(.v-mobile) .footer__dev a:focus-visible {
 .catalog-sidebar__inner {
   border-radius: 5px;
   background: var(--color-grey-200);
-  padding: 29px 21px 42px 21px;
+  padding: 29px 21px 37px 21px;
 }
 .catalog-sidebar__actions {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 34px 0 0;
+  gap: 23px;
 }
 .catalog-sidebar__apply {
   display: flex;
@@ -2442,7 +2443,6 @@ html:not(.v-mobile) .footer__dev a:focus-visible {
 .catalog-sidebar__reset {
   display: flex;
   align-items: center;
-  margin-top: 23px;
   gap: 5px;
   border: none;
   background: transparent;
@@ -2451,6 +2451,7 @@ html:not(.v-mobile) .footer__dev a:focus-visible {
   line-height: 1;
   color: var(--color-red);
   cursor: pointer;
+  padding: 16px 50px;
 }
 .catalog-sidebar__reset::after {
   content: "";
@@ -2531,7 +2532,7 @@ html:not(.v-mobile) .footer__dev a:focus-visible {
   background: transparent;
   border: none;
   cursor: pointer;
-  transition: 0.2s ease;
+  transition: 0.2 linear;
 }
 .filter-group__header:hover .filter-group__title {
   color: var(--color-red);
@@ -2541,14 +2542,14 @@ html:not(.v-mobile) .footer__dev a:focus-visible {
   font-size: 16px;
   line-height: 1.2;
   color: var(--color-black);
-  transition: color 0.2s ease;
+  transition: 0.2 linear;
 }
 .filter-group__arrow {
   width: 16px;
   height: 16px;
   flex-shrink: 0;
   background: url("../assets/arrow-grey-bottom.svg") center/contain no-repeat;
-  transition: transform 0.2s ease;
+  transition: transform 0.2s linear;
 }
 
 .category-list {
@@ -2572,7 +2573,7 @@ html:not(.v-mobile) .footer__dev a:focus-visible {
   align-items: center;
   justify-content: space-between;
   padding: 14px 16px;
-  transition: background 0.2s ease, color 0.2s ease;
+  transition: background 0.2s linear, color 0.2s linear;
 }
 .category-list__text {
   font-weight: 400;
@@ -2610,7 +2611,7 @@ html:not(.v-mobile) .footer__dev a:focus-visible {
   flex-shrink: 0;
   border: 1px solid var(--color-grey-150);
   border-radius: 2px;
-  transition: background 0.2s ease, border-color 0.2s ease;
+  transition: background 0.2s linear, border-color 0.2s linear;
 }
 .filter-checkbox__text {
   font-weight: 400;
@@ -2736,7 +2737,7 @@ html:not(.v-mobile) .footer__dev a:focus-visible {
   border-radius: 5px;
   padding: 30px 0 14px;
   gap: 12px;
-  transition: 0.2s;
+  transition: 0.2 linear;
 }
 .catalog-subcategories__link.active {
   border: 1px solid var(--color-red);
@@ -2824,14 +2825,14 @@ html:not(.v-mobile) .footer__dev a:focus-visible {
 .product-card .rating-container .rating {
   display: flex;
   align-items: center;
-  transition: 2s;
+  transition: 0.2 linear;
 }
 .product-card .rating-container .rating .star {
   background: url(../assets/grey_star.svg) no-repeat center;
   width: 16px;
   height: 16px;
   cursor: pointer;
-  transition: 0.2s;
+  transition: 0.2 linear;
 }
 .product-card .rating-container .rating .star:hover {
   transform: scale(1.1);

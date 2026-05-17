@@ -1,77 +1,87 @@
+const categoryList = {
 
-$('.category-list__item').click(function () {
-    $(".category-list__item").removeClass("active")
-    $(this).addClass('active');
+    categoryListItem:
+        document.querySelectorAll('.category-list__item'),
 
-});
+    init() {
 
-$('.filter-group__header').click(function () {
+        this.categoryListItem.forEach(item => {
 
-    $(this).parent().toggleClass('active');
+            item.addEventListener('click', () => {
 
-});
+                this.categoryListItem.forEach(el => {
+                    el.classList.remove('active');
+                });
 
+                item.classList.add('active');
 
+            });
+
+        });
+
+    }
+
+};
+
+const filterGroup = {
+    headers: document.querySelectorAll('.filter-group__header'),
+
+    init() {
+        this.headers.forEach(header => {
+            header.addEventListener('click', () => {
+                header.parentElement.classList.toggle('active');
+            })
+        })
+    }
+};
 
 const subcategories = {
-    subcategoriesItem: document.getElementsByClassName(".catalog-subcategories__link"),
+    subcategoriesItems: document.querySelectorAll(".catalog-subcategories__link"),
 
-    subcategoriesActiveBtn(e) {
-        e.preventDefault()
+    init() {
+        this.subcategoriesItems.forEach(item => {
+            item.addEventListener("click", (e) => {
+                e.preventDefault();
+                const isActive =
+                    item.classList.contains('active');
 
-        const clickedBtn = e.currentTarget;
+                this.subcategoriesItems.forEach(el => {
+                    el.classList.remove('active');
+                });
 
-        if(clickedBtn.classList.contains("active")){
-            clickedBtn.classList.remove("active");
-        }else{
-            subcategories.subcategoriesItem.forEach
-        }
-    },
-}
-
-
-
-
-$('.catalog-subcategories__link').click(function (e) {
-    e.preventDefault();
-    if ($(this).hasClass("active")) {
-        $(this).removeClass("active")
-    } else {
-        $(".catalog-subcategories__link").removeClass("active")
-        $(this).addClass('active');
+                if (!isActive) {
+                    item.classList.add('active');
+                }
+            });
+        });
     }
-});
+};
 
+const priceRange = {
+    range: document.querySelector('.price-filter__range'),
+    input: document.querySelector('.price-filter__input'),
 
+    init() {
+        noUiSlider.create(this.range, {
+            start: [0, 2500],
+            connect: true,
 
+            range: {
+                min: 0,
+                max: 5000
+            }
+        });
 
-
-
-const range =
-    document.querySelector('.price-filter__range');
-
-const input =
-    document.querySelector('.price-filter__input');
-
-
-noUiSlider.create(range, {
-
-    start: [0, 2500],
-
-    connect: true,
-
-    range: {
-        min: 0,
-        max: 5000
+        this.range.noUiSlider.on('update', (values) => {
+            this.input.value =
+                Math.round(values[1]) + ' грн';
+        });
     }
+};
 
-});
 
 
-range.noUiSlider.on('update', function (values) {
-
-    input.value =
-        Math.round(values[1]) + ' грн';
-
-});
-
+subcategories.init();
+categoryList.init();
+filterGroup.init();
+priceRange.init();
