@@ -79,6 +79,10 @@ const priceRange = {
     }
 };
 
+const starRating = {
+    const ratings = document.querySelectorAll('.rating-stars')
+}
+
 
 
 subcategories.init();
