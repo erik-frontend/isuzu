@@ -2959,7 +2959,13 @@ html:not(.v-mobile) .footer__dev a:focus-visible {
 
 
 .filter-group {
+    &:first-child {
 
+        .filter-group__header {
+            padding: 0;
+        }
+
+    }
 
 
 
@@ -3071,6 +3077,7 @@ html:not(.v-mobile) .footer__dev a:focus-visible {
 
         @include transition;
 
+
         &:hover {
 
             .filter-group__title {
@@ -3081,6 +3088,8 @@ html:not(.v-mobile) .footer__dev a:focus-visible {
     }
 
     &__reset {
+        display: flex;
+        gap: 5px;
         border: none;
         background: rgba(0, 0, 0, 0);
         font-weight: 500;
@@ -3088,6 +3097,15 @@ html:not(.v-mobile) .footer__dev a:focus-visible {
         line-height: 1;
         color: var(--color-red);
         cursor: pointer;
+
+        &::after {
+            content: "";
+            display: block;
+            width: 16px;
+            height: 16px;
+            background: url(../assets/reset-icon.svg) center no-repeat;
+
+        }
     }
 
     &__title {
