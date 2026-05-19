@@ -81,6 +81,9 @@ const priceRange = {
 
 
 
+
+
+
 subcategories.init();
 categoryList.init();
 filterGroup.init();
