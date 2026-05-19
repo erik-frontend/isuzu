@@ -29,7 +29,7 @@ const filterGroup = {
     init() {
         this.headers.forEach(header => {
             header.addEventListener('click', () => {
-                header.parentElement.classList.toggle('active');
+                header.closest('.filter-group').classList.toggle('active');
             })
         })
     }
@@ -79,8 +79,34 @@ const priceRange = {
     }
 };
 
+const productRating = {
+
+    ratings: document.querySelectorAll('.rating-stars'),
+
+    init() {
+
+        this.ratings.forEach(rating => {
+
+            const stars =
+                rating.querySelectorAll('span');
+
+            stars.forEach((star, index) => {
+
+                star.addEventListener('click', () => {
+
+                    rating.dataset.rating = index + 1;
+
+                });
+
+            });
+
+        });
+
+    }
+};
 
 
+productRating.init();
 subcategories.init();
 categoryList.init();
 filterGroup.init();
