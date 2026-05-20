@@ -102,6 +102,37 @@ const swiperMain = new Swiper('.productGallery__main', {
 
 
 
+
+
+const reviewsSlider = new Swiper('.reviewsSlider', {
+
+    slidesPerView: 1,
+    spaceBetween: 30,
+
+    navigation: {
+        nextEl: '.reviews-button-next',
+        prevEl: '.reviews-button-prev',
+    },
+
+    pagination: {
+        el: '.reviews-pagination',
+        clickable: true,
+        bulletClass: 'reviews-pagination__button',
+        bulletActiveClass: 'active',
+
+        renderBullet: function (index, className) {
+            return `<button class="${className}">
+                        ${index + 1}
+                    </button>`;
+        },
+    },
+
+});
+
+
+
+
+
 subcategories.init();
 categoryList.init();
 filterGroup.init();
