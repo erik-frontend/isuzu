@@ -81,6 +81,24 @@ const priceRange = {
 
 
 
+const swiperThumbnails = new Swiper('.productGallery__thumbnails', {
+    slidesPerView: 4,     
+    spaceBetween: 14,     
+    freeMode: true,
+    watchSlidesProgress: true,
+});
+
+
+const swiperMain = new Swiper('.productGallery__main', {
+    spaceBetween: 10, 
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+    thumbs: {
+        swiper: swiperThumbnails, 
+    },
+});
 
 
 
