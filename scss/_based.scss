@@ -3051,7 +3051,7 @@ html:not(.v-mobile) .footer__dev a:focus-visible {
         background: transparent;
         border: none;
         cursor: pointer;
-        transition: .2s ease;
+        transition: .2s linear;
 
         &:hover {
 
@@ -3069,7 +3069,7 @@ html:not(.v-mobile) .footer__dev a:focus-visible {
 
         color: var(--color-black);
 
-        transition: color .2s ease;
+        transition: color .2s linear;
     }
 
     &__arrow {
@@ -3081,7 +3081,7 @@ html:not(.v-mobile) .footer__dev a:focus-visible {
         background:
             url("../assets/arrow-grey-bottom.svg") center / contain no-repeat;
 
-        transition: transform .2s ease;
+        transition: transform .2s linear;
     }
 
 
