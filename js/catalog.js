@@ -59,29 +59,6 @@ const subcategories = {
 
 }
 
-const ratingStars = {
-    ratings: document.querySelectorAll('.rating'),
-
-    init() {
-        this.ratings.forEach(rating => {
-            const stars =
-                rating.querySelectorAll('.star')
-            stars.forEach((star, index) => {
-                star.addEventListener('click', () => {
-                    stars.forEach(el => {
-                        el.classList.remove('active')
-                    });
-                    stars.forEach((el, i) => {
-                        if (i <= index) {
-                            el.classList.add('active')
-                        }
-                    })
-                })
-            })
-        })
-    }
-}
-
 const priceRange = {
     range: document.querySelector('.price-filter__range'),
     input: document.querySelector('.price-filter__input'),
@@ -114,9 +91,34 @@ const priceRange = {
 
 }
 
+// const ratingStars = {
+//     ratings: document.querySelectorAll('.rating'),
+
+//     init() {
+//         this.ratings.forEach(rating => {
+//             const stars =
+//                 rating.querySelectorAll('.star')
+//             stars.forEach((star, index) => {
+//                 star.addEventListener('click', () => {
+//                     stars.forEach(el => {
+//                         el.classList.remove('active')
+//                     });
+//                     stars.forEach((el, i) => {
+//                         if (i <= index) {
+//                             el.classList.add('active')
+//                         }
+//                     })
+//                 })
+//             })
+//         })
+//     }
+// }
+
+
+
+// ratingStars.init()
 
 categoryList.init()
 filterGroup.init()
 subcategories.init()
-ratingStars.init()
 priceRange.init()

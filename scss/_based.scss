@@ -3471,11 +3471,11 @@ html:not(.v-mobile) .footer__dev a:focus-visible {
                 background: url(../assets/grey_star.svg) no-repeat center;
                 width: 16px;
                 height: 16px;
-                cursor: pointer;
-                transition: .2s;
+                // cursor: pointer;
+                // transition: .2s;
 
                 &:hover {
-                    transform: scale(1.1);
+                    // transform: scale(1.1);
                 }
 
                 &.active {
