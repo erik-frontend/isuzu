@@ -80,59 +80,41 @@ const priceRange = {
 };
 
 
+const productGallery = {
+    thumbnails: document.querySelector('.productGallery__thumbnails'),
+    main: document.querySelector('.productGallery__main'),
+    thumbnailsSlider: null,
+    mainSlider: null,
 
-const swiperThumbnails = new Swiper('.productGallery__thumbnails', {
-    slidesPerView: 4,     
-    spaceBetween: 14,     
-    freeMode: true,
-    watchSlidesProgress: true,
-});
+    init() {
+        this.thumbnailsSlider = new Swiper(this.thumbnails, {
+            slidesPerView: 4,
+            spaceBetween: 14,
+            freeMode: true,
+            watchSlidesProgress: true,
+        })
 
-
-const swiperMain = new Swiper('.productGallery__main', {
-    spaceBetween: 10, 
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-    },
-    thumbs: {
-        swiper: swiperThumbnails, 
-    },
-});
-
-
-
-
-
-const reviewsSlider = new Swiper('.reviewsSlider', {
-
-    slidesPerView: 1,
-    spaceBetween: 30,
-
-    navigation: {
-        nextEl: '.reviews-button-next',
-        prevEl: '.reviews-button-prev',
-    },
-
-    pagination: {
-        el: '.reviews-pagination',
-        clickable: true,
-        bulletClass: 'reviews-pagination__button',
-        bulletActiveClass: 'active',
-
-        renderBullet: function (index, className) {
-            return `<button class="${className}">
-                        ${index + 1}
-                    </button>`;
-        },
-    },
-
-});
+        this.mainSlider = new Swiper(this.main, {
+            spaceBetween: 10,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            thumbs: {
+                swiper: this.thumbnailsSlider,
+            },
+        })
+    }
+}
 
 
 
 
 
+
+
+
+productGallery.init();
 subcategories.init();
 categoryList.init();
 filterGroup.init();
