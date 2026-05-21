@@ -2532,7 +2532,7 @@ html:not(.v-mobile) .footer__dev a:focus-visible {
   background: transparent;
   border: none;
   cursor: pointer;
-  transition: 0.2 linear;
+  transition: 0.2s linear;
 }
 .filter-group__header:hover .filter-group__title {
   color: var(--color-red);
@@ -2542,7 +2542,7 @@ html:not(.v-mobile) .footer__dev a:focus-visible {
   font-size: 16px;
   line-height: 1.2;
   color: var(--color-black);
-  transition: 0.2 linear;
+  transition: 0.2s linear;
 }
 .filter-group__arrow {
   width: 16px;
@@ -2737,7 +2737,7 @@ html:not(.v-mobile) .footer__dev a:focus-visible {
   border-radius: 5px;
   padding: 30px 0 14px;
   gap: 12px;
-  transition: 0.2 linear;
+  transition: 0.2s linear;
 }
 .catalog-subcategories__link.active {
   border: 1px solid var(--color-red);
@@ -2825,14 +2825,14 @@ html:not(.v-mobile) .footer__dev a:focus-visible {
 .product-card .rating-container .rating {
   display: flex;
   align-items: center;
-  transition: 0.2 linear;
+  transition: 0.2s linear;
 }
 .product-card .rating-container .rating .star {
   background: url(../assets/grey_star.svg) no-repeat center;
   width: 16px;
   height: 16px;
   cursor: pointer;
-  transition: 0.2 linear;
+  transition: 0.2s linear;
 }
 .product-card .rating-container .rating .star:hover {
   transform: scale(1.1);

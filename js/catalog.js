@@ -1,27 +1,23 @@
-const categoryList = {
 
-    categoryListItem:
-        document.querySelectorAll('.category-list__item'),
+const categoryList = {
+    items: document.querySelectorAll('.category-list__item'),
 
     init() {
-
-        this.categoryListItem.forEach(item => {
-
-            item.addEventListener('click', () => {
-
-                this.categoryListItem.forEach(el => {
-                    el.classList.remove('active');
+        if (!this.items.length) return
+        this.items.forEach(item => {
+            item.addEventListener('click', (e) => {
+                e.preventDefault()
+                this.items.forEach(el => {
+                    el.classList.remove('active')
                 });
-
-                item.classList.add('active');
-
-            });
-
-        });
-
+                item.classList.add('active')
+            })
+        })
     }
+}
 
-};
+
+
 
 const filterGroup = {
     headers: document.querySelectorAll('.filter-group__header'),
@@ -79,34 +75,34 @@ const priceRange = {
     }
 };
 
-const productRating = {
+// const productRating = {
 
-    ratings: document.querySelectorAll('.rating-stars'),
+//     ratings: document.querySelectorAll('.rating-stars'),
 
-    init() {
+//     init() {
 
-        this.ratings.forEach(rating => {
+//         this.ratings.forEach(rating => {
 
-            const stars =
-                rating.querySelectorAll('span');
+//             const stars =
+//                 rating.querySelectorAll('span');
 
-            stars.forEach((star, index) => {
+//             stars.forEach((star, index) => {
 
-                star.addEventListener('click', () => {
+//                 star.addEventListener('click', () => {
 
-                    rating.dataset.rating = index + 1;
+//                     rating.dataset.rating = index + 1;
 
-                });
+//                 });
 
-            });
+//             });
 
-        });
+//         });
 
-    }
-};
+//     }
+// };
 
 
-productRating.init();
+// productRating.init();
 subcategories.init();
 categoryList.init();
 filterGroup.init();

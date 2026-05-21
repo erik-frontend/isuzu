@@ -2858,7 +2858,7 @@ html:not(.v-mobile) .footer__dev a:focus-visible {
 
 
 @mixin transition {
-    transition: 0.2 linear;
+    transition: .2s linear;
 }
 
 
