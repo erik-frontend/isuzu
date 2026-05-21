@@ -1,78 +1,122 @@
 
-$('.category-list__item').click(function () {
-    $(".category-list__item").removeClass("active")
-    $(this).addClass('active');
 
-});
+const categoryList = {
+    items: document.querySelectorAll('.category-list__item'),
 
-$('.filter-group__header').click(function () {
-
-    $(this).parent().toggleClass('active');
-
-});
-
-
-
-$('.catalog-subcategories__link').click(function (e) {
-    e.preventDefault();
-    if ($(this).hasClass("active")) {
-        $(this).removeClass("active")
-    } else {
-        $(".catalog-subcategories__link").removeClass("active")
-        $(this).addClass('active');
+    init() {
+        this.items.forEach(item => {
+            item.addEventListener('click', (e) => {
+                e.preventDefault()
+                this.items.forEach(el => {
+                    el.classList.remove('active')
+                });
+                item.classList.add('active')
+            });
+        });
     }
-});
+}
 
+const filterGroup = {
+    headers: document.querySelectorAll('.filter-group__header'),
 
+    init() {
+        this.headers.forEach(header => {
+            header.addEventListener('click', () => {
+                header.parentElement.classList.toggle('active')
+            })
+        })
+    }
+}
 
-$(".star").on("click", function () {
+const subcategories = {
 
-    const currentStar = $(this);
+    links: document.querySelectorAll('.catalog-subcategories__link'),
 
-    const currentRating =
-        currentStar.parent();
+    init() {
 
-    const stars =
-        currentRating.find(".star");
+        this.links.forEach(link => {
 
-    const index =
-        currentStar.index();
+            link.addEventListener('click', (e) => {
 
-    stars.removeClass("active");
+                e.preventDefault();
 
-    stars
-        .slice(0, index + 1)
-        .addClass("active");
+                const isActive =
+                    link.classList.contains('active');
 
-});
+                this.links.forEach(el => {
+                    el.classList.remove('active');
+                });
 
+                if (!isActive) {
+                    link.classList.add('active');
+                }
 
+            });
 
-const range =
-    document.querySelector('.price-filter__range');
+        });
 
-const input =
-    document.querySelector('.price-filter__input');
-
-
-noUiSlider.create(range, {
-
-    start: [0, 2500],
-
-    connect: true,
-
-    range: {
-        min: 0,
-        max: 5000
     }
 
-});
+}
+
+const ratingStars = {
+    ratings: document.querySelectorAll('.rating'),
+
+    init() {
+        this.ratings.forEach(rating => {
+            const stars =
+                rating.querySelectorAll('.star')
+            stars.forEach((star, index) => {
+                star.addEventListener('click', () => {
+                    stars.forEach(el => {
+                        el.classList.remove('active')
+                    });
+                    stars.forEach((el, i) => {
+                        if (i <= index) {
+                            el.classList.add('active')
+                        }
+                    })
+                })
+            })
+        })
+    }
+}
+
+const priceRange = {
+    range: document.querySelector('.price-filter__range'),
+    input: document.querySelector('.price-filter__input'),
+
+    init() {
+
+        if (!this.range || !this.input) return
+
+        noUiSlider.create(this.range, {
+
+            start: [0, 2500],
+
+            connect: true,
+
+            range: {
+                min: 0,
+                max: 5000
+            }
+
+        });
+
+        this.range.noUiSlider.on('update', (values) => {
+
+            this.input.value =
+                Math.round(values[1]) + ' грн'
+
+        })
+
+    }
+
+}
 
 
-range.noUiSlider.on('update', function (values) {
-
-    input.value =
-        Math.round(values[1]) + ' грн';
-
-});
-
+categoryList.init()
+filterGroup.init()
+subcategories.init()
+ratingStars.init()
+priceRange.init()
