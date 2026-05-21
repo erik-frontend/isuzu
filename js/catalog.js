@@ -1,26 +1,18 @@
 const categoryList = {
-
-    categoryListItem:
-        document.querySelectorAll('.category-list__item'),
+    items: document.querySelectorAll('.category-list__item'),
 
     init() {
-
-        this.categoryListItem.forEach(item => {
-
-            item.addEventListener('click', () => {
-
-                this.categoryListItem.forEach(el => {
-                    el.classList.remove('active');
+        if (!this.items.length) return;
+        this.items.forEach(item => {
+            item.addEventListener('click', (e) => {
+                e.preventDefault()
+                this.items.forEach(el => {
+                    el.classList.remove('active')
                 });
-
-                item.classList.add('active');
-
-            });
-
-        });
-
+                item.classList.add('active')
+            })
+        })
     }
-
 };
 
 const filterGroup = {
