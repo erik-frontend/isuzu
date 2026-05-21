@@ -2849,17 +2849,11 @@ html:not(.v-mobile) .footer__dev a:focus-visible {
 .product-card .rating-container .rating {
   display: flex;
   align-items: center;
-  transition: 0.2 linear;
 }
 .product-card .rating-container .rating .star {
   background: url(../assets/grey_star.svg) no-repeat center;
   width: 16px;
   height: 16px;
-  cursor: pointer;
-  transition: 0.2 linear;
-}
-.product-card .rating-container .rating .star:hover {
-  transform: scale(1.1);
 }
 .product-card .rating-container .rating .star.active {
   background: url(../assets/yellow-star.svg) no-repeat center;
