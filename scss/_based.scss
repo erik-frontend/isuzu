@@ -3886,12 +3886,11 @@ html:not(.v-mobile) .footer__dev a:focus-visible {
     .quantity {
         display: inline-flex;
         align-items: center;
-
-        width: 110px;
+        min-width: 110px;
+        width: fit-content;
         height: 45px;
         border: 1px solid var(--color-grey-150);
         border-radius: 5px;
-        background-color: transparent;
         overflow: hidden;
 
 
@@ -3937,6 +3936,14 @@ html:not(.v-mobile) .footer__dev a:focus-visible {
             font-weight: 400;
             font-size: 16px;
             color: var(--color-black);
+
+            appearance: textfield;
+
+            &::-webkit-outer-spin-button,
+            &::-webkit-inner-spin-button {
+                appearance: none;
+                margin: 0;
+            }
         }
     }
 

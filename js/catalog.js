@@ -99,13 +99,32 @@ const productGallery = {
     }
 }
 
+const quantityCounter = {
+    input: document.querySelector('.quantity__input'),
+    plusBtn: document.querySelector('.quantity__btn--plus'),
+    minusBtn: document.querySelector('.quantity__btn--minus'),
+
+    init() {
+        if (!this.input ||
+            !this.plusBtn ||
+            !this.minusBtn) return
+        this.plusBtn.addEventListener('click', () => {
+            this.input.value =
+                +this.input.value + 1
+        });
+
+        this.minusBtn.addEventListener('click', () => {
+            if (+this.input.value > 1) {
+                this.input.value =
+                    +this.input.value - 1
+            }
+        })
+    }
+}
 
 
 
-
-
-
-
+quantityCounter.init();
 productGallery.init();
 subcategories.init();
 categoryList.init();
