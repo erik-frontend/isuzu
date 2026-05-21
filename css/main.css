@@ -3055,37 +3055,43 @@ html:not(.v-mobile) .footer__dev a:focus-visible {
 }
 .productPage__prices {
   display: flex;
+  align-items: flex-end;
   gap: 10px;
-  align-items: baseline;
 }
 .productPage__price-current {
   font-weight: 600;
   font-size: 34px;
-  line-height: 88%;
+  line-height: 1;
   color: var(--color-black);
+  display: flex;
+  align-items: flex-end;
+  gap: 6px;
 }
 .productPage__price-current span {
   font-size: 24px;
 }
-.productPage__old-price-wrapper {
+.productPage__price-info {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  gap: 4px;
+  gap: 5px;
 }
-.productPage__discount-badge {
+.productPage__discount {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px 8px;
+  border-radius: 4px;
+  background: var(--color-red);
+  color: var(--color-white);
+  line-height: 1;
   font-weight: 500;
   font-size: 10px;
-  color: var(--color-white);
-  background: var(--color-red);
-  border-radius: 4px;
-  width: 35px;
-  padding: 0 3px;
 }
 .productPage__price-old {
+  line-height: 1;
   font-weight: 400;
   font-size: 20px;
-  line-height: 90%;
   color: var(--color-grey-150);
   text-decoration: line-through;
 }
