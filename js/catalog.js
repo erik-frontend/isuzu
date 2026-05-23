@@ -124,6 +124,56 @@ const quantityCounter = {
 
 
 
+
+const productTabs = {
+    items: document.querySelectorAll('.productTabs__btn'),
+
+    init() {
+        if (!this.items.length) return;
+        this.items.forEach(item => {
+            item.addEventListener('click', (e) => {
+                e.preventDefault()
+                this.items.forEach(el => {
+                    el.classList.remove('active')
+                });
+                item.classList.add('active')
+            })
+        })
+    }
+};
+
+
+
+
+
+
+
+const popup = {
+    element: document.querySelector('#cartPopup'),
+    openBtn: document.querySelector('.open-cart'),
+    closeBtn: document.querySelector('.popup__close'),
+    bg: document.querySelector('.popup__bg'),
+
+    init() {
+        if (!this.element) return;
+        this.openBtn?.addEventListener('click', () => {
+            this.element.classList.add('active')
+        });
+        this.closeBtn?.addEventListener('click', () => {
+            this.element.classList.remove('active')
+        });
+        this.bg?.addEventListener('click', () => {
+            this.element.classList.remove('active')
+        });
+    }
+}
+
+
+
+
+
+popup.init();
+productTabs.init()
 quantityCounter.init();
 productGallery.init();
 subcategories.init();
