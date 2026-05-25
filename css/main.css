@@ -3134,7 +3134,7 @@ html:not(.v-mobile) .footer__dev a:focus-visible {
   background: url(../assets/minus.svg) no-repeat center;
 }
 .quantity__btn--plus {
-  background: url(../assets/plus) no-repeat center;
+  background: url(../assets/plus.svg) no-repeat center;
 }
 .quantity__input {
   flex-grow: 1;
