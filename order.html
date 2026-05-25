@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./assets/favicon.png" type="image/png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
+
+    <title>Isuzu</title>
+</head>
+
+
+<body class="home">
+
+    <section class="checkout">
+        <div class="container">
+
+            <form class="checkout__form">
+
+                <div class="checkout__inner">
+
+                    <!-- LEFT -->
+                    <div class="checkout__main">
+
+                        <!-- header -->
+                        <div class="checkout__header">
+
+                            <h1 class="checkout__title">
+                                Оформлення замовлення
+                            </h1>
+
+                            <a href="#" class="checkout__back">
+                                ← Повернутись до покупок
+                            </a>
+
+                        </div>
+
+                        <!-- help -->
+                        <div class="checkout-help">
+
+                            <div class="checkout-help__icon"></div>
+
+                            <div class="checkout-help__content">
+
+                                <div class="checkout-help__title">
+                                    Потрібна допомога або немає часу?
+                                </div>
+
+                            </div>
+
+                            <button class="checkout-help__button" type="button">
+                                Замовити в один клік
+                            </button>
+
+                        </div>
+
+                        <!-- tabs -->
+                        <div class="checkout-tabs">
+
+                            <button class="checkout-tabs__btn active" type="button">
+                                Я новий покупець
+                            </button>
+
+                            <button class="checkout-tabs__btn" type="button">
+                                Я зареєстрований покупець
+                            </button>
+
+                        </div>
+
+                        <!-- customer info -->
+                        <div class="checkout-section">
+
+                            <h2 class="checkout-section__title">
+                                Контактні дані
+                            </h2>
+
+                            <div class="checkout-grid">
+
+                                <label class="checkout-field">
+                                    <span class="checkout-field__label">
+                                        ПІБ *
+                                    </span>
+
+                                    <input type="text" class="checkout-field__input" placeholder="Ваше ім’я">
+                                </label>
+
+                                <label class="checkout-field">
+                                    <span class="checkout-field__label">
+                                        Email
+                                    </span>
+
+                                    <input type="email" class="checkout-field__input" placeholder="Електронна пошта">
+                                </label>
+
+                                <label class="checkout-field checkout-field--full">
+                                    <span class="checkout-field__label">
+                                        Телефон *
+                                    </span>
+
+                                    <input type="tel" class="checkout-field__input" placeholder="Номер телефону">
+                                </label>
+
+                            </div>
+
+                            <label class="checkout-checkbox">
+
+                                <input type="checkbox">
+
+                                <span class="checkout-checkbox__box"></span>
+
+                                <span class="checkout-checkbox__text">
+                                    Не телефонувати для підтвердження замовлення
+                                </span>
+
+                            </label>
+
+                        </div>
+
+                        <!-- delivery -->
+                        <div class="checkout-section">
+
+                            <h2 class="checkout-section__title">
+                                Спосіб доставки
+                            </h2>
+
+                            <div class="checkout-radio">
+
+                                <label class="checkout-radio__item">
+
+                                    <input type="radio" name="delivery" checked>
+
+                                    <span class="checkout-radio__box"></span>
+
+                                    <span class="checkout-radio__text">
+                                        Нова Пошта — у відділення
+                                    </span>
+
+                                </label>
+
+                                <label class="checkout-radio__item">
+
+                                    <input type="radio" name="delivery">
+
+                                    <span class="checkout-radio__box"></span>
+
+                                    <span class="checkout-radio__text">
+                                        Нова Пошта — до будинку
+                                    </span>
+
+                                </label>
+
+                                <label class="checkout-radio__item">
+
+                                    <input type="radio" name="delivery">
+
+                                    <span class="checkout-radio__box"></span>
+
+                                    <span class="checkout-radio__text">
+                                        Укрпошта
+                                    </span>
+
+                                </label>
+
+                            </div>
+
+                        </div>
+
+                        <!-- address -->
+                        <div class="checkout-section">
+
+                            <h2 class="checkout-section__title">
+                                Адреса доставки
+                            </h2>
+
+                            <div class="checkout-grid">
+
+                                <label class="checkout-field">
+
+                                    <span class="checkout-field__label">
+                                        Область *
+                                    </span>
+
+                                    <input type="text" class="checkout-field__input" placeholder="Київська">
+
+                                </label>
+
+                                <label class="checkout-field">
+
+                                    <span class="checkout-field__label">
+                                        Місто *
+                                    </span>
+
+                                    <input type="text" class="checkout-field__input" placeholder="Київ">
+
+                                </label>
+
+                                <label class="checkout-field checkout-field--full">
+
+                                    <span class="checkout-field__label">
+                                        Відділення *
+                                    </span>
+
+                                    <input type="text" class="checkout-field__input" placeholder="Відділення №15">
+
+                                </label>
+
+                            </div>
+
+                        </div>
+
+                        <!-- payment -->
+                        <div class="checkout-section">
+
+                            <h2 class="checkout-section__title">
+                                Способи оплати
+                            </h2>
+
+                            <div class="checkout-radio">
+
+                                <label class="checkout-radio__item">
+
+                                    <input type="radio" name="payment" checked>
+
+                                    <span class="checkout-radio__box"></span>
+
+                                    <span class="checkout-radio__text">
+                                        Portmone
+                                    </span>
+
+                                </label>
+
+                                <label class="checkout-radio__item">
+
+                                    <input type="radio" name="payment">
+
+                                    <span class="checkout-radio__box"></span>
+
+                                    <span class="checkout-radio__text">
+                                        Накладний платіж
+                                    </span>
+
+                                </label>
+
+                                <label class="checkout-radio__item">
+
+                                    <input type="radio" name="payment">
+
+                                    <span class="checkout-radio__box"></span>
+
+                                    <span class="checkout-radio__text">
+                                        По рахунку
+                                    </span>
+
+                                </label>
+
+                            </div>
+
+                        </div>
+
+                        <!-- comment -->
+                        <div class="checkout-section">
+
+                            <h2 class="checkout-section__title">
+                                Коментар до замовлення
+                            </h2>
+
+                            <textarea class="checkout-textarea" placeholder="Ваше повідомлення"></textarea>
+
+                        </div>
+
+                    </div>
+
+                    <!-- SIDEBAR -->
+                    <aside class="checkout-sidebar">
+
+                        <div class="checkout-summary">
+
+                            <h2 class="checkout-summary__title">
+                                Список товарів
+                            </h2>
+
+                            <div class="checkout-products">
+
+                                <!-- item -->
+                                <div class="checkout-product">
+
+                                    <a href="#" class="checkout-product__image">
+                                        <img src="./assets/product.jpg" alt="">
+                                    </a>
+
+                                    <div class="checkout-product__content">
+
+                                        <a href="#" class="checkout-product__title">
+                                            8982738210 Міст діодний...
+                                        </a>
+
+                                        <div class="checkout-product__article">
+                                            Артикул: 920
+                                        </div>
+
+                                        <div class="checkout-product__bottom">
+
+                                            <div class="checkout-product__price">
+                                                5 954 грн
+                                            </div>
+
+                                            <div class="quantity">
+
+                                                <button class="quantity__btn quantity__btn--minus"
+                                                    type="button"></button>
+
+                                                <input type="number" value="1" min="1" class="quantity__input">
+
+                                                <button class="quantity__btn quantity__btn--plus"
+                                                    type="button"></button>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <!-- totals -->
+                            <div class="checkout-total">
+
+                                <div class="checkout-total__row">
+                                    <span>Знижка:</span>
+                                    <span>500 грн</span>
+                                </div>
+
+                                <div class="checkout-total__row">
+                                    <span>Доставка:</span>
+                                    <span>50 грн</span>
+                                </div>
+
+                                <div class="checkout-total__row">
+                                    <span>До сплати:</span>
+                                    <span>14 400 грн</span>
+                                </div>
+
+                                <div class="checkout-total__row checkout-total__row--final">
+                                    <span>Всього:</span>
+                                    <span>12 450 грн</span>
+                                </div>
+
+                            </div>
+
+                            <button class="checkout-summary__submit btn" type="submit">
+                                Оформити замовлення
+                            </button>
+
+                        </div>
+
+                    </aside>
+
+                </div>
+
+            </form>
+
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
