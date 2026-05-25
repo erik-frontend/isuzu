@@ -3103,6 +3103,66 @@ html:not(.v-mobile) .footer__dev a:focus-visible {
   border-color: var(--color-red);
 }
 
+.quantity {
+  display: inline-flex;
+  align-items: center;
+  min-width: 110px;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 45px;
+  border: 1px solid var(--color-grey-150);
+  border-radius: 5px;
+  overflow: hidden;
+}
+.quantity__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 100%;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+.quantity__btn:hover {
+  background-color: rgba(0, 0, 0, 0.02);
+}
+.quantity__btn:active {
+  background-color: rgba(0, 0, 0, 0.06);
+}
+.quantity__btn--minus {
+  background: url(../assets/minus.svg) no-repeat center;
+}
+.quantity__btn--plus {
+  background: url(../assets/plus) no-repeat center;
+}
+.quantity__input {
+  flex-grow: 1;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  border: none;
+  outline: none;
+  background: transparent;
+  text-align: center;
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--color-black);
+  -webkit-appearance: textfield;
+     -moz-appearance: textfield;
+          appearance: textfield;
+}
+.quantity__input::-webkit-outer-spin-button, .quantity__input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+          appearance: none;
+  margin: 0;
+}
+
+.quantity__input {
+  width: 20px;
+  border: none;
+}
+
 /* CHECKBOX */
 .checkout-checkbox {
   display: flex;
