@@ -3043,13 +3043,12 @@ html:not(.v-mobile) .footer__dev a:focus-visible {
 
 /* SECTIONS */
 .checkout-section {
-  padding: 30px;
-  border: 1px solid var(--color-grey-150);
-  border-radius: 10px;
-  background: var(--color-white);
+  padding: 44px 49px 49px 48px;
+  border-radius: 5px;
+  background: var(--color-grey-200);
 }
 .checkout-section:not(:last-child) {
-  margin-bottom: 24px;
+  margin-bottom: 50px;
 }
 .checkout-section__title {
   margin-bottom: 24px;
@@ -3063,8 +3062,8 @@ html:not(.v-mobile) .footer__dev a:focus-visible {
 .checkout-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
-  margin-bottom: 20px;
+  gap: 15px;
+  margin-bottom: 15px;
 }
 
 /* FIELD */
@@ -3080,6 +3079,9 @@ html:not(.v-mobile) .footer__dev a:focus-visible {
   font-weight: 500;
   font-size: 14px;
   color: var(--color-black);
+}
+.checkout-field__label span {
+  color: var(--color-red);
 }
 .checkout-field__input {
   width: 100%;
@@ -3201,47 +3203,51 @@ input:checked + .checkout-checkbox__box::after {
   color: var(--color-grey-100);
 }
 
-/* RADIO */
 .checkout-radio {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 20px;
 }
 .checkout-radio__item {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 14px;
   cursor: pointer;
 }
 .checkout-radio__item input {
   display: none;
 }
 .checkout-radio__box {
-  width: 18px;
-  height: 18px;
-  border: 1px solid var(--color-grey-150);
-  border-radius: 50%;
   position: relative;
+  width: 24px;
+  height: 24px;
+  border: 2px solid #d9d9d9;
+  background: white;
   flex-shrink: 0;
+  transition: 0.2s ease;
 }
 .checkout-radio__box::after {
   content: "";
   position: absolute;
   top: 50%;
-  left: 50%;
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background: var(--color-red);
+  left: 55%;
+  width: 18px;
+  height: 18px;
   transform: translate(-50%, -50%) scale(0);
   transition: 0.2s ease;
+  background: url("../assets/tick.svg") no-repeat center;
+  background-size: contain;
+}
+input:checked + .checkout-radio__box {
+  border-color: var(--color-red);
 }
 input:checked + .checkout-radio__box::after {
   transform: translate(-50%, -50%) scale(1);
 }
 .checkout-radio__text {
-  font-size: 15px;
-  color: var(--color-black);
+  font-size: 16px;
+  line-height: 1.3;
+  color: #4a4a4a;
 }
 
 /* TEXTAREA */
@@ -3309,13 +3315,15 @@ input:checked + .checkout-radio__box::after {
   display: flex;
   flex-direction: column;
   gap: 24px;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 }
 
 .checkout-product {
   display: flex;
   align-items: flex-start;
   gap: 14px;
+  border-bottom: 1px solid var(--color-grey-150);
+  padding-bottom: 25px;
 }
 .checkout-product__image {
   width: 132px;
@@ -3332,14 +3340,16 @@ input:checked + .checkout-radio__box::after {
      object-fit: cover;
 }
 .checkout-product__content {
+  display: flex;
+  flex-direction: column;
   width: 100%;
 }
 .checkout-product__title {
   display: block;
-  margin-bottom: 6px;
+  margin-bottom: 5px;
   font-weight: 500;
-  font-size: 15px;
-  line-height: 1.4;
+  font-size: 16px;
+  line-height: 1;
   color: var(--color-black);
   transition: 0.2s ease;
 }
@@ -3348,28 +3358,30 @@ input:checked + .checkout-radio__box::after {
 }
 .checkout-product__article {
   margin-bottom: 10px;
-  font-size: 13px;
   color: var(--color-grey-100);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1;
 }
-.checkout-product__bottom {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 10px;
+.checkout-product__article span {
+  color: var(--color-black);
 }
 .checkout-product__price {
   font-weight: 600;
-  font-size: 24px;
   color: var(--color-black);
+  font-size: 18px;
+  line-height: 1;
+  margin-bottom: 8px;
 }
 
-/* TOTAL */
 .checkout-total {
-  padding-top: 24px;
-  border-top: 1px solid var(--color-grey-150);
   display: flex;
   flex-direction: column;
-  gap: 14px;
+  gap: 10px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1;
+  color: #202020;
 }
 .checkout-total__row {
   display: flex;
@@ -3382,6 +3394,16 @@ input:checked + .checkout-radio__box::after {
   margin-top: 10px;
   font-weight: 600;
   font-size: 28px;
+}
+
+.checkout-total__row--final {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1;
+  color: #202020;
+}
+.checkout-total__row--final :last-child {
+  font-size: 24px;
 }
 
 /* MEDIA */

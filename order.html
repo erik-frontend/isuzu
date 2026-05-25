@@ -77,12 +77,20 @@
                             <div class="checkout-section">
                                 <div class="checkout-grid">
 
-                                    <label class="checkout-field">
+                                    <label class="checkout-field checkout-field--full">
                                         <span class="checkout-field__label">
-                                            ПІБ *
+                                            ПІБ <span>*</span>
                                         </span>
 
                                         <input type="text" class="checkout-field__input" placeholder="Ваше ім’я">
+                                    </label>
+
+                                    <label class="checkout-field ">
+                                        <span class="checkout-field__label">
+                                            Телефон <span>*</span>
+                                        </span>
+
+                                        <input type="tel" class="checkout-field__input" placeholder="Номер телефону">
                                     </label>
 
                                     <label class="checkout-field">
@@ -93,22 +101,12 @@
                                         <input type="email" class="checkout-field__input"
                                             placeholder="Електронна пошта">
                                     </label>
-
-                                    <label class="checkout-field checkout-field--full">
-                                        <span class="checkout-field__label">
-                                            Телефон *
-                                        </span>
-
-                                        <input type="tel" class="checkout-field__input" placeholder="Номер телефону">
-                                    </label>
-
                                 </div>
+                                <label class="checkout-radio__item">
 
-                                <label class="checkout-checkbox">
+                                    <input type="radio" name="payment" checked>
 
-                                    <input type="checkbox">
-
-                                    <span class="checkout-checkbox__box"></span>
+                                    <span class="checkout-radio__box"></span>
 
                                     <span class="checkout-checkbox__text">
                                         Не телефонувати для підтвердження замовлення
@@ -126,17 +124,12 @@
                                 </h2>
 
                                 <div class="checkout-radio">
-
                                     <label class="checkout-radio__item">
-
                                         <input type="radio" name="delivery" checked>
-
                                         <span class="checkout-radio__box"></span>
-
                                         <span class="checkout-radio__text">
                                             Нова Пошта — у відділення
                                         </span>
-
                                     </label>
 
                                     <label class="checkout-radio__item">
@@ -163,7 +156,14 @@
 
                                     </label>
 
+                                    <div class="checkout-radio__delivery">
+                                        Доставка сплачується окремо відповідно до тарифів перевізника. Безкоштовна
+                                        доставка діє для всіх замовлень від 1000 грн.
+                                    </div>
+
                                 </div>
+
+
 
                             </div>
 
@@ -179,7 +179,7 @@
                                     <label class="checkout-field">
 
                                         <span class="checkout-field__label">
-                                            Область *
+                                            Область <span>*</span>
                                         </span>
 
                                         <input type="text" class="checkout-field__input" placeholder="Київська">
@@ -189,7 +189,7 @@
                                     <label class="checkout-field">
 
                                         <span class="checkout-field__label">
-                                            Місто *
+                                            Місто <span>*</span>
                                         </span>
 
                                         <input type="text" class="checkout-field__input" placeholder="Київ">
@@ -199,7 +199,7 @@
                                     <label class="checkout-field checkout-field--full">
 
                                         <span class="checkout-field__label">
-                                            Відділення *
+                                            Відділення <span>*</span>
                                         </span>
 
                                         <input type="text" class="checkout-field__input" placeholder="Відділення №15">
@@ -280,7 +280,6 @@
                         <div class="checkout-summary">
                             <div class="checkout-products">
 
-                                <!-- item -->
                                 <div class="checkout-product">
 
                                     <a href="#" class="checkout-product__image">
@@ -294,25 +293,54 @@
                                         </a>
 
                                         <div class="checkout-product__article">
-                                            Артикул: 920
+                                            Артикул: <span>920</span>
                                         </div>
 
-                                        <div class="checkout-product__bottom">
 
-                                            <div class="checkout-product__price">
-                                                5 954 грн
-                                            </div>
+                                        <div class="checkout-product__price">
+                                            5 954 грн
+                                        </div>
 
-                                            <div class="quantity">
-                                                <button class="quantity__btn quantity__btn--minus" type="button">
-                                                </button>
-                                                <input type="number" min="1" value="1" class="quantity__input">
-                                                <button class="quantity__btn quantity__btn--plus" type="button">
-                                                </button>
-                                            </div>
+                                        <div class="quantity">
+                                            <button class="quantity__btn quantity__btn--minus" type="button">
+                                            </button>
+                                            <input type="number" min="1" value="1" class="quantity__input">
+                                            <button class="quantity__btn quantity__btn--plus" type="button">
+                                            </button>
                                         </div>
                                     </div>
                                 </div>
+                                <div class="checkout-product">
+
+                                    <a href="#" class="checkout-product__image">
+                                        <img src="./assets/product.jpg" alt="">
+                                    </a>
+
+                                    <div class="checkout-product__content">
+
+                                        <a href="#" class="checkout-product__title">
+                                            8982738210 Міст діодний з реле регулятором 90А NPR75
+                                        </a>
+
+                                        <div class="checkout-product__article">
+                                            Артикул: <span>920</span>
+                                        </div>
+
+
+                                        <div class="checkout-product__price">
+                                            5 954 грн
+                                        </div>
+
+                                        <div class="quantity">
+                                            <button class="quantity__btn quantity__btn--minus" type="button">
+                                            </button>
+                                            <input type="number" min="1" value="1" class="quantity__input">
+                                            <button class="quantity__btn quantity__btn--plus" type="button">
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+
                             </div>
 
                             <!-- totals -->
