@@ -4013,6 +4013,15 @@ html:not(.v-mobile) .footer__dev a:focus-visible {
         }
     }
 
+    &__delivery {
+        padding: 20px 30px;
+        background: var(--color-white);
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.3;
+        color: var(--color-black);
+    }
+
     &__box {
         position: relative;
         width: 24px;
@@ -4039,11 +4048,11 @@ html:not(.v-mobile) .footer__dev a:focus-visible {
         }
     }
 
-    input:checked + &__box {
+    input:checked+&__box {
         border-color: var(--color-red);
     }
 
-    input:checked + &__box::after {
+    input:checked+&__box::after {
         transform:
             translate(-50%, -50%) scale(1);
     }
