@@ -349,6 +349,9 @@
                 </ol>
 
             </nav>
+
+            <h1 class="account__title">Особистий кабінет</h1>
+            
             <div class="account__inner">
                 <!-- sidebar -->
                 <aside class="account-sidebar">
@@ -380,57 +383,41 @@
                     <!-- personal data -->
                     <div class="account-panel active">
 
-                        <form class="account-form">
+                        <div class="account-grid">
+                            <label class="account-field account-field--full">
+                                <span class="account-field__label">
+                                    ПІБ <span>*</span>
+                                </span>
 
-                            <div class="account-form__grid">
+                                <input type="text" class="account-field__input" placeholder="Ваше ім’я">
+                            </label>
 
-                                <label class="account-form__field account-form__field--full">
+                            <label class="account-field ">
+                                <span class="account-field__label">
+                                    Телефон <span>*</span>
+                                </span>
 
-                                    <span class="account-form__label">
-                                        ПІБ <span>*</span>
-                                    </span>
+                                <input type="tel" class="account-field__input" placeholder="Номер телефону">
+                            </label>
 
-                                    <input type="text" class="account-form__input" placeholder="Ваше ім’я">
+                            <label class="account-field">
+                                <span class="account-field__label">
+                                    Email
+                                </span>
 
-                                </label>
+                                <input type="email" class="account-field__input" placeholder="Електронна пошта">
+                            </label>
 
-                                <label class="account-form__field">
+                            <label class="account-field account-field--full">
+                                <span class="account-field__label">
+                                    Адреса <span>*</span>
+                                </span>
 
-                                    <span class="account-form__label">
-                                        Телефон <span>*</span>
-                                    </span>
+                                <input type="text" class="account-field__input" placeholder="Ваша адреса">
+                            </label>
 
-                                    <input type="tel" class="account-form__input" placeholder="Номер телефону">
-
-                                </label>
-
-                                <label class="account-form__field">
-
-                                    <span class="account-form__label">
-                                        Email
-                                    </span>
-
-                                    <input type="email" class="account-form__input" placeholder="Електронна пошта">
-
-                                </label>
-
-                                <label class="account-form__field account-form__field--full">
-
-                                    <span class="account-form__label">
-                                        Адреса <span>*</span>
-                                    </span>
-
-                                    <input type="text" class="account-form__input" placeholder="Ваша адреса">
-
-                                </label>
-
-                            </div>
-
-                            <button class="account-form__submit btn" type="submit">
-                                Зберегти
-                            </button>
-
-                        </form>
+                            <button class="account-save-btn" type="submit">Зберегти</button>
+                        </div>
 
                     </div>
 

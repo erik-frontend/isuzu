@@ -2928,7 +2928,14 @@ html:not(.v-mobile) .footer__dev a:focus-visible {
 }
 
 .account {
-  padding: 40px 0 80px;
+  padding: 0;
+}
+.account__title {
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 1.3;
+  color: #010101;
+  margin-bottom: 32px;
 }
 .account__inner {
   display: flex;
@@ -2936,18 +2943,75 @@ html:not(.v-mobile) .footer__dev a:focus-visible {
   gap: 30px;
 }
 
-.account-sidebar {
-  max-width: 270px;
+.account-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  max-width: 930px;
   width: 100%;
+  border-radius: 5px;
+  background: var(--color-grey-200);
+  padding: 45px 48px 55px;
+}
+
+/* FIELD */
+.account-field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.account-field--full {
+  grid-column: 1/-1;
+}
+.account-field__label {
+  font-weight: 500;
+  font-size: 14px;
+  color: var(--color-black);
+}
+.account-field__label span {
+  color: var(--color-red);
+}
+.account-field__input {
+  width: 100%;
+  height: 50px;
+  padding: 0 16px;
   border: 1px solid var(--color-grey-150);
+  border-radius: 6px;
+  background: var(--color-white);
+  font-size: 15px;
+  color: var(--color-black);
+  outline: none;
+  transition: 0.2s ease;
+}
+.account-field__input::-moz-placeholder {
+  color: var(--color-grey-100);
+}
+.account-field__input::placeholder {
+  color: var(--color-grey-100);
+}
+.account-field__input:focus {
+  border-color: var(--color-red);
+}
+
+.account-save-btn {
+  border-radius: 5px;
+  padding: 14px 72px;
+  width: 210px;
+  background: var(--color-red);
+  color: var(--color-white);
+  border: none;
+}
+
+.account-sidebar {
+  max-width: 402px;
+  width: 100%;
 }
 .account-sidebar__nav {
   display: flex;
   flex-direction: column;
 }
 .account-sidebar__link, .account-sidebar__logout {
-  height: 72px;
-  padding: 0 20px;
+  padding: 30px 0 30px 30px;
   display: flex;
   align-items: center;
   border: none;
@@ -2958,16 +3022,21 @@ html:not(.v-mobile) .footer__dev a:focus-visible {
   color: var(--color-grey-100);
   cursor: pointer;
   transition: 0.2s ease;
+  gap: 10px;
 }
 .account-sidebar__link:hover, .account-sidebar__logout:hover {
   background: rgba(0, 0, 0, 0.02);
 }
+.account-sidebar__logout::before {
+  content: "";
+  display: flex;
+  background: url(../assets/log-out.svg) no-repeat center;
+  width: 24px;
+  height: 24px;
+}
 .account-sidebar__link.active {
   background: var(--color-black);
   color: var(--color-white);
-}
-.account-sidebar__logout {
-  color: var(--color-black);
 }
 
 .account-content {
