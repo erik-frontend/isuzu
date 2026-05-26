@@ -3638,6 +3638,47 @@ html:not(.v-mobile) .footer__dev a:focus-visible {
 .checkout {
     padding: 40px 0 80px;
 
+
+    .catalog-breadcrumbs {
+        margin: 34px 0 10px;
+
+        &__list {
+            display: flex;
+            align-items: center;
+        }
+
+        &__item {
+            display: flex;
+            align-items: center;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 1; // 71%
+
+
+            &::after {
+                content: "/";
+                margin: 0 9px;
+                color: var(--color-grey-150);
+                font-size: 8px;
+
+            }
+
+            &:last-child::after {
+                display: none;
+            }
+
+            span {
+                color: var(--color-grey-100);
+            }
+        }
+
+        &__link {
+
+            color: var(--color-grey-150);
+        }
+    }
+
+
     &__inner {
         display: flex;
         align-items: flex-start;
@@ -4070,20 +4111,15 @@ html:not(.v-mobile) .footer__dev a:focus-visible {
 .checkout-textarea {
     width: 100%;
     min-height: 140px;
-
     padding: 16px;
-
     border: 1px solid var(--color-grey-150);
     border-radius: 6px;
-
     resize: vertical;
-
     outline: none;
-
     font-size: 15px;
     color: var(--color-black);
-
     transition: .2s ease;
+    resize: none;
 
     &::placeholder {
         color: var(--color-grey-100);

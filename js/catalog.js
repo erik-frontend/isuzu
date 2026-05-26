@@ -102,6 +102,9 @@ const priceRange = {
 // };
 
 
+
+
+
 // productRating.init();
 subcategories.init();
 categoryList.init();

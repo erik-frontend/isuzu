@@ -2930,6 +2930,35 @@ html:not(.v-mobile) .footer__dev a:focus-visible {
 .checkout {
   padding: 40px 0 80px;
 }
+.checkout .catalog-breadcrumbs {
+  margin: 34px 0 10px;
+}
+.checkout .catalog-breadcrumbs__list {
+  display: flex;
+  align-items: center;
+}
+.checkout .catalog-breadcrumbs__item {
+  display: flex;
+  align-items: center;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1;
+}
+.checkout .catalog-breadcrumbs__item::after {
+  content: "/";
+  margin: 0 9px;
+  color: var(--color-grey-150);
+  font-size: 8px;
+}
+.checkout .catalog-breadcrumbs__item:last-child::after {
+  display: none;
+}
+.checkout .catalog-breadcrumbs__item span {
+  color: var(--color-grey-100);
+}
+.checkout .catalog-breadcrumbs__link {
+  color: var(--color-grey-150);
+}
 .checkout__inner {
   display: flex;
   align-items: flex-start;
@@ -3270,6 +3299,7 @@ input:checked + .checkout-radio__box::after {
   font-size: 15px;
   color: var(--color-black);
   transition: 0.2s ease;
+  resize: none;
 }
 .checkout-textarea::-moz-placeholder {
   color: var(--color-grey-100);
