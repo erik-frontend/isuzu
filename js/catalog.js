@@ -75,8 +75,6 @@ const priceRange = {
     }
 };
 
-
-
 // const productRating = {
 
 //     ratings: document.querySelectorAll('.rating-stars'),
@@ -103,7 +101,6 @@ const priceRange = {
 //     }
 // };
 // productRating.init();
-
 
 
 
