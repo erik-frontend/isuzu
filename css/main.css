@@ -3109,11 +3109,12 @@ html:not(.v-mobile) .footer__dev a:focus-visible {
 /* ── HEADER ROW ── */
 .orders__head {
   display: grid;
-  grid-template-columns: 165px 0px 1fr 140px 180px;
+  grid-template-columns: 150px 0px 1fr 220px 110px;
   align-items: center;
   gap: 12px;
-  padding: 14px 24px;
-  background: #3d3d3d;
+  padding: 14px 17px;
+  background: var(--color-grey-100);
+  border-radius: 5px;
   font-weight: 500;
   font-size: 14px;
   line-height: 1;
@@ -3126,9 +3127,7 @@ html:not(.v-mobile) .footer__dev a:focus-visible {
 
 /* ── ORDER ROW ── */
 .orders__row {
-  border: 1px solid var(--color-grey-150);
   margin-top: 6px;
-  border-radius: 5px;
 }
 .orders__row:last-child {
   border-bottom: none;
@@ -3137,10 +3136,12 @@ html:not(.v-mobile) .footer__dev a:focus-visible {
 /* ── SUMMARY BAR (always visible) ── */
 .orders__summary {
   display: grid;
-  grid-template-columns: 150px 110px 1fr 130px 200px;
+  grid-template-columns: 110px 150px 1fr 145px 200px;
   align-items: center;
   gap: 12px;
-  padding: 16px 24px;
+  padding: 15px 14px 15px 34px;
+  border: 1px solid var(--color-grey-150);
+  border-radius: 5px;
   cursor: pointer;
   transition: background 0.2s ease;
 }
@@ -3152,13 +3153,17 @@ html:not(.v-mobile) .footer__dev a:focus-visible {
 }
 
 .orders__num {
-  font-size: 14px;
   color: var(--color-black);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.1;
 }
 
 .orders__date {
+  color: var(--color-black);
+  font-weight: 400;
   font-size: 14px;
-  color: var(--color-grey-100);
+  line-height: 1.1;
 }
 
 /* ── THUMBNAILS ── */
@@ -3169,13 +3174,9 @@ html:not(.v-mobile) .footer__dev a:focus-visible {
 }
 
 .orders__thumb {
-  width: 44px;
-  height: 44px;
-  -o-object-fit: contain;
-     object-fit: contain;
-  border: 1px solid var(--color-grey-150);
-  border-radius: 4px;
-  background: var(--color-white);
+  width: 52px;
+  height: 52px;
+  border-radius: 5px;
   flex-shrink: 0;
 }
 
@@ -3190,25 +3191,27 @@ html:not(.v-mobile) .footer__dev a:focus-visible {
   font-size: 14px;
   font-weight: 500;
   color: var(--color-black);
+  line-height: 1;
 }
 
 /* ── STATUS + CHEVRON ── */
 .orders__status-col {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 8px;
+  justify-content: flex-end;
+  gap: 20px;
 }
 
 .orders__status {
   font-size: 14px;
   font-weight: 500;
+  line-height: 1;
 }
 .orders__status--sent {
   color: var(--color-black);
 }
 .orders__status--processing {
-  color: var(--color-red);
+  color: #e98522;
 }
 .orders__status--delivered {
   color: #27ae60;
@@ -3218,29 +3221,20 @@ html:not(.v-mobile) .footer__dev a:focus-visible {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-shrink: 0;
-  width: 28px;
-  height: 28px;
+  width: 16px;
+  height: 16px;
   border: none;
-  border-radius: 4px;
-  background: transparent;
-  color: var(--color-grey-100);
+  background: url(../assets/arrow-grey-bottom.svg) no-repeat center;
   cursor: pointer;
-  transition: background 0.2s ease, color 0.2s ease;
 }
-.orders__toggle:hover {
-  background: var(--color-grey-150);
-  color: var(--color-black);
-}
-.orders__toggle svg {
-  display: block;
-  transition: transform 0.25s ease;
+.orders__toggle.active {
+  transform: rotate(270deg);
+  background: url(../assets/arrow-red.svg) no-repeat center;
 }
 
 /* ── DETAILS PANEL ── */
 .orders__details {
   display: none;
-  border-top: 1px solid var(--color-grey-150);
 }
 .active .orders__details {
   display: block;
@@ -3256,7 +3250,6 @@ html:not(.v-mobile) .footer__dev a:focus-visible {
 .orders__left {
   flex: 1;
   min-width: 0;
-  border-right: 1px solid var(--color-grey-150);
 }
 
 /* ── ITEMS ── */
@@ -3269,7 +3262,7 @@ html:not(.v-mobile) .footer__dev a:focus-visible {
   display: flex;
   align-items: center;
   gap: 16px;
-  padding: 16px 24px;
+  padding: 16px 24px 16px 0;
   border-bottom: 1px solid var(--color-grey-150);
 }
 .orders__item:last-child {
@@ -3277,14 +3270,9 @@ html:not(.v-mobile) .footer__dev a:focus-visible {
 }
 
 .orders__item-img {
-  width: 72px;
-  height: 72px;
-  -o-object-fit: contain;
-     object-fit: contain;
-  border: 1px solid var(--color-grey-150);
-  border-radius: 4px;
-  background: var(--color-white);
-  flex-shrink: 0;
+  width: 100px;
+  height: 100px;
+  border-radius: 5px;
 }
 
 .orders__item-desc {
@@ -3325,7 +3313,7 @@ html:not(.v-mobile) .footer__dev a:focus-visible {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  padding: 18px 24px;
+  padding: 35px 0;
   border-top: 1px solid var(--color-grey-150);
 }
 
@@ -3342,17 +3330,15 @@ html:not(.v-mobile) .footer__dev a:focus-visible {
   font-weight: 700;
   color: var(--color-black);
   padding-top: 8px;
-  border-top: 1px solid var(--color-grey-150);
 }
 
 /* ── RIGHT COLUMN ── */
 .orders__right {
-  width: 220px;
-  flex-shrink: 0;
+  width: 241px;
   display: flex;
   flex-direction: column;
   gap: 20px;
-  padding: 20px 18px;
+  padding: 45px 0 26px 44px;
 }
 
 /* ── ACTION BUTTONS ── */
