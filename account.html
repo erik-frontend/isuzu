@@ -351,18 +351,18 @@
             </nav>
 
             <h1 class="account__title">Особистий кабінет</h1>
-            
+
             <div class="account__inner">
                 <!-- sidebar -->
                 <aside class="account-sidebar">
 
                     <nav class="account-sidebar__nav">
 
-                        <button class="account-sidebar__link active" type="button">
+                        <button class="account-sidebar__link " type="button">
                             Особисті дані
                         </button>
 
-                        <button class="account-sidebar__link" type="button">
+                        <button class="account-sidebar__link active" type="button">
                             Історія замовлень
                         </button>
 
@@ -381,7 +381,7 @@
                 <!-- content -->
                 <div class="account-content">
                     <!-- personal data -->
-                    <div class="account-panel active">
+                    <div class="account-panel">
 
                         <div class="account-grid">
                             <label class="account-field account-field--full">
@@ -421,6 +421,229 @@
 
                     </div>
 
+                    <div class="account-panel active">
+
+
+
+                        <div class="orders">
+
+                            <div class="orders__table">
+
+                                <div class="orders__head">
+                                    <span>№ замовлення</span>
+                                    <span>Дата</span>
+                                    <span class="orders__head-center">Товари</span>
+                                    <span>Сума</span>
+                                    <span>Статус</span>
+                                </div>
+
+                                <div class="orders__row" data-order="1">
+                                    <div class="orders__summary">
+                                        <span class="orders__num">125488741</span>
+                                        <span class="orders__date">15.02.2026</span>
+                                        <div class="orders__thumbs">
+                                            <img src="./assets/product.jpg" alt="" class="orders__thumb">
+                                            <img src="./assets/product.jpg" alt="" class="orders__thumb">
+                                            <img src="./assets/product.jpg" alt="" class="orders__thumb">
+                                            <span class="orders__thumbs-extra">+ 2</span>
+                                        </div>
+                                        <span class="orders__total">1 500 грн</span>
+                                        <div class="orders__status-col">
+                                            <span class="orders__status orders__status--sent">Відправлено</span>
+                                            <button class="orders__toggle" type="button" aria-expanded="false"
+                                                aria-label="Розгорнути замовлення">
+                                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                                    <path d="M3 6l5 5 5-5" stroke="currentColor" stroke-width="1.5"
+                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="orders__details"></div>
+                                </div>
+
+                                <div class="orders__row active" data-order="2">
+                                    <div class="orders__summary">
+                                        <span class="orders__num">125488741</span>
+                                        <span class="orders__date">15.02.2026</span>
+                                        <div class="orders__thumbs">
+                                            <img src="./assets/product.jpg" alt="" class="orders__thumb">
+                                            <img src="./assets/product.jpg" alt="" class="orders__thumb">
+                                        </div>
+                                        <span class="orders__total">12 457 грн</span>
+                                        <div class="orders__status-col">
+                                            <span class="orders__status orders__status--processing">Обробляється</span>
+                                            <button class="orders__toggle" type="button" aria-expanded="true"
+                                                aria-label="Згорнути замовлення">
+                                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                                    <path d="M13 10l-5-5-5 5" stroke="currentColor" stroke-width="1.5"
+                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                    <div class="orders__details">
+                                        <div class="orders__details-inner">
+
+                                            <div class="orders__left">
+
+                                                <div class="orders__items">
+
+                                                    <div class="orders__item">
+                                                        <img src="./assets/product.jpg" alt=""
+                                                            class="orders__item-img">
+                                                        <div class="orders__item-desc">
+                                                            <span class="orders__item-code">8982738210</span>
+                                                            <span class="orders__item-name">Міст діодний з реле
+                                                                регулятором 90A NPR75</span>
+                                                            <span class="orders__item-qty">5 954 грн x 1 шт.</span>
+                                                        </div>
+                                                        <span class="orders__item-price">5 954 грн</span>
+                                                    </div>
+
+                                                    <div class="orders__item">
+                                                        <img src="./assets/product.jpg" alt=""
+                                                            class="orders__item-img">
+                                                        <div class="orders__item-desc">
+                                                            <span class="orders__item-code">8982738210</span>
+                                                            <span class="orders__item-name">Міст діодний з реле
+                                                                регулятором 90A NPR75</span>
+                                                            <span class="orders__item-qty">5 954 грн x 1 шт.</span>
+                                                        </div>
+                                                        <span class="orders__item-price">5 954 грн</span>
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="orders__payment">
+                                                    <div class="orders__payment-row">
+                                                        <span>Спосіб оплати</span>
+                                                        <span>Накладеним платежем</span>
+                                                    </div>
+                                                    <div class="orders__payment-row">
+                                                        <span>Доставка</span>
+                                                        <span>35 грн.</span>
+                                                    </div>
+                                                    <div class="orders__payment-row orders__payment-row--total">
+                                                        <span>Всього:</span>
+                                                        <span>12 457 грн.</span>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                            <div class="orders__right">
+
+                                                <div class="orders__actions">
+                                                    <button class="orders__btn orders__btn--primary"
+                                                        type="button">Відстежити замовлення</button>
+                                                    <button class="orders__btn orders__btn--secondary"
+                                                        type="button">Повторити замовлення</button>
+                                                </div>
+
+                                                <div class="orders__meta">
+                                                    <p class="orders__meta-label">Адреса доставки:</p>
+                                                    <p class="orders__meta-bold">Нова пошта</p>
+                                                    <p class="orders__meta-text">Відділення №6: вул. Шевченко, 100</p>
+                                                </div>
+
+                                                <div class="orders__meta">
+                                                    <p class="orders__meta-label">Отримувач замовлення:</p>
+                                                    <p class="orders__meta-bold">Михайло Іванов</p>
+                                                    <p class="orders__meta-text">+38 (067) 233-45-56</p>
+                                                    <p class="orders__meta-text">ivanov@gmail.com</p>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="orders__row" data-order="3">
+                                    <div class="orders__summary">
+                                        <span class="orders__num">125488741</span>
+                                        <span class="orders__date">15.02.2026</span>
+                                        <div class="orders__thumbs">
+                                            <img src="./assets/product.jpg" alt="" class="orders__thumb">
+                                            <img src="./assets/product.jpg" alt="" class="orders__thumb">
+                                            <img src="./assets/product.jpg" alt="" class="orders__thumb">
+                                        </div>
+                                        <span class="orders__total">1 500 грн</span>
+                                        <div class="orders__status-col">
+                                            <span class="orders__status orders__status--delivered">Доставлено</span>
+                                            <button class="orders__toggle" type="button" aria-expanded="false"
+                                                aria-label="Розгорнути замовлення">
+                                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                                    <path d="M3 6l5 5 5-5" stroke="currentColor" stroke-width="1.5"
+                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="orders__details"></div>
+                                </div>
+
+                                <div class="orders__row" data-order="4">
+                                    <div class="orders__summary">
+                                        <span class="orders__num">125488741</span>
+                                        <span class="orders__date">15.02.2026</span>
+                                        <div class="orders__thumbs">
+                                            <img src="./assets/product.jpg" alt="" class="orders__thumb">
+                                            <img src="./assets/product.jpg" alt="" class="orders__thumb">
+                                        </div>
+                                        <span class="orders__total">1 500 грн</span>
+                                        <div class="orders__status-col">
+                                            <span class="orders__status orders__status--delivered">Доставлено</span>
+                                            <button class="orders__toggle" type="button" aria-expanded="false"
+                                                aria-label="Розгорнути замовлення">
+                                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                                    <path d="M3 6l5 5 5-5" stroke="currentColor" stroke-width="1.5"
+                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="orders__details"></div>
+                                </div>
+
+                                <div class="orders__row" data-order="5">
+                                    <div class="orders__summary">
+                                        <span class="orders__num">125488741</span>
+                                        <span class="orders__date">15.02.2026</span>
+                                        <div class="orders__thumbs">
+                                            <img src="./assets/product.jpg" alt="" class="orders__thumb">
+                                            <img src="./assets/product.jpg" alt="" class="orders__thumb">
+                                        </div>
+                                        <span class="orders__total">1 500 грн</span>
+                                        <div class="orders__status-col">
+                                            <span class="orders__status orders__status--delivered">Доставлено</span>
+                                            <button class="orders__toggle" type="button" aria-expanded="false"
+                                                aria-label="Розгорнути замовлення">
+                                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                                    <path d="M3 6l5 5 5-5" stroke="currentColor" stroke-width="1.5"
+                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="orders__details"></div>
+                                </div>
+
+                            </div>
+
+                            <button class="orders__load-more" type="button">
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true">
+                                    <path d="M9 3.75v10.5M4.5 12l4.5 4.5 4.5-4.5" stroke="currentColor"
+                                        stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                                Завантажити ще
+                            </button>
+
+                        </div>
+                    </div>
+
                 </div>
 
             </div>
@@ -430,8 +653,256 @@
     </section>
 
 
+    <section class="related grey-bg">
+        <div class="container">
+            <div class="related__wrapper">
+                <h2 class="related__title h2">Переглянуті товари</h3>
+                    <div class="related__slider active">
+                        <div class="swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide related__item productCard">
+                                    <div class="productCard__labels">
+                                        <div class="productCard__labels-item green">Топ продажів</div>
+                                    </div>
+                                    <a href="./product.html" class="productCard__image">
+                                        <img src="./assets/product.jpg" alt="">
+                                    </a>
+                                    <div class="productCard__rating">
+                                        <div class="productCard__rating-stars rating-stars" data-rating="4">
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                        </div>
+                                        <div class="productCard__status in-stock">В наявності</div>
+                                        <!-- <div class="productCard__status out-of-stock">Не в наявності</div> -->
+                                    </div>
+                                    <a href="./product.html" class="productCard__title">8982738210 Мост диодный с реле
+                                        регулятором 90А NPR75</a>
+                                    <div class="productCard__details">
+                                        <span>Артикул: 920</span>
+                                        <span>Япония</span>
+                                    </div>
+                                    <div class="productCard__bottom">
+                                        <div class="productCard__price">
+                                            180 грн.
+                                            <span>200 грн.</span>
+                                        </div>
+                                        <div class="productCard__btn btn btn-3">
+                                            <div class="productCard__btn-cart"></div>
+                                            <span>Купити</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide related__item productCard">
+                                    <div class="productCard__labels">
+                                        <div class="productCard__labels-item green">Топ продажів</div>
+                                    </div>
+                                    <a href="./product.html" class="productCard__image">
+                                        <img src="./assets/product.jpg" alt="">
+                                    </a>
+                                    <div class="productCard__rating">
+                                        <div class="productCard__rating-stars rating-stars" data-rating="5">
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                        </div>
+                                        <div class="productCard__status in-stock">В наявності</div>
+                                        <!-- <div class="productCard__status out-of-stock">Не в наявності</div> -->
+                                    </div>
+                                    <a href="./product.html" class="productCard__title">8982738210 Мост диодный с реле
+                                        регулятором 90А NPR75</a>
+                                    <div class="productCard__details">
+                                        <span>Артикул: 920</span>
+                                        <span>Япония</span>
+                                    </div>
+                                    <div class="productCard__bottom">
+                                        <div class="productCard__price">
+                                            180 грн.
+                                            <span>200 грн.</span>
+                                        </div>
+                                        <div class="productCard__btn btn btn-3">
+                                            <div class="productCard__btn-cart"></div>
+                                            <span>Купити</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide related__item productCard">
+                                    <div class="productCard__labels">
+                                        <div class="productCard__labels-item green">Топ продажів</div>
+                                    </div>
+                                    <a href="./product.html" class="productCard__image">
+                                        <img src="./assets/product.jpg" alt="">
+                                    </a>
+                                    <div class="productCard__rating">
+                                        <div class="productCard__rating-stars rating-stars" data-rating="3">
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                        </div>
+                                        <div class="productCard__status in-stock">В наявності</div>
+                                        <!-- <div class="productCard__status out-of-stock">Не в наявності</div> -->
+                                    </div>
+                                    <a href="./product.html" class="productCard__title">8982738210 Мост диодный с реле
+                                        регулятором 90А NPR75</a>
+                                    <div class="productCard__details">
+                                        <span>Артикул: 920</span>
+                                        <span>Япония</span>
+                                    </div>
+                                    <div class="productCard__bottom">
+                                        <div class="productCard__price">
+                                            180 грн.
+                                            <span>200 грн.</span>
+                                        </div>
+                                        <div class="productCard__btn btn btn-3">
+                                            <div class="productCard__btn-cart"></div>
+                                            <span>Купити</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide related__item productCard">
+                                    <div class="productCard__labels">
+                                        <div class="productCard__labels-item green">Топ продажів</div>
+                                    </div>
+                                    <a href="./product.html" class="productCard__image">
+                                        <img src="./assets/product.jpg" alt="">
+                                    </a>
+                                    <div class="productCard__rating">
+                                        <div class="productCard__rating-stars rating-stars" data-rating="4">
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                        </div>
+                                        <div class="productCard__status in-stock">В наявності</div>
+                                        <!-- <div class="productCard__status out-of-stock">Не в наявності</div> -->
+                                    </div>
+                                    <a href="./product.html" class="productCard__title">8982738210 Мост диодный с реле
+                                        регулятором 90А NPR75</a>
+                                    <div class="productCard__details">
+                                        <span>Артикул: 920</span>
+                                        <span>Япония</span>
+                                    </div>
+                                    <div class="productCard__bottom">
+                                        <div class="productCard__price">
+                                            180 грн.
+                                            <span>200 грн.</span>
+                                        </div>
+                                        <div class="productCard__btn btn btn-3">
+                                            <div class="productCard__btn-cart"></div>
+                                            <span>Купити</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide related__item productCard">
+                                    <div class="productCard__labels">
+                                        <div class="productCard__labels-item green">Топ продажів</div>
+                                    </div>
+                                    <a href="./product.html" class="productCard__image">
+                                        <img src="./assets/product.jpg" alt="">
+                                    </a>
+                                    <div class="productCard__rating">
+                                        <div class="productCard__rating-stars rating-stars" data-rating="4">
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                        </div>
+                                        <div class="productCard__status in-stock">В наявності</div>
+                                        <!-- <div class="productCard__status out-of-stock">Не в наявності</div> -->
+                                    </div>
+                                    <a href="./product.html" class="productCard__title">8982738210 Мост диодный с реле
+                                        регулятором 90А NPR75</a>
+                                    <div class="productCard__details">
+                                        <span>Артикул: 920</span>
+                                        <span>Япония</span>
+                                    </div>
+                                    <div class="productCard__bottom">
+                                        <div class="productCard__price">
+                                            180 грн.
+                                            <span>200 грн.</span>
+                                        </div>
+                                        <div class="productCard__btn btn btn-3">
+                                            <div class="productCard__btn-cart"></div>
+                                            <span>Купити</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide related__item productCard">
+                                    <div class="productCard__labels">
+                                        <div class="productCard__labels-item green">Топ продажів</div>
+                                    </div>
+                                    <a href="./product.html" class="productCard__image">
+                                        <img src="./assets/product.jpg" alt="">
+                                    </a>
+                                    <div class="productCard__rating">
+                                        <div class="productCard__rating-stars rating-stars" data-rating="4">
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                        </div>
+                                        <div class="productCard__status in-stock">В наявності</div>
+                                        <!-- <div class="productCard__status out-of-stock">Не в наявності</div> -->
+                                    </div>
+                                    <a href="./product.html" class="productCard__title">8982738210 Мост диодный с реле
+                                        регулятором 90А NPR75</a>
+                                    <div class="productCard__details">
+                                        <span>Артикул: 920</span>
+                                        <span>Япония</span>
+                                    </div>
+                                    <div class="productCard__bottom">
+                                        <div class="productCard__price">
+                                            180 грн.
+                                            <span>200 грн.</span>
+                                        </div>
+                                        <div class="productCard__btn btn btn-3">
+                                            <div class="productCard__btn-cart"></div>
+                                            <span>Купити</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-bottom">
+                                <div class="swiper-pagination"></div>
+                                <div class="swiper-buttons">
+                                    <div class="swiper-button-prev"></div>
+                                    <div class="swiper-pagination-pages"></div>
+                                    <div class="swiper-button-next"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </section>
 
 
+
+    <div class="subscribe" style="margin-top: 0;">
+        <img src="./assets/subscribe.png" alt="" class="subscribe__bg">
+        <div class="container">
+            <div class="subscribe__wrapper">
+                <div class="subscribe__text">Підпишись на розсилку та дізнавайся першим про наші акції та новини</div>
+                <div class="subscribe__form">
+                    <form action="">
+                        <div class="subscribe__form-wrapper">
+                            <input type="email" placeholder="Ваш email">
+                            <input type="submit" value="Підписатись" class="btn">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <footer class="footer">
         <div class="container">

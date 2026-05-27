@@ -3634,103 +3634,30 @@ html:not(.v-mobile) .footer__dev a:focus-visible {
 
 
 .account {
-    padding: 0;
+    padding: 0 0 125px;
 
     &__title {
+        margin: 30px 0 32px;
+
         font-weight: 500;
-        font-size: 30px;
-        line-height: 1.3; // 133%
+        font-size: 36px;
+        line-height: 1;
+
         color: #010101;
-        margin-bottom: 32px;
     }
 
     &__inner {
         display: flex;
         align-items: flex-start;
-        gap: 30px;
+        gap: 77px;
     }
 }
 
-
-
-
-.account-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 15px;
-    max-width: 930px;
-    width: 100%;
-    border-radius: 5px;
-    background: var(--color-grey-200);
-    padding: 45px 48px 55px;
-}
-
-/* FIELD */
-
-.account-field {
-
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-
-    &--full {
-        grid-column: 1 / -1;
-    }
-
-    &__label {
-        font-weight: 500;
-        font-size: 14px;
-        color: var(--color-black);
-
-        span {
-            color: var(--color-red);
-        }
-    }
-
-    &__input {
-        width: 100%;
-        height: 50px;
-
-        padding: 0 16px;
-
-        border: 1px solid var(--color-grey-150);
-        border-radius: 6px;
-
-        background: var(--color-white);
-
-        font-size: 15px;
-        color: var(--color-black);
-
-        outline: none;
-
-        transition: .2s ease;
-
-        &::placeholder {
-            color: var(--color-grey-100);
-        }
-
-        &:focus {
-            border-color: var(--color-red);
-        }
-    }
-}
-
-.account-save-btn {
-    border-radius: 5px;
-    padding: 14px 72px;
-    width: 210px;
-    background: var(--color-red);
-    color: var(--color-white);
-    border: none;
-}
-
-
-
+/* SIDEBAR */
 
 .account-sidebar {
     max-width: 402px;
     width: 100%;
-
 
     &__nav {
         display: flex;
@@ -3739,30 +3666,30 @@ html:not(.v-mobile) .footer__dev a:focus-visible {
 
     &__link,
     &__logout {
-        padding: 30px 0 30px 30px;
         display: flex;
         align-items: center;
+        gap: 10px;
+
+        padding: 30px 0 30px 30px;
+
         border: none;
         border-bottom: 1px solid var(--color-grey-150);
+
         background: transparent;
-        font-weight: 400;
-        font-size: 20px;
+
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 1;
+
         color: var(--color-grey-100);
+
         cursor: pointer;
+
         transition: .2s ease;
-        gap: 10px;
 
         &:hover {
             background: rgba(0, 0, 0, 0.02);
         }
-    }
-
-    &__logout::before {
-        content: "";
-        display: flex;
-        background: url(../assets/log-out.svg) no-repeat center;
-        width: 24px;
-        height: 24px;
     }
 
     &__link {
@@ -3770,9 +3697,24 @@ html:not(.v-mobile) .footer__dev a:focus-visible {
         &.active {
             background: var(--color-black);
             color: var(--color-white);
+            cursor: default;
+        }
+    }
+
+    &__logout {
+
+        &::before {
+            content: "";
+
+            width: 24px;
+            height: 24px;
+
+            background: url(../assets/log-out.svg) no-repeat center;
         }
     }
 }
+
+/* CONTENT */
 
 .account-content {
     flex: 1;
@@ -3786,26 +3728,39 @@ html:not(.v-mobile) .footer__dev a:focus-visible {
     }
 }
 
-.account-form {
+/* GRID */
 
-    &__grid {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 20px;
-    }
+.account-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
 
-    &__field {
-        display: flex;
-        flex-direction: column;
-        gap: 8px;
+    max-width: 930px;
+    width: 100%;
 
-        &--full {
-            grid-column: 1 / -1;
-        }
+    padding: 45px 48px 55px;
+
+    border-radius: 5px;
+
+    background: var(--color-grey-200);
+}
+
+/* FIELD */
+
+.account-field {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+
+    &--full {
+        grid-column: 1 / -1;
     }
 
     &__label {
+        font-weight: 500;
         font-size: 14px;
+        line-height: 1;
+
         color: var(--color-black);
 
         span {
@@ -3815,63 +3770,450 @@ html:not(.v-mobile) .footer__dev a:focus-visible {
 
     &__input {
         width: 100%;
-        height: 52px;
 
-        padding: 0 16px;
+        padding: 14px 20px;
 
         border: 1px solid var(--color-grey-150);
         border-radius: 6px;
 
-        outline: none;
+        background: var(--color-white);
 
-        font-size: 15px;
+        color: var(--color-black);
+
+        outline: none;
 
         transition: .2s ease;
 
-        &:focus {
-            border-color: var(--color-red);
-        }
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.2;
+        color: var(--grey-stroke);
+
 
         &::placeholder {
             color: var(--color-grey-100);
         }
-    }
 
-    &__submit {
-        margin-top: 30px;
-        min-width: 180px;
+        &:focus {
+            border-color: var(--color-red);
+        }
     }
 }
 
-@media (max-width: 900px) {
+/* BUTTON */
 
-    .account {
+.account-save-btn {
+    width: 210px;
 
-        &__inner {
-            flex-direction: column;
-        }
-    }
+    padding: 14px 72px;
+    border: none;
+    border-radius: 5px;
+    background: var(--color-red);
+    color: var(--color-white);
+    cursor: pointer;
+    transition: .2s ease;
 
-    .account-sidebar {
-        max-width: 100%;
+    font-weight: 500;
+    font-size: 14px;
+
+    &:hover {
+        opacity: .9;
     }
 }
 
-@media (max-width: 700px) {
 
-    .account-form {
 
-        &__grid {
-            grid-template-columns: 1fr;
+
+
+// orders 
+
+
+
+
+
+.orders {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+    max-width: 931px;
+    width: 100%;
+}
+
+/* ── TABLE WRAPPER ── */
+
+.orders__table {
+    width: 100%;
+}
+
+/* ── HEADER ROW ── */
+
+.orders__head {
+    display: grid;
+    grid-template-columns: 165px 0px 1fr 140px 180px;
+    align-items: center;
+    gap: 12px;
+    padding: 14px 24px;
+    background: #3d3d3d;
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1;
+    color: var(--color-white);
+}
+
+.orders__head-center {
+    text-align: center;
+}
+
+/* ── ORDER ROW ── */
+
+.orders__row {
+    border: 1px solid var(--color-grey-150);
+    margin-top: 6px;
+    border-radius: 5px;
+
+    &:last-child {
+        border-bottom: none;
+    }
+
+}
+
+/* ── SUMMARY BAR (always visible) ── */
+
+.orders__summary {
+    display: grid;
+    grid-template-columns: 150px 110px 1fr 130px 200px;
+    align-items: center;
+    gap: 12px;
+    padding: 16px 24px;
+    cursor: pointer;
+    transition: background 0.2s ease;
+
+    &:hover {
+        background: rgba(0, 0, 0, 0.02);
+    }
+
+    .active & {
+        background: rgba(0, 0, 0, 0.02);
+    }
+}
+
+.orders__num {
+    font-size: 14px;
+    color: var(--color-black);
+}
+
+.orders__date {
+    font-size: 14px;
+    color: var(--color-grey-100);
+}
+
+/* ── THUMBNAILS ── */
+
+.orders__thumbs {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.orders__thumb {
+    width: 44px;
+    height: 44px;
+    object-fit: contain;
+    border: 1px solid var(--color-grey-150);
+    border-radius: 4px;
+    background: var(--color-white);
+    flex-shrink: 0;
+}
+
+.orders__thumbs-extra {
+    font-size: 13px;
+    color: var(--color-grey-100);
+    white-space: nowrap;
+    margin-left: 2px;
+}
+
+.orders__total {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--color-black);
+}
+
+/* ── STATUS + CHEVRON ── */
+
+.orders__status-col {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+}
+
+.orders__status {
+    font-size: 14px;
+    font-weight: 500;
+
+    &--sent {
+        color: var(--color-black);
+    }
+
+    &--processing {
+        color: var(--color-red);
+    }
+
+    &--delivered {
+        color: #27ae60;
+    }
+}
+
+.orders__toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 28px;
+    height: 28px;
+    border: none;
+    border-radius: 4px;
+    background: transparent;
+    color: var(--color-grey-100);
+    cursor: pointer;
+    transition: background 0.2s ease, color 0.2s ease;
+
+    &:hover {
+        background: var(--color-grey-150);
+        color: var(--color-black);
+    }
+
+    svg {
+        display: block;
+        transition: transform 0.25s ease;
+    }
+
+    // when row is open the svg is already pointing up (different path), no transform needed
+}
+
+/* ── DETAILS PANEL ── */
+
+.orders__details {
+    display: none;
+    border-top: 1px solid var(--color-grey-150);
+
+    .active & {
+        display: block;
+    }
+}
+
+.orders__details-inner {
+    display: flex;
+    align-items: flex-start;
+    gap: 0;
+}
+
+/* ── LEFT COLUMN ── */
+
+.orders__left {
+    flex: 1;
+    min-width: 0;
+    border-right: 1px solid var(--color-grey-150);
+}
+
+/* ── ITEMS ── */
+
+.orders__items {
+    display: flex;
+    flex-direction: column;
+}
+
+.orders__item {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 16px 24px;
+    border-bottom: 1px solid var(--color-grey-150);
+
+    &:last-child {
+        border-bottom: none;
+    }
+}
+
+.orders__item-img {
+    width: 72px;
+    height: 72px;
+    object-fit: contain;
+    border: 1px solid var(--color-grey-150);
+    border-radius: 4px;
+    background: var(--color-white);
+    flex-shrink: 0;
+}
+
+.orders__item-desc {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    flex: 1;
+    min-width: 0;
+}
+
+.orders__item-code {
+    font-size: 12px;
+    color: var(--color-grey-100);
+}
+
+.orders__item-name {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--color-black);
+    line-height: 1.35;
+}
+
+.orders__item-qty {
+    font-size: 13px;
+    color: var(--color-grey-100);
+}
+
+.orders__item-price {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--color-black);
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+/* ── PAYMENT SUMMARY ── */
+
+.orders__payment {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 18px 24px;
+    border-top: 1px solid var(--color-grey-150);
+}
+
+.orders__payment-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    font-size: 13px;
+    color: var(--color-grey-100);
+
+    &--total {
+        font-size: 14px;
+        font-weight: 700;
+        color: var(--color-black);
+        padding-top: 8px;
+        border-top: 1px solid var(--color-grey-150);
+    }
+}
+
+/* ── RIGHT COLUMN ── */
+
+.orders__right {
+    width: 220px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px 18px;
+}
+
+/* ── ACTION BUTTONS ── */
+
+.orders__actions {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.orders__btn {
+    width: 100%;
+    padding: 13px 10px;
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 1;
+    text-align: center;
+    cursor: pointer;
+    transition: opacity 0.2s ease, background 0.2s ease;
+
+    &--primary {
+        background: var(--color-red);
+        color: var(--color-white);
+        border: 1px solid var(--color-red);
+
+        &:hover {
+            opacity: 0.88;
         }
     }
 
-    .account-sidebar {
+    &--secondary {
+        background: var(--color-white);
+        color: var(--color-black);
+        border: 1px solid var(--color-grey-150);
 
-        &__link,
-        &__logout {
-            height: 60px;
-            font-size: 18px;
+        &:hover {
+            background: var(--color-grey-200);
         }
     }
+}
+
+/* ── META (address / recipient) ── */
+
+.orders__meta {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.orders__meta-label {
+    font-size: 12px;
+    color: var(--color-grey-100);
+    margin-bottom: 2px;
+}
+
+.orders__meta-bold {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--color-black);
+    line-height: 1.4;
+}
+
+.orders__meta-text {
+    font-size: 13px;
+    color: var(--color-black);
+    line-height: 1.4;
+}
+
+/* ── LOAD MORE ── */
+
+.orders__load-more {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    align-self: center;
+    padding: 12px 28px;
+    border: 1px solid var(--color-grey-150);
+    border-radius: 5px;
+    background: transparent;
+    font-weight: 500;
+    font-size: 14px;
+    color: var(--color-black);
+    cursor: pointer;
+    transition: background 0.2s ease, border-color 0.2s ease;
+
+    svg {
+        flex-shrink: 0;
+    }
+
+    &:hover {
+        background: var(--color-grey-200);
+        border-color: var(--color-grey-100);
+    }
+}
+
+
+
+.grey-bg {
+    background: var(--color-grey-200);
 }
