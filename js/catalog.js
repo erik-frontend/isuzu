@@ -102,6 +102,73 @@ const priceRange = {
 // };
 
 
+
+
+
+const accountTabs = {
+    links: document.querySelectorAll('.account-sidebar__link'),
+    panels: document.querySelectorAll('.account-panel'),
+
+    init() {
+
+        this.links.forEach((link, index) => {
+
+            link.addEventListener('click', () => {
+
+                this.links.forEach(item => {
+                    item.classList.remove('active');
+                });
+
+                this.panels.forEach(panel => {
+                    panel.classList.remove('active');
+                });
+
+                link.classList.add('active');
+                this.panels[index].classList.add('active');
+
+            });
+
+        });
+
+    }
+};
+
+
+
+const ordersAccordion = {
+    rows: document.querySelectorAll('.orders__row'),
+
+    init() {
+
+        this.rows.forEach(row => {
+
+            const toggle = row.querySelector('.orders__toggle');
+
+            toggle.addEventListener('click', (e) => {
+
+                e.stopPropagation();
+
+                row.classList.toggle('active');
+                toggle.classList.toggle('active');
+
+            });
+
+        });
+
+    }
+};
+
+
+
+
+
+
+
+
+
+
+accountTabs.init()
+ordersAccordion.init()
 // productRating.init();
 subcategories.init();
 categoryList.init();

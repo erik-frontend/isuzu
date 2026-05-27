@@ -3417,9 +3417,9 @@ html:not(.v-mobile) .footer__dev a:focus-visible {
 .orders__load-more {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 5px;
   align-self: center;
-  padding: 12px 28px;
+  padding: 10px 19px;
   border: 1px solid var(--color-grey-150);
   border-radius: 5px;
   background: transparent;
@@ -3431,6 +3431,10 @@ html:not(.v-mobile) .footer__dev a:focus-visible {
 }
 .orders__load-more::before {
   content: "";
+  display: flex;
+  width: 16px;
+  height: 16px;
+  background: url(../assets/load-morebtn-icon.svg) no-repeat center;
 }
 .orders__load-more svg {
   flex-shrink: 0;
