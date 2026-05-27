@@ -3089,6 +3089,7 @@ html:not(.v-mobile) .footer__dev a:focus-visible {
   font-weight: 400;
   font-size: 14px;
   line-height: 1;
+  cursor: pointer;
 }
 
 .orders {
