@@ -4052,7 +4052,6 @@ html:not(.v-mobile) .footer__dev a:focus-visible {
 .orders__item {
     display: flex;
     align-items: center;
-    gap: 16px;
     padding: 16px 24px 16px 0;
     border-bottom: 1px solid var(--color-grey-150);
 
@@ -4070,9 +4069,15 @@ html:not(.v-mobile) .footer__dev a:focus-visible {
 .orders__item-desc {
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    gap: 10px;
     flex: 1;
-    min-width: 0;
+    max-width: 261px;
+    width: 100%;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1;
+    color: var(--color-black);
+    margin: 27px 156px 36px 19px;
 }
 
 .orders__item-code {
@@ -4093,11 +4098,11 @@ html:not(.v-mobile) .footer__dev a:focus-visible {
 }
 
 .orders__item-price {
-    font-size: 14px;
-    font-weight: 500;
     color: var(--color-black);
-    white-space: nowrap;
     flex-shrink: 0;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1;
 }
 
 /* ── PAYMENT SUMMARY ── */
@@ -4105,7 +4110,7 @@ html:not(.v-mobile) .footer__dev a:focus-visible {
 .orders__payment {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 15px;
     padding: 35px 0;
     border-top: 1px solid var(--color-grey-150);
 }
@@ -4115,14 +4120,20 @@ html:not(.v-mobile) .footer__dev a:focus-visible {
     justify-content: space-between;
     align-items: center;
     gap: 16px;
-    font-size: 13px;
     color: var(--color-grey-100);
 
-    &--total {
-        font-size: 14px;
-        font-weight: 700;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.1;
+
+    .right {
         color: var(--color-black);
-        padding-top: 8px;
+    }
+
+    &--total {
+        font-size: 16px;
+        font-weight: 600;
+        color: var(--color-black);
     }
 }
 
@@ -4132,7 +4143,6 @@ html:not(.v-mobile) .footer__dev a:focus-visible {
     width: 241px;
     display: flex;
     flex-direction: column;
-    gap: 20px;
     padding: 45px 0 26px 44px;
 }
 
@@ -4142,6 +4152,7 @@ html:not(.v-mobile) .footer__dev a:focus-visible {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    margin-bottom: 30px;
 }
 
 .orders__btn {
@@ -4149,11 +4160,12 @@ html:not(.v-mobile) .footer__dev a:focus-visible {
     padding: 13px 10px;
     border-radius: 5px;
     font-weight: 500;
-    font-size: 13px;
+    font-size: 14px;
     line-height: 1;
     text-align: center;
     cursor: pointer;
     transition: opacity 0.2s ease, background 0.2s ease;
+
 
     &--primary {
         background: var(--color-red);
@@ -4181,24 +4193,26 @@ html:not(.v-mobile) .footer__dev a:focus-visible {
 .orders__meta {
     display: flex;
     flex-direction: column;
-    gap: 3px;
 }
 
 .orders__meta-label {
-    font-size: 12px;
+    font-size: 14px;
     color: var(--color-grey-100);
-    margin-bottom: 2px;
+    margin: 12px 0;
+    font-weight: 400;
 }
 
 .orders__meta-bold {
-    font-size: 13px;
+    font-size: 14px;
     font-weight: 600;
-    color: var(--color-black);
     line-height: 1.4;
+    color: var(--color-black);
 }
 
 .orders__meta-text {
-    font-size: 13px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.4;
     color: var(--color-black);
     line-height: 1.4;
 }
@@ -4219,6 +4233,11 @@ html:not(.v-mobile) .footer__dev a:focus-visible {
     color: var(--color-black);
     cursor: pointer;
     transition: background 0.2s ease, border-color 0.2s ease;
+
+    &::before {
+        content: "";
+        background: ;
+    }
 
     svg {
         flex-shrink: 0;
