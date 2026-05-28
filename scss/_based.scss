@@ -3623,3 +3623,76 @@ html:not(.v-mobile) .footer__dev a:focus-visible {
         }
     }
 }
+
+
+
+//  delivery
+
+
+
+
+
+.account-sidebar {
+    max-width: 402px;
+    width: 100%;
+
+    &__nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__link,
+    &__logout {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        padding: 30px 0 30px 30px;
+
+        border: none;
+        border-bottom: 1px solid var(--color-grey-150);
+
+        background: transparent;
+
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 1;
+
+        color: var(--color-grey-100);
+
+        cursor: pointer;
+
+        transition: .2s ease;
+
+        &:hover {
+            background: rgba(0, 0, 0, 0.02);
+        }
+
+        &:first-child {
+            border-top: 1px solid var(--color-grey-150);
+        }
+    }
+
+    &__link {
+
+        &.active {
+            background: var(--color-black);
+            color: var(--color-white);
+            cursor: default;
+        }
+    }
+
+    &__logout {
+
+        &::before {
+            content: "";
+
+            width: 24px;
+            height: 24px;
+
+            background: url(../assets/log-out.svg) no-repeat center;
+        }
+    }
+}
+
+

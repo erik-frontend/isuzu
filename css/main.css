@@ -2925,4 +2925,45 @@ html:not(.v-mobile) .footer__dev a:focus-visible {
   width: 14px;
   height: 14px;
   background: url("../assets/cart.svg") center/contain no-repeat;
+}
+
+.account-sidebar {
+  max-width: 402px;
+  width: 100%;
+}
+.account-sidebar__nav {
+  display: flex;
+  flex-direction: column;
+}
+.account-sidebar__link, .account-sidebar__logout {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 30px 0 30px 30px;
+  border: none;
+  border-bottom: 1px solid var(--color-grey-150);
+  background: transparent;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1;
+  color: var(--color-grey-100);
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+.account-sidebar__link:hover, .account-sidebar__logout:hover {
+  background: rgba(0, 0, 0, 0.02);
+}
+.account-sidebar__link:first-child, .account-sidebar__logout:first-child {
+  border-top: 1px solid var(--color-grey-150);
+}
+.account-sidebar__link.active {
+  background: var(--color-black);
+  color: var(--color-white);
+  cursor: default;
+}
+.account-sidebar__logout::before {
+  content: "";
+  width: 24px;
+  height: 24px;
+  background: url(../assets/log-out.svg) no-repeat center;
 }/*# sourceMappingURL=main.css.map */
