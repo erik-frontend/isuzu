@@ -2925,4 +2925,105 @@ html:not(.v-mobile) .footer__dev a:focus-visible {
   width: 14px;
   height: 14px;
   background: url("../assets/cart.svg") center/contain no-repeat;
+}
+
+.thank-you {
+  padding: 45px 0 175px;
+}
+.thank-you__card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 114px 175px 121px;
+  max-width: 929px;
+  width: 100%;
+  border-radius: 10px;
+  background: #f4f7f8;
+}
+.thank-you__title {
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 1;
+  color: var(--color-black);
+  margin: 20px 0 10px;
+}
+.thank-you__description {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.5;
+  text-align: center;
+  color: var(--color-black);
+  margin-bottom: 25px;
+}
+.thank-you__button {
+  font-weight: 500;
+  font-size: 14px;
+  text-align: center;
+  color: var(--color-white);
+  background: var(--color-red);
+  padding: 14px 31px;
+  border-radius: 5px;
+}
+
+@media (max-width: 992px) {
+  .thank-you {
+    padding: 40px 0 120px;
+  }
+  .thank-you__card {
+    padding: 80px 60px;
+  }
+  .thank-you__title {
+    font-size: 30px;
+  }
+  .thank-you__description {
+    font-size: 18px;
+  }
+}
+@media (max-width: 768px) {
+  .thank-you {
+    padding: 30px 0 90px;
+  }
+  .thank-you__card {
+    padding: 60px 30px;
+  }
+  .thank-you__icon {
+    width: 90px;
+  }
+  .thank-you__title {
+    font-size: 26px;
+    text-align: center;
+  }
+  .thank-you__description {
+    font-size: 16px;
+    line-height: 1.4;
+  }
+  .thank-you__button {
+    width: 100%;
+    max-width: 320px;
+    padding: 16px 20px;
+  }
+}
+@media (max-width: 480px) {
+  .thank-you {
+    padding: 20px 0 70px;
+  }
+  .thank-you__card {
+    padding: 40px 20px;
+    border-radius: 8px;
+  }
+  .thank-you__icon {
+    width: 70px;
+  }
+  .thank-you__title {
+    font-size: 22px;
+    line-height: 1.2;
+  }
+  .thank-you__description {
+    font-size: 14px;
+  }
+  .thank-you__button {
+    font-size: 13px;
+  }
 }/*# sourceMappingURL=main.css.map */
