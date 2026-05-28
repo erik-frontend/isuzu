@@ -2925,4 +2925,226 @@ html:not(.v-mobile) .footer__dev a:focus-visible {
   width: 14px;
   height: 14px;
   background: url("../assets/cart.svg") center/contain no-repeat;
+}
+
+.delivery {
+  padding: 0 0 120px;
+}
+.delivery__title {
+  margin: 30px 0 32px;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 1.1;
+  color: var(--color-black);
+}
+.delivery__inner {
+  display: flex;
+  align-items: flex-start;
+  gap: 46px;
+}
+
+/* SIDEBAR */
+.delivery-sidebar {
+  max-width: 402px;
+  width: 100%;
+  flex-shrink: 0;
+}
+.delivery-sidebar__nav {
+  display: flex;
+  flex-direction: column;
+}
+.delivery-sidebar__link {
+  padding: 30px;
+  border: none;
+  border-bottom: 1px solid var(--color-grey-150);
+  background: transparent;
+  text-align: left;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.2;
+  color: var(--color-grey-100);
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+.delivery-sidebar__link:first-child {
+  border-top: 1px solid var(--color-grey-150);
+}
+.delivery-sidebar__link:hover {
+  background: rgba(0, 0, 0, 0.02);
+}
+.delivery-sidebar__link.active {
+  background: var(--color-black);
+  color: var(--color-white);
+  cursor: default;
+}
+
+/* CONTENT */
+.delivery-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex: 1;
+}
+
+/* CARD */
+.delivery-card {
+  padding: 28px 30px 34px;
+  border: 1px solid var(--color-grey-150);
+  border-radius: 5px;
+  background: var(--color-white);
+}
+.delivery-card__top {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 24px;
+}
+.delivery-card__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  flex-shrink: 0;
+}
+.delivery-card__icon img {
+  max-width: 100%;
+}
+.delivery-card__title {
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 1.2;
+  color: var(--color-black);
+}
+.delivery-card__body {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.delivery-card__block {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.delivery-card__subtitle {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.2;
+  color: var(--color-black);
+}
+.delivery-card__text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.7;
+  color: var(--color-grey-100);
+}
+.delivery-card__list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.delivery-card__item {
+  position: relative;
+  padding-left: 30px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--color-grey-100);
+}
+.delivery-card__item::before {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 0;
+  width: 18px;
+  height: 18px;
+  background: url(../assets/check-red.svg) no-repeat center;
+  background-size: contain;
+}
+
+/* ========== 1200 ========== */
+@media (max-width: 1200px) {
+  .delivery__inner {
+    gap: 30px;
+  }
+  .delivery-sidebar {
+    max-width: 320px;
+  }
+  .delivery-sidebar__link {
+    padding: 24px;
+    font-size: 20px;
+  }
+  .delivery-card__title {
+    font-size: 26px;
+  }
+  .delivery-card__subtitle {
+    font-size: 21px;
+  }
+}
+/* ========== 992 ========== */
+@media (max-width: 992px) {
+  .delivery__inner {
+    flex-direction: column;
+  }
+  .delivery-sidebar {
+    max-width: 100%;
+  }
+  .delivery-content {
+    width: 100%;
+  }
+}
+/* ========== 768 ========== */
+@media (max-width: 768px) {
+  .delivery {
+    padding-bottom: 80px;
+  }
+  .delivery__title {
+    margin: 24px 0;
+    font-size: 30px;
+  }
+  .delivery-sidebar__link {
+    padding: 20px;
+    font-size: 18px;
+  }
+  .delivery-card {
+    padding: 24px 20px;
+  }
+  .delivery-card__top {
+    margin-bottom: 20px;
+  }
+  .delivery-card__title {
+    font-size: 22px;
+  }
+  .delivery-card__subtitle {
+    font-size: 18px;
+  }
+  .delivery-card__text, .delivery-card__item {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+}
+/* ========== 576 ========== */
+@media (max-width: 576px) {
+  .delivery__title {
+    font-size: 26px;
+  }
+  .delivery-sidebar__link {
+    padding: 18px 16px;
+    font-size: 16px;
+  }
+  .delivery-card {
+    padding: 20px 16px;
+  }
+  .delivery-card__top {
+    gap: 10px;
+  }
+  .delivery-card__title {
+    font-size: 20px;
+  }
+  .delivery-card__subtitle {
+    font-size: 16px;
+  }
+  .delivery-card__body {
+    gap: 20px;
+  }
 }/*# sourceMappingURL=main.css.map */

@@ -320,34 +320,201 @@
         </div>
     </header>
 
+
+
+
+
     <body>
-        <div class="container">
-            <div class="account-inner">
-                <aside class="account-sidebar">
+        <section class="delivery">
 
-                    <nav class="account-sidebarnav">
+            <div class="container">
 
-                        <button class="account-sidebarlink " type="button">
-                            Особисті дані
-                        </button>
+                <!-- breadcrumbs -->
+                <nav class="catalog-breadcrumbs">
 
-                        <button class="account-sidebarlink active" type="button">
-                            Історія замовлень
-                        </button>
+                    <ol class="catalog-breadcrumbslist">
 
-                        <button class="account-sidebarlink " type="button">
-                            Обрані товари
-                        </button>
+                        <li class="catalog-breadcrumbsitem">
 
-                        <button class="account-sidebar__logout" type="button">
-                            Вийти
-                        </button>
+                            <a href="/" class="catalog-breadcrumbslink">
 
-                    </nav>
-                </aside>
+                                <img src="./assets/home-icon.svg" alt="home icon" class="catalog-breadcrumbsicon">
+
+                            </a>
+
+                        </li>
+
+                        <li class="catalog-breadcrumbsitem">
+
+                            <span class="catalog-breadcrumbscurrent">
+                                Доставка і оплата
+                            </span>
+
+                        </li>
+
+                    </ol>
+
+                </nav>
+
+                <!-- title -->
+                <h1 class="delivery__title">
+                    Доставка і оплата
+                </h1>
+
+                <div class="delivery__inner">
+
+                    <!-- sidebar -->
+                    <aside class="delivery-sidebar">
+
+                        <nav class="delivery-sidebar__nav">
+
+                            <button class="delivery-sidebar__link active" type="button">
+                                Доставка і оплата
+                            </button>
+
+                            <button class="delivery-sidebar__link" type="button">
+                                Обмін та повернення
+                            </button>
+
+                            <button class="delivery-sidebar__link" type="button">
+                                Політика конфіденційності
+                            </button>
+
+                            <button class="delivery-sidebar__link" type="button">
+                                Публічний договір (Оферта)
+                            </button>
+
+                        </nav>
+
+                    </aside>
+
+                    <!-- content -->
+                    <div class="delivery-content">
+
+                        <!-- payment -->
+                        <div class="delivery-card">
+
+                            <div class="delivery-card__top">
+
+                                <div class="delivery-card__icon">
+                                    <img src="./assets/payment-icon.svg" alt="">
+                                </div>
+
+                                <h2 class="delivery-card__title">
+                                    Оплата
+                                </h2>
+
+                            </div>
+
+                            <div class="delivery-card__body">
+
+                                <p class="delivery-card__text">
+                                    Ви можете сплатити замовлення карткою - онлайн,
+                                    передоплатою або при отриманні на відділенні перевізника.
+                                </p>
+
+                                <p class="delivery-card__text">
+                                    Щоб сплатити карткою під час оформлення замовлення,
+                                    виберіть спосіб оплати онлайн оплата банківською карткою.
+                                </p>
+
+                                <div class="delivery-card__block">
+
+                                    <h3 class="delivery-card__subtitle">
+                                        Остаточна оплата і доставка
+                                    </h3>
+
+                                    <ul class="delivery-card__list">
+
+                                        <li class="delivery-card__item">
+                                            Після підтвердження замовлення Ваше замовлення
+                                            передається в роботу.
+                                        </li>
+
+                                        <li class="delivery-card__item">
+                                            Якщо всі товари згідно Вашого замовлення є в наявності,
+                                            ми одразу узгодимо дату доставки.
+                                        </li>
+
+                                        <li class="delivery-card__item">
+                                            Якщо Ваше замовлення потребує виготовлення,
+                                            воно буде передано на виробництво для виконання.
+                                        </li>
+
+                                        <li class="delivery-card__item">
+                                            Коли замовлення буде готове,
+                                            ми проінформуємо Вас та узгодимо дату доставки.
+                                        </li>
+
+                                    </ul>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <!-- shipping -->
+                        <div class="delivery-card">
+
+                            <div class="delivery-card__top">
+
+                                <div class="delivery-card__icon">
+                                    <img src="./assets/delivery-icon.svg" alt="">
+                                </div>
+
+                                <h2 class="delivery-card__title">
+                                    Доставка
+                                </h2>
+
+                            </div>
+
+                            <div class="delivery-card__body">
+
+                                <div class="delivery-card__block">
+
+                                    <h3 class="delivery-card__subtitle">
+                                        Умови доставки
+                                    </h3>
+
+                                    <p class="delivery-card__text">
+                                        За тарифами Нової Пошти.
+                                        Відправка замовлень відбувається
+                                        в робочі дні до 16:00.
+                                    </p>
+
+                                </div>
+
+                                <div class="delivery-card__block">
+
+                                    <h3 class="delivery-card__subtitle">
+                                        Вартість доставки
+                                    </h3>
+
+                                    <p class="delivery-card__text">
+                                        Вартість доставки Новою Поштою
+                                        за тарифами перевізника.
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
             </div>
-        </div>
+
+        </section>
     </body>
+
+
+
+
+
     <div class="subscribe">
         <img src="./assets/subscribe.png" alt="" class="subscribe__bg">
         <div class="container">
@@ -546,6 +713,7 @@
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <script src="./js/script.js"></script>
+    <script src="./js/catalog.js"></script>
 </body>
 
 </html>
