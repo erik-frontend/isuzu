@@ -2931,7 +2931,6 @@ html:not(.v-mobile) .footer__dev a:focus-visible {
   padding: 0 0 120px;
 }
 .delivery__title {
-  margin: 30px 0 32px;
   font-weight: 500;
   font-size: 36px;
   line-height: 1.1;
@@ -2941,9 +2940,9 @@ html:not(.v-mobile) .footer__dev a:focus-visible {
   display: flex;
   align-items: flex-start;
   gap: 46px;
+  margin-top: 34px;
 }
 
-/* SIDEBAR */
 .delivery-sidebar {
   max-width: 402px;
   width: 100%;
@@ -2982,13 +2981,13 @@ html:not(.v-mobile) .footer__dev a:focus-visible {
 .delivery-content {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 30px;
   flex: 1;
 }
 
 /* CARD */
 .delivery-card {
-  padding: 28px 30px 34px;
+  padding: 29px 34px 38px 38px;
   border: 1px solid var(--color-grey-150);
   border-radius: 5px;
   background: var(--color-white);
@@ -2997,14 +2996,14 @@ html:not(.v-mobile) .footer__dev a:focus-visible {
   display: flex;
   align-items: center;
   gap: 14px;
-  margin-bottom: 24px;
+  margin-bottom: 15px;
 }
 .delivery-card__icon {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 32px;
-  height: 32px;
+  width: 40px;
+  height: 40px;
   flex-shrink: 0;
 }
 .delivery-card__icon img {
