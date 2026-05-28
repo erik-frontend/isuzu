@@ -3037,29 +3037,6 @@ html:not(.v-mobile) .footer__dev a:focus-visible {
   line-height: 1.7;
   color: var(--color-grey-100);
 }
-.delivery-card__list {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-}
-.delivery-card__item {
-  position: relative;
-  padding-left: 30px;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.6;
-  color: var(--color-grey-100);
-}
-.delivery-card__item::before {
-  content: "";
-  position: absolute;
-  top: 3px;
-  left: 0;
-  width: 18px;
-  height: 18px;
-  background: url(../assets/check-red.svg) no-repeat center;
-  background-size: contain;
-}
 
 /* ========== 1200 ========== */
 @media (max-width: 1200px) {
