@@ -3092,6 +3092,52 @@ html:not(.v-mobile) .footer__dev a:focus-visible {
   cursor: pointer;
 }
 
+@media (max-width: 1050px) {
+  .account__inner {
+    flex-direction: column;
+    align-items: center;
+  }
+  .account-sidebar {
+    width: 100%;
+    max-width: 930px;
+  }
+  .account-content {
+    width: 100%;
+    max-width: 930px;
+  }
+}
+@media (max-width: 768px) {
+  .account-sidebar__nav {
+    display: flex;
+    overflow-x: auto;
+  }
+  .account-sidebar__link, .account-sidebar__logout {
+    flex-shrink: 0;
+    white-space: nowrap;
+  }
+  .account-grid {
+    grid-template-columns: 1fr;
+    padding: 25px 20px;
+  }
+  .account-field--full {
+    grid-column: auto;
+  }
+  .account-save-btn {
+    width: 100%;
+  }
+  .orders__head {
+    display: none;
+  }
+  .orders__summary {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+  .orders__details-inner {
+    flex-direction: column;
+  }
+}
 .orders {
   display: flex;
   flex-direction: column;
@@ -3444,6 +3490,171 @@ html:not(.v-mobile) .footer__dev a:focus-visible {
   border-color: var(--color-grey-100);
 }
 
+/* =========================
+    1200px
+========================= */
+@media (max-width: 1420px) {
+  .orders__head {
+    grid-template-columns: 120px 110px 1fr 130px 120px;
+    padding: 14px 16px;
+  }
+  .orders__summary {
+    grid-template-columns: 110px 110px 1fr 120px 140px;
+    padding: 14px 16px;
+  }
+  .orders__details-inner {
+    gap: 30px;
+  }
+  .orders__right {
+    width: 220px;
+    padding: 35px 0 25px;
+  }
+  .orders__item-desc {
+    margin: 20px 60px 20px 18px;
+    max-width: 240px;
+  }
+}
+/* =========================
+    1050px
+========================= */
+@media (max-width: 1050px) {
+  .orders__head {
+    display: none;
+  }
+  .orders__summary {
+    grid-template-columns: 1fr auto;
+    gap: 20px;
+    align-items: flex-start;
+  }
+  .orders__summary > *:not(.orders__status-col) {
+    grid-column: 1;
+  }
+  .orders__status-col {
+    grid-column: 2;
+    grid-row: 1/5;
+    align-self: center;
+  }
+  .orders__thumbs {
+    flex-wrap: wrap;
+  }
+  .orders__details-inner {
+    flex-direction: column;
+  }
+  .orders__right {
+    width: 100%;
+    padding: 0 0 25px;
+    border-top: 1px solid var(--color-grey-150);
+  }
+  .orders__actions {
+    margin-top: 25px;
+    flex-direction: row;
+  }
+  .orders__btn {
+    width: 100%;
+  }
+  .orders__meta {
+    max-width: 400px;
+  }
+  .orders__item {
+    padding: 20px 0;
+  }
+  .orders__item-desc {
+    margin: 0 30px 0 18px;
+    max-width: 100%;
+  }
+}
+/* =========================
+    768px
+========================= */
+@media (max-width: 768px) {
+  .orders {
+    gap: 24px;
+  }
+  .orders__summary {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+  .orders__status-col {
+    grid-column: auto;
+    grid-row: auto;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 8px;
+    border-top: 1px solid var(--color-grey-150);
+  }
+  .orders__thumb {
+    width: 46px;
+    height: 46px;
+  }
+  .orders__item {
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+  .orders__item-img {
+    width: 80px;
+    height: 80px;
+  }
+  .orders__item-desc {
+    flex: 1;
+    margin: 0;
+  }
+  .orders__item-price {
+    width: 100%;
+    padding-left: 96px;
+  }
+  .orders__actions {
+    flex-direction: column;
+  }
+  .orders__payment {
+    padding: 25px 0;
+  }
+  .orders__payment-row {
+    font-size: 13px;
+  }
+  .orders__payment-row--total {
+    font-size: 15px;
+  }
+  .orders__meta-label,
+  .orders__meta-bold,
+  .orders__meta-text {
+    font-size: 13px;
+  }
+}
+/* =========================
+    576px
+========================= */
+@media (max-width: 576px) {
+  .orders__summary {
+    padding: 14px;
+  }
+  .orders__num,
+  .orders__date,
+  .orders__total,
+  .orders__status {
+    font-size: 13px;
+  }
+  .orders__item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .orders__item-img {
+    width: 100%;
+    max-width: 120px;
+    height: auto;
+  }
+  .orders__item-price {
+    padding-left: 0;
+  }
+  .orders__payment-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+  .orders__load-more {
+    width: 100%;
+    justify-content: center;
+  }
+}
 .grey-bg {
   background: var(--color-grey-200);
 }/*# sourceMappingURL=main.css.map */
