@@ -3978,6 +3978,8 @@ html:not(.v-mobile) .footer__dev a:focus-visible {
         border-bottom: none;
     }
 
+
+
 }
 
 /* ── SUMMARY BAR (always visible) ── */
@@ -4084,6 +4086,8 @@ html:not(.v-mobile) .footer__dev a:focus-visible {
     background: url(../assets/arrow-grey-bottom.svg) no-repeat center;
     cursor: pointer;
 
+    transition: .1s linear;
+
     &.active {
         transform: rotate(270deg);
         background: url(../assets/arrow-red.svg) no-repeat center;
@@ -4093,10 +4097,19 @@ html:not(.v-mobile) .footer__dev a:focus-visible {
 /* ── DETAILS PANEL ── */
 
 .orders__details {
-    display: none;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition:
+        max-height .4s ease,
+        opacity .3s ease,
+        transform .3s ease;
 
-    .active & {
-        display: block;
+    &.active {
+        max-height: 2000px;
+        opacity: 1;
+        transform: translateY(0);
     }
 }
 

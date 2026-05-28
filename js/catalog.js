@@ -136,19 +136,19 @@ const accountTabs = {
 
 
 const ordersAccordion = {
+
     rows: document.querySelectorAll('.orders__row'),
 
     init() {
 
         this.rows.forEach(row => {
 
+            const details = row.querySelector('.orders__details');
             const toggle = row.querySelector('.orders__toggle');
 
-            toggle.addEventListener('click', (e) => {
+            row.addEventListener('click', () => {
 
-                e.stopPropagation();
-
-                row.classList.toggle('active');
+                details.classList.toggle('active');
                 toggle.classList.toggle('active');
 
             });
@@ -157,6 +157,8 @@ const ordersAccordion = {
 
     }
 };
+
+ordersAccordion.init();
 
 
 
@@ -168,7 +170,6 @@ const ordersAccordion = {
 
 
 accountTabs.init()
-ordersAccordion.init()
 // productRating.init();
 subcategories.init();
 categoryList.init();
