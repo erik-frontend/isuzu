@@ -2856,14 +2856,6 @@ html:not(.v-mobile) .footer__dev a:focus-visible {
 
 
 
-
-@mixin transition {
-    transition: .2s linear;
-}
-
-
-
-
 .catalog-layout__sidebar {
     display: flex;
     gap: 30px;
@@ -2899,7 +2891,7 @@ html:not(.v-mobile) .footer__dev a:focus-visible {
     &__inner {
         border-radius: 5px;
         background: var(--color-grey-200);
-        padding: 29px 21px 37px 21px;
+        padding: 29px 21px 42px 21px;
     }
 
     &__actions {
@@ -2907,7 +2899,6 @@ html:not(.v-mobile) .footer__dev a:focus-visible {
         flex-direction: column;
         align-items: center;
         padding: 34px 0 0;
-        gap: 23px;
     }
 
     &__apply {
@@ -2936,6 +2927,7 @@ html:not(.v-mobile) .footer__dev a:focus-visible {
     &__reset {
         display: flex;
         align-items: center;
+        margin-top: 23px;
         gap: 5px;
         border: none;
         background: transparent;
@@ -2944,8 +2936,6 @@ html:not(.v-mobile) .footer__dev a:focus-visible {
         line-height: 1;
         color: var(--color-red);
         cursor: pointer;
-        padding: 16px 50px;
-
 
         &::after {
             content: "";
@@ -3033,7 +3023,6 @@ html:not(.v-mobile) .footer__dev a:focus-visible {
 
     &__body {
         display: none;
-        
     }
 
     &.active {
@@ -3062,8 +3051,7 @@ html:not(.v-mobile) .footer__dev a:focus-visible {
         background: transparent;
         border: none;
         cursor: pointer;
-        
-        @include transition;
+        transition: .2s linear;
 
         &:hover {
 
@@ -3081,7 +3069,7 @@ html:not(.v-mobile) .footer__dev a:focus-visible {
 
         color: var(--color-black);
 
-        @include transition;
+        transition: color .2s linear;
     }
 
     &__arrow {
@@ -3126,10 +3114,9 @@ html:not(.v-mobile) .footer__dev a:focus-visible {
         justify-content: space-between;
         padding: 14px 16px;
 
-        
         transition:
-            background .2s linear,
-            color .2s linear;
+            background .2s ease,
+            color .2s ease;
 
     }
 
@@ -3184,8 +3171,8 @@ html:not(.v-mobile) .footer__dev a:focus-visible {
         border-radius: 2px;
 
         transition:
-            background .2s linear,
-            border-color .2s linear;
+            background .2s ease,
+            border-color .2s ease;
     }
 
     &__text {
@@ -3315,29 +3302,32 @@ html:not(.v-mobile) .footer__dev a:focus-visible {
 .catalog-subcategories {
     padding-bottom: 30px;
 
-
-
     &__list {
         display: flex;
+        flex-wrap: wrap;
         gap: 20px;
 
 
-        @media (max-width: 1330px) {
-            flex-wrap: wrap;
+        @media (max-width: 1650px) {
+            justify-content: center;
+
         }
 
+
+        @media (max-width: 748px) {
+            max-width: 500px;
+        }
     }
 
     &__item {
-        max-width: 194px;
-        width: 100%;
-        min-width: 170px;
+        width: 194px;
+        flex: 0 0 194px;
 
-
-        @media (max-width: 1100px) {
-            max-width: 170px;
-            width: 100%;
+        @media (max-width: 375px) {
+            flex: 0 0 calc(51% - 10px);
+            gap: 10px;
         }
+
     }
 
 
@@ -3360,7 +3350,7 @@ html:not(.v-mobile) .footer__dev a:focus-visible {
         padding: 30px 0 14px;
         gap: 12px;
 
-        @include transition;
+        transition: .2s;
 
         &.active {
             border: 1px solid var(--color-red);
@@ -3474,17 +3464,17 @@ html:not(.v-mobile) .footer__dev a:focus-visible {
         .rating {
             display: flex;
             align-items: center;
-            @include transition;
+            transition: 2s;
 
             .star {
                 background: url(../assets/grey_star.svg) no-repeat center;
                 width: 16px;
                 height: 16px;
-                cursor: pointer;
-                @include transition;
+                // cursor: pointer;
+                // transition: .2s;
 
                 &:hover {
-                    transform: scale(1.1);
+                    // transform: scale(1.1);
                 }
 
                 &.active {
