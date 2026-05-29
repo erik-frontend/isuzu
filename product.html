@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="./css/main.min.css" />
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nouislider@15.8.1/dist/nouislider.min.css" />
-<script src="https://cdn.jsdelivr.net/npm/nouislider@15.8.1/dist/nouislider.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/nouislider@15.8.1/dist/nouislider.min.js"></script>
 
 
     <title>Isuzu</title>
@@ -323,529 +323,331 @@
             </div>
         </div>
     </header>
+
+
     <div class="container">
-        <nav class="catalog-breadcrumbs">
-            <ol class="catalog-breadcrumbs__list">
-                <li class="catalog-breadcrumbs__item">
-                    <a href="/" class="catalog-breadcrumbs__link">
-                        <img src="./assets/home-icon.svg" alt="home icon" class="catalog-breadcrumbs__icon">
-                    </a>
-                </li>
-                <li class="catalog-breadcrumbs__item">
-                    <a href="/" class="catalog-breadcrumbs__link">
-                        Каталог
-                    </a>
-                </li>
-                <li class="catalog-breadcrumbs__item">
-                    <span class="catalog-breadcrumbs__current">Двигун та система охолодження</span>
-                </li>
-            </ol>
-        </nav>
-        <h1 class="catalog-title">Назва категорії 1</h1>
+        <div class="productPage">
+            <nav class="catalog-breadcrumbs">
+                <ol class="catalog-breadcrumbs__list">
+                    <li class="catalog-breadcrumbs__item">
+                        <a href="/" class="catalog-breadcrumbs__link">
+                            <img src="./assets/home-icon.svg" alt="home icon" class="catalog-breadcrumbs__icon">
+                        </a>
+                    </li>
+                    <li class="catalog-breadcrumbs__item">
+                        <a href="/" class="catalog-breadcrumbs__link">
+                            Каталог
+                        </a>
+                    </li>
+                    <li class="catalog-breadcrumbs__item">
+                        <a href="/" class="catalog-breadcrumbs__link">
+                            Двигун та система охолодження
+                        </a>
+                    </li>
+                    <li class="catalog-breadcrumbs__item">
+                        <span class="catalog-breadcrumbs__current">Назва категорії 1</span>
+                    </li>
+                </ol>
+            </nav>
+            <div class="productPage__inner">
 
-        <div class="catalog-layout__sidebar">
-            <aside class="catalog-sidebar">
-                <div class="catalog-sidebar__inner">
-                    <div class="filter-group active">
-                        <button class="filter-group__header" type="button">
-                            <span class="filter-group__title">Каталог</span>
-                            <span class="filter-group__arrow"></span>
-                        </button>
-                        <div class="filter-group__body">
-                            <ul class="category-list">
-                                <li class="category-list__item active">
-                                    <a href="#" class="category-list__link active">
-                                        <span class="category-list__text">Категория 1</span>
-                                        <span class="category-list__icon"></span>
-                                    </a>
-                                </li>
-                                <li class="category-list__item">
-                                    <a href="#" class="category-list__link">
-                                        <span class="category-list__text">Категория 2</span>
-                                        <span class="category-list__icon"></span>
-                                    </a>
-                                </li>
-                                <li class="category-list__item">
-                                    <a href="#" class="category-list__link">
-                                        <span class="category-list__text">Категория 3</span>
-                                        <span class="category-list__icon"></span>
-                                    </a>
-                                </li>
-                                <li class="category-list__item">
-                                    <a href="#" class="category-list__link">
-                                        <span class="category-list__text">Категория 4</span>
-                                        <span class="category-list__icon"></span>
-                                    </a>
-                                </li>
-                                <li class="category-list__item">
-                                    <a href="#" class="category-list__link">
-                                        <span class="category-list__text">Категория 5</span>
-                                        <span class="category-list__icon"></span>
-                                    </a>
-                                </li>
-                            </ul>
+
+                <!-- TOP -->
+                <div class="productPage__top">
+                    <!-- slider -->
+                    <div class="productGallery">
+                        <div class="productGallery__main swiper">
+
+                            <div class="swiper-wrapper">
+
+                                <div class="swiper-slide">
+                                    <img src="./assets/product.jpg" alt="product">
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <img src="./assets/product.jpg" alt="product">
+
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <img src="./assets/product.jpg" alt="product">
+
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <img src="./assets/product.jpg" alt="product">
+
+                                </div>
+
+                            </div>
+
                         </div>
+
+                        <!-- THUMBNAILS -->
+                        <div class="productGallery__thumbnails swiper">
+
+                            <div class="swiper-wrapper">
+
+                                <div class="productGallery__thumbnail swiper-slide">
+                                    <img src="./assets/product.jpg" alt="">
+                                </div>
+
+                                <div class="productGallery__thumbnail swiper-slide">
+                                    <img src="./assets/product.jpg" alt="">
+                                </div>
+
+                                <div class="productGallery__thumbnail swiper-slide">
+                                    <img src="./assets/product.jpg" alt="">
+                                </div>
+
+                                <div class="productGallery__thumbnail swiper-slide">
+                                    <img src="./assets/product.jpg" alt="">
+                                </div>
+
+                            </div>
+
+                        </div>
+
                     </div>
 
+                    <div class="productPage__info">
 
-                    <div class="catalog-sidebar__filters">
-                        <div class="filter-group filters active">
-                            <button class="filter-group__header" type="button">
-                                <span class="filter-group__title">Ціна</span>
-                                <span class="filter-group__arrow"></span>
-                            </button>
-                            <div class="filter-group__body">
+                        <!-- title -->
+                        <h1 class="productPage__title">
+                            8982738210 Міст діодний з реле регулятором 90А NPR75 арт: 920
+                        </h1>
 
-                                <div class="price-filter">
+                        <!-- meta -->
+                        <div class="productPage__meta">
 
-                                    <div class="price-filter__range">
-                                        <!-- range slider -->
+                            <div class="productPage__meta-left">
+
+                                <div class="productPage__sku">
+                                    Артикул: <span>920</span>
+                                </div>
+
+                                <div class="productPage__country">
+                                    Країна виробник: <span>Україна</span>
+                                </div>
+
+                            </div>
+
+                            <div class="productPage__meta-right">
+
+                                <div class="productPage__rating">
+                                    <div class="rating-stars" data-rating="4">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                    <span class="productPage__grade">4.5</span>
+                                    <div class="productPage__reviews">
+                                        25 відгуків
                                     </div>
 
-                                    <div class="price-filter__values">
+                                </div>
 
-                                        <span class="price-filter__min">
-                                            0 грн
-                                        </span>
+                                <button class="productPage__favorite" type="submit">
+                                    Додати в обране
+                                </button>
 
-                                        <input type="text" value="2500 грн" class="price-filter__input">
+                            </div>
 
-                                        <span class="price-filter__max">
-                                            5000 грн
-                                        </span>
+                        </div>
+
+                        <!-- status -->
+                        <div class="productPage__status in-stock">
+                            В наявності
+                        </div>
+
+                        <!-- prices -->
+                        <div class="productPage__prices">
+                            <div class="productPage__price-current">
+                                520 <span>грн</span>
+                            </div>
+                            <div class="productPage__price-info">
+                                <div class="productPage__discount">
+                                    -20%
+                                </div>
+                                <div class="productPage__price-old">
+                                    650 <span>грн</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- actions -->
+                        <span class="quantity-of-items">Кількість, шт.</span>
+                        <div class="productPage__actions">
+                            <div class="quantity">
+
+                                <button class="quantity__btn quantity__btn--minus" type="button">
+
+                                </button>
+
+                                <input type="number" min="1" value="1" class="quantity__input">
+
+                                <button class="quantity__btn quantity__btn--plus" type="button">
+
+                                </button>
+
+                            </div>
+
+                            <button class="productPage__buy btn" type="submit">
+                                Купити
+                            </button>
+
+                            <button class="productPage__quickOrder" type="submit">
+                                Замовлення в один клік
+                            </button>
+
+                        </div>
+
+                        <div class="productPage__description">
+                            <div class="productPage__text">
+                                Високоякісний вузол генератора в зборі, що включає діодний міст та регулятор напруги
+                                (реле). Цей модуль розроблений спеціально для вантажних автомобілів Isuzu NPR75,
+                                обладнаних генераторами з силою струму 90 Ампер. Вузол відповідає за перетворення
+                                змінного струму в постійний та підтримку стабільної напруги в бортовій мережі
+                                автомобіля, що захищає акумулятор від перезаряду, а електроніку — від стрибків напруги.
+                            </div>
+                            <span class="productPage__detales">Детальніше</span>
+                        </div>
+
+
+
+                        <div class="productAdvantages">
+                            <div class="productAdvantages__column">
+                                <div class="productAdvantages__item">
+
+                                    <div class="productAdvantages__icon wallet"></div>
+
+                                    <div class="productAdvantages__content">
+
+                                        <div class="productAdvantages__title">
+                                            Оплата зручним способом
+                                        </div>
+
+                                        <div class="productAdvantages__text">
+                                            Зручна оплата як для фізичних осіб так і для юридичних осіб
+                                        </div>
 
                                     </div>
 
                                 </div>
+                                <div class="productAdvantages__item">
 
+                                    <div class="productAdvantages__icon payment-card"></div>
+
+                                    <div class="productAdvantages__content">
+
+                                        <div class="productAdvantages__title">
+                                            Онлайн оплата
+                                        </div>
+
+                                        <div class="productAdvantages__text">
+                                            <div class="productAdvantages__images">
+                                                <div class="visa"></div>
+                                                <div class="mastercard"></div>
+                                                <div class="liqpay"></div>
+                                                <div class="monobank"></div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </div>
                             </div>
-                        </div>
+                            <div class="productAdvantages__column">
+                                <div class="productAdvantages__item">
 
+                                    <div class="productAdvantages__icon nova-post"></div>
 
-                        <div class="filter-group filters active">
-                            <button class="filter-group__header" type="button">
-                                <span class="filter-group__title">Країна-виробник товару</span>
-                                <span class="filter-group__arrow"></span>
-                            </button>
-                            <div class="filter-group__body">
-                                <div class="filter-checkboxes">
-                                    <label class="filter-checkbox">
-                                        <input type="checkbox" class="filter-checkbox__input">
-                                        <span class="filter-checkbox__box"></span>
-                                        <span class="filter-checkbox__text">Китай</span>
-                                    </label>
-                                    <label class="filter-checkbox">
-                                        <input type="checkbox" class="filter-checkbox__input">
-                                        <span class="filter-checkbox__box"></span>
-                                        <span class="filter-checkbox__text">Тайвань</span>
-                                    </label>
+                                    <div class="productAdvantages__content">
+
+                                        <div class="productAdvantages__title">
+                                            Доставка накладеним платежем
+                                        </div>
+
+                                        <div class="productAdvantages__text">
+                                            Відправлення накладеним платежем Новою поштою
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                                <div class="productAdvantages__item">
+
+                                    <div class="productAdvantages__icon car"></div>
+
+                                    <div class="productAdvantages__content">
+
+                                        <div class="productAdvantages__title">
+                                            Доставка Укрпоштою – по всій Україні!
+                                        </div>
+
+                                        <div class="productAdvantages__text">
+                                            ≈ 100 грн / Безкоштовно при замовленні від 5 000 грн
+                                        </div>
+
+                                    </div>
+
                                 </div>
                             </div>
                         </div>
 
-
-                        <div class="filter-group filters active">
-                            <button class="filter-group__header" type="button">
-                                <span class="filter-group__title">Статус в наявності</span>
-                                <span class="filter-group__arrow"></span>
-                            </button>
-                            <div class="filter-group__body">
-                                <div class="filter-checkboxes">
-                                    <label class="filter-checkbox">
-                                        <input type="checkbox" class="filter-checkbox__input">
-                                        <span class="filter-checkbox__box"></span>
-                                        <span class="filter-checkbox__text">В наявності</span>
-                                    </label>
-                                    <label class="filter-checkbox">
-                                        <input type="checkbox" class="filter-checkbox__input">
-                                        <span class="filter-checkbox__box"></span>
-                                        <span class="filter-checkbox__text">Немає в наявності</span>
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-
-
-                        <div class="filter-group filters">
-                            <button class="filter-group__header" type="button">
-                                <span class="filter-group__title">Бренди</span>
-                                <span class="filter-group__arrow"></span>
-                            </button>
-                            <div class="filter-group__body">
-                            </div>
-                        </div>
                     </div>
 
-
-                    <div class="catalog-sidebar__actions">
-                        <button class="catalog-sidebar__apply" type="submit">Застосувати фільтр</button>
-                        <button class="catalog-sidebar__reset" type="reset">Очистити</button>
-                    </div>
                 </div>
-            </aside>
 
+                <!-- tabs -->
+                <div class="productTabs">
 
-            <div class="catalog-layout">
-                <div class="catalog-layout__content">
-                    <div class="catalog-subcategories">
-                        <ul class="catalog-subcategories__list">
-                            <li class="catalog-subcategories__item ">
-                                <a href="" class="catalog-subcategories__link ">
-                                    <img src="./assets/category.png" alt="" class="catalog-subcategories__img">
-                                    <span class="catalog-subcategories__name">Назва підкатегорії 1</span>
-                                </a>
-                            </li>
-                            <li class="catalog-subcategories__item ">
-                                <a href="" class="catalog-subcategories__link active">
-                                    <img src="./assets/category.png" alt="" class="catalog-subcategories__img">
-                                    <span class="catalog-subcategories__name">Назва підкатегорії 2</span>
-                                </a>
-                            </li>
-                            <li class="catalog-subcategories__item">
-                                <a href="" class="catalog-subcategories__link">
-                                    <img src="./assets/category.png" alt="" class="catalog-subcategories__img">
-                                    <span class="catalog-subcategories__name">Назва підкатегорії 3</span>
-                                </a>
-                            </li>
-                            <li class="catalog-subcategories__item">
-                                <a href="" class="catalog-subcategories__link">
-                                    <img src="./assets/category.png" alt="" class="catalog-subcategories__img">
-                                    <span class="catalog-subcategories__name">Назва підкатегорії 4</span>
-                                </a>
-                            </li>
-                            <li class="catalog-subcategories__item">
-                                <a href="" class="catalog-subcategories__link">
-                                    <img src="./assets/category.png" alt="" class="catalog-subcategories__img">
-                                    <span class="catalog-subcategories__name">Назва підкатегорії 5</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="catalog-sorting">
-                        <span>Сортування:</span>
-                        <select class="catalog-sorting__select">
-                            <option value="price-asc">Ціна за зростанням</option>
-                            <option value="price-asc">Ціна за спаданням</option>
-                        </select>
+                    <!-- nav -->
+                    <div class="productTabs__nav">
 
-                    </div>
-                    <div class="catalog-grid">
-                       <article class="product-card">
-                            <div class="product-card__image-wrapper">
-                                <img src="./assets/product.jpg" alt="product" class="img">
-                                <span class="badge">Топ продажів</span>
-                            </div>
-                            <div class="rating-container">
-                                <div class="rating">
-                                    <span class="star active"></span>
-                                    <span class="star active"></span>
-                                    <span class="star active"></span>
-                                    <span class="star active"></span>
-                                    <span class="star"></span>
-                                </div>
-                                <span class="in-stock">В наявності</span>
-                            </div>
-                            <div class="product-card__content">
-                                <h3 class="product-card__title">8982738210 Мост диодный с реле регулятором 90А NPR75
-                                </h3>
-                                <div class="product-card__meta">
-                                    <p class="product-card__info">Артикул: 920</p>
-                                    <span>Япония</span>
-                                </div>
-                                <div class="product-card__footer">
-                                    <span class="product-card__price">180 грн.</span>
-                                    <button class="product-card__buy">Купити</button>
-                                </div>
-                            </div>
-                        </article>
-                        <article class="product-card">
-                            <div class="product-card__image-wrapper">
-                                <img src="./assets/product.jpg" alt="product" class="img">
-                                <span class="">Топ продажів</span>
-                            </div>
-                            <div class="rating-container">
-                                <div class="rating">
-                                    <span class="star"></span>
-                                    <span class="star"></span>
-                                    <span class="star"></span>
-                                    <span class="star "></span>
-                                    <span class="star"></span>
-                                </div>
-                                <span class="in-stock">В наявності</span>
-                            </div>
-                            <div class="product-card__content">
-                                <h3 class="product-card__title">8982738210 Мост диодный с реле регулятором 90А NPR75
-                                </h3>
-                                <div class="product-card__meta">
-                                    <p class="product-card__info">Артикул: 920</p>
-                                    <span>Япония</span>
-                                </div>
-                                <div class="product-card__footer">
-                                    <span class="product-card__price">180 грн.</span>
-                                    <button class="product-card__buy">Купити</button>
-                                </div>
-                            </div>
-                        </article>
-                        <article class="product-card">
-                            <div class="product-card__image-wrapper">
-                                <img src="./assets/product.jpg" alt="product" class="img">
-                                <span class="">Топ продажів</span>
-                            </div>
-                            <div class="rating-container">
-                                <div class="rating">
-                                    <span class="star "></span>
-                                    <span class="star "></span>
-                                    <span class="star "></span>
-                                    <span class="star "></span>
-                                    <span class="star"></span>
-                                </div>
-                                <span class="in-stock">В наявності</span>
-                            </div>
-                            <div class="product-card__content">
-                                <h3 class="product-card__title">8982738210 Мост диодный с реле регулятором 90А NPR75
-                                </h3>
-                                <div class="product-card__meta">
-                                    <p class="product-card__info">Артикул: 920</p>
-                                    <span>Япония</span>
-                                </div>
-                                <div class="product-card__footer">
-                                    <span class="product-card__price">180 грн.</span>
-                                    <button class="product-card__buy">Купити</button>
-                                </div>
-                            </div>
-                        </article>
-                        <article class="product-card">
-                            <div class="product-card__image-wrapper">
-                                <img src="./assets/product.jpg" alt="product" class="img">
-                                <span class="">Топ продажів</span>
-                            </div>
-                            <div class="rating-container">
-                                <div class="rating">
-                                    <span class="star "></span>
-                                    <span class="star "></span>
-                                    <span class="star "></span>
-                                    <span class="star "></span>
-                                    <span class="star"></span>
-                                </div>
-                                <span class="in-stock">В наявності</span>
-                            </div>
-                            <div class="product-card__content">
-                                <h3 class="product-card__title">8982738210 Мост диодный с реле регулятором 90А NPR75
-                                </h3>
-                                <div class="product-card__meta">
-                                    <p class="product-card__info">Артикул: 920</p>
-                                    <span>Япония</span>
-                                </div>
-                                <div class="product-card__footer">
-                                    <span class="product-card__price">180 грн.</span>
-                                    <button class="product-card__buy">Купити</button>
-                                </div>
-                            </div>
-                        </article>
-                        <article class="product-card">
-                            <div class="product-card__image-wrapper">
-                                <img src="./assets/product.jpg" alt="product" class="img">
-                                <span class="">Топ продажів</span>
-                            </div>
-                            <div class="rating-container">
-                                <div class="rating">
-                                    <span class="star "></span>
-                                    <span class="star "></span>
-                                    <span class="star "></span>
-                                    <span class="star "></span>
-                                    <span class="star"></span>
-                                </div>
-                                <span class="in-stock">В наявності</span>
-                            </div>
-                            <div class="product-card__content">
-                                <h3 class="product-card__title">8982738210 Мост диодный с реле регулятором 90А NPR75
-                                </h3>
-                                <div class="product-card__meta">
-                                    <p class="product-card__info">Артикул: 920</p>
-                                    <span>Япония</span>
-                                </div>
-                                <div class="product-card__footer">
-                                    <span class="product-card__price">180 грн.</span>
-                                    <button class="product-card__buy">Купити</button>
-                                </div>
-                            </div>
-                        </article>
-                        <article class="product-card">
-                            <div class="product-card__image-wrapper">
-                                <img src="./assets/product.jpg" alt="product" class="img">
-                                <span class="">Топ продажів</span>
-                            </div>
-                            <div class="rating-container">
-                                <div class="rating">
-                                    <span class="star "></span>
-                                    <span class="star "></span>
-                                    <span class="star "></span>
-                                    <span class="star "></span>
-                                    <span class="star"></span>
-                                </div>
-                                <span class="in-stock">В наявності</span>
-                            </div>
-                            <div class="product-card__content">
-                                <h3 class="product-card__title">8982738210 Мост диодный с реле регулятором 90А NPR75
-                                </h3>
-                                <div class="product-card__meta">
-                                    <p class="product-card__info">Артикул: 920</p>
-                                    <span>Япония</span>
-                                </div>
-                                <div class="product-card__footer">
-                                    <span class="product-card__price">180 грн.</span>
-                                    <button class="product-card__buy">Купити</button>
-                                </div>
-                            </div>
-                        </article>
-                        <article class="product-card">
-                            <div class="product-card__image-wrapper">
-                                <img src="./assets/product.jpg" alt="product" class="img">
-                                <span class="badge">Топ продажів</span>
-                            </div>
-                            <div class="rating-container">
-                                <div class="rating">
-                                    <span class="star active"></span>
-                                    <span class="star active"></span>
-                                    <span class="star active"></span>
-                                    <span class="star active"></span>
-                                    <span class="star"></span>
-                                </div>
-                                <span class="in-stock">В наявності</span>
-                            </div>
-                            <div class="product-card__content">
-                                <h3 class="product-card__title">8982738210 Мост диодный с реле регулятором 90А NPR75
-                                </h3>
-                                <div class="product-card__meta">
-                                    <p class="product-card__info">Артикул: 920</p>
-                                    <span>Япония</span>
-                                </div>
-                                <div class="product-card__footer">
-                                    <span class="product-card__price">180 грн.</span>
-                                    <button class="product-card__buy">Купити</button>
-                                </div>
-                            </div>
-                        </article>
-                        <article class="product-card">
-                            <div class="product-card__image-wrapper">
-                                <img src="./assets/product.jpg" alt="product" class="img">
-                                <span class="">Топ продажів</span>
-                            </div>
-                            <div class="rating-container">
-                                <div class="rating">
-                                    <span class="star "></span>
-                                    <span class="star "></span>
-                                    <span class="star "></span>
-                                    <span class="star "></span>
-                                    <span class="star"></span>
-                                </div>
-                                <span class="in-stock">В наявності</span>
-                            </div>
-                            <div class="product-card__content">
-                                <h3 class="product-card__title">8982738210 Мост диодный с реле регулятором 90А NPR75
-                                </h3>
-                                <div class="product-card__meta">
-                                    <p class="product-card__info">Артикул: 920</p>
-                                    <span>Япония</span>
-                                </div>
-                                <div class="product-card__footer">
-                                    <span class="product-card__price">180 грн.</span>
-                                    <button class="product-card__buy">Купити</button>
-                                </div>
-                            </div>
-                        </article>
-                        <article class="product-card">
-                            <div class="product-card__image-wrapper">
-                                <img src="./assets/product.jpg" alt="product" class="img">
-                                <span class="">Топ продажів</span>
-                            </div>
-                            <div class="rating-container">
-                                <div class="rating">
-                                    <span class="star "></span>
-                                    <span class="star "></span>
-                                    <span class="star "></span>
-                                    <span class="star "></span>
-                                    <span class="star"></span>
-                                </div>
-                                <span class="in-stock">В наявності</span>
-                            </div>
-                            <div class="product-card__content">
-                                <h3 class="product-card__title">8982738210 Мост диодный с реле регулятором 90А NPR75
-                                </h3>
-                                <div class="product-card__meta">
-                                    <p class="product-card__info">Артикул: 920</p>
-                                    <span>Япония</span>
-                                </div>
-                                <div class="product-card__footer">
-                                    <span class="product-card__price">180 грн.</span>
-                                    <button class="product-card__buy">Купити</button>
-                                </div>
-                            </div>
-                        </article>
-
-                        
-                    </div>
-                    <button class="load-more-btn">
-                        Завантажити ще
-                    </button>
-                </div>
-            </div>
-        </div>
-
-
-    </div>
-
-
-
-
-<div class="cta">
-        <div class="container">
-            <div class="cta__wrapper">
-                <div class="cta__item">
-                    <div class="cta__item-bg">
-                        <img src="./assets/cta-bg-1.jpg" alt="">
-                    </div>
-                    <div class="cta__item-image">
-                        <img src="./assets/cta-img-1.png" alt="">
-                    </div>
-                    <div class="cta__item-title">Знайти запчастини у пошуку</div>
-                    <div class="cta__item-text">Самостійний підбір</div>
-                    <div class="cta__item-search">
-                        <input type="text" placeholder="Пошук">
-                        <button type="submit">
-                            <svg width="26" height="26" viewBox="0 0 26 26" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <g clip-path="url(#clip0_2031_1380)">
-                                    <path
-                                        d="M25.675 24.1583L19.8467 18.33C21.45 16.38 22.4467 13.9317 22.4467 11.2233C22.4683 5.04833 17.42 0 11.2233 0C5.02667 0 0 5.04833 0 11.2233C0 17.3983 5.04833 22.4467 11.2233 22.4467C13.9317 22.4467 16.38 21.45 18.33 19.8467L24.1583 25.675C24.375 25.8917 24.6567 26 24.9167 26C25.1767 26 25.48 25.8917 25.675 25.675C26.1083 25.2633 26.1083 24.57 25.675 24.1583ZM2.16667 11.2233C2.16667 6.24 6.24 2.16667 11.2233 2.16667C16.2067 2.16667 20.28 6.24 20.28 11.2233C20.28 16.2067 16.2067 20.28 11.2233 20.28C6.24 20.28 2.16667 16.2283 2.16667 11.2233Z"
-                                        fill="white" />
-                                </g>
-                                <defs>
-                                    <clipPath id="clip0_2031_1380">
-                                        <rect width="26" height="26" fill="white" />
-                                    </clipPath>
-                                </defs>
-                            </svg>
+                        <button class="productTabs__btn active">
+                            Опис
                         </button>
+
+                        <button class="productTabs__btn" type="button">
+                            Характеристики
+                        </button>
+
+                        <button class="productTabs__btn" type="button">
+                            Документація
+                        </button>
+
+                        <button class="productTabs__btn" type="button">
+                            Відгуки <span>(12)</span>
+                        </button>
+
                     </div>
-                </div>
-                <div class="cta__item">
-                    <div class="cta__item-bg">
-                        <img src="./assets/cta-bg-2.jpg" alt="">
-                    </div>
-                    <div class="cta__item-image">
-                        <img src="./assets/cta-img-2.png" alt="">
-                    </div>
-                    <div class="cta__item-title">Підберемо за Вас</div>
-                    <div class="cta__item-text">Професійний підбір нашим експертом</div>
-                    <div class="cta__item-btn btn">
-                        <span>Звернутися до експерта</span>
-                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="white"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path d="M5 15L15 5" stroke="inherit" stroke-linecap="round" stroke-linejoin="round" />
-                            <path d="M6.875 5H15V13.125" stroke="inherit" stroke-linecap="round"
-                                stroke-linejoin="round" />
-                        </svg>
+
+                    <div class="productTabs__content">
+
+                        <div class="productTabs__panel active">
+
+                            <h2 class="productTabs__title">
+                                Міст діодний з реле регулятором
+                            </h2>
+
+                            <div class="productTabs__text">
+                                Високоякісний вузол генератора в зборі, що включає діодний міст та регулятор напруги
+                                (реле). Цей модуль розроблений спеціально для вантажних автомобілів Isuzu NPR75,
+                                обладнаних генераторами з силою струму 90 Ампер. Високоякісний вузол генератора в зборі,
+                                що включає діодний міст та регулятор напруги (реле). Цей модуль розроблений спеціально
+                                для вантажних автомобілів Isuzu NPR75, обладнаних генераторами з силою струму 90 Ампер.
+                                Вузол відповідає за перетворення змінного струму в постійний та підтримку стабільної
+                                напруги в бортовій мережі автомобіля, що захищає акумулятор від перезаряду, а
+                                електроніку — від стрибків напруги.
+
+                                Вузол відповідає за перетворення змінного струму в постійний та підтримку стабільної
+                                напруги в бортовій мережі автомобіля, що захищає акумулятор від перезаряду, а
+                                електроніку — від стрибків напруги.
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -1084,312 +886,310 @@
         </div>
     </section>
 
-    <section class="reviews _grey">
+
+    <div class="cta">
         <div class="container">
-            <div class="reviews__wrapper">
-                <div class="reviews__top">
-                    <h2 class="reviews__title h2">Відгуки наших покупців</h2>
-                    <a href="#" target="_blank" rel="nofollow" class="reviews__btn btn btn-2 _desk">
-                        <span>Всі відгуки</span>
-                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="#231F20"
+            <div class="cta__wrapper">
+                <div class="cta__item">
+                    <div class="cta__item-bg">
+                        <img src="./assets/cta-bg-1.jpg" alt="">
+                    </div>
+                    <div class="cta__item-image">
+                        <img src="./assets/cta-img-1.png" alt="">
+                    </div>
+                    <div class="cta__item-title">Знайти запчастини у пошуку</div>
+                    <div class="cta__item-text">Самостійний підбір</div>
+                    <div class="cta__item-search">
+                        <input type="text" placeholder="Пошук">
+                        <button type="submit">
+                            <svg width="26" height="26" viewBox="0 0 26 26" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_2031_1380)">
+                                    <path
+                                        d="M25.675 24.1583L19.8467 18.33C21.45 16.38 22.4467 13.9317 22.4467 11.2233C22.4683 5.04833 17.42 0 11.2233 0C5.02667 0 0 5.04833 0 11.2233C0 17.3983 5.04833 22.4467 11.2233 22.4467C13.9317 22.4467 16.38 21.45 18.33 19.8467L24.1583 25.675C24.375 25.8917 24.6567 26 24.9167 26C25.1767 26 25.48 25.8917 25.675 25.675C26.1083 25.2633 26.1083 24.57 25.675 24.1583ZM2.16667 11.2233C2.16667 6.24 6.24 2.16667 11.2233 2.16667C16.2067 2.16667 20.28 6.24 20.28 11.2233C20.28 16.2067 16.2067 20.28 11.2233 20.28C6.24 20.28 2.16667 16.2283 2.16667 11.2233Z"
+                                        fill="white" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_2031_1380">
+                                        <rect width="26" height="26" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="cta__item">
+                    <div class="cta__item-bg">
+                        <img src="./assets/cta-bg-2.jpg" alt="">
+                    </div>
+                    <div class="cta__item-image">
+                        <img src="./assets/cta-img-2.png" alt="">
+                    </div>
+                    <div class="cta__item-title">Підберемо за Вас</div>
+                    <div class="cta__item-text">Професійний підбір нашим експертом</div>
+                    <div class="cta__item-btn btn">
+                        <span>Звернутися до експерта</span>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="white"
                             xmlns="http://www.w3.org/2000/svg">
                             <path d="M5 15L15 5" stroke="inherit" stroke-linecap="round" stroke-linejoin="round" />
                             <path d="M6.875 5H15V13.125" stroke="inherit" stroke-linecap="round"
                                 stroke-linejoin="round" />
                         </svg>
-                    </a>
-                </div>
-                <div class="reviews__slider">
-                    <div class="swiper">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide reviews__item">
-                                <div class="reviews__item-top">
-                                    <a href="./product.html" class="reviews__item-image">
-                                        <img src="./assets/product.jpg" alt="">
-                                    </a>
-                                    <div class="reviews__item-box">
-                                        <a href="./product.html" class="reviews__item-title">8982738210 Мост диодный с
-                                            реле регулятором 90А
-                                            NPR75</a>
-                                        <div class="reviews__item-stars rating-stars" data-rating="5">
-                                            <span></span>
-                                            <span></span>
-                                            <span></span>
-                                            <span></span>
-                                            <span></span>
-                                        </div>
-                                        <div class="reviews__item-author">Михайло</div>
-                                    </div>
-                                </div>
-                                <div class="reviews__item-text">
-                                    <p>Працювати з Chef’s shop було задоволенням. Вони не лише приймають кожен виклик,
-                                        який їм ставлять. Вони справляються з ним таким чином, що виконають усе, що
-                                        потрібно для створення унікального виробу. І вони надзвичайно швидкі на кожному
-                                        кроці процесу!</p>
-                                </div>
-                            </div>
-                            <div class="swiper-slide reviews__item">
-                                <div class="reviews__item-top">
-                                    <a href="./product.html" class="reviews__item-image">
-                                        <img src="./assets/product.jpg" alt="">
-                                    </a>
-                                    <div class="reviews__item-box">
-                                        <a href="./product.html" class="reviews__item-title">8982738210 Мост диодный с
-                                            реле регулятором 90А
-                                            NPR75</a>
-                                        <div class="reviews__item-stars rating-stars" data-rating="5">
-                                            <span></span>
-                                            <span></span>
-                                            <span></span>
-                                            <span></span>
-                                            <span></span>
-                                        </div>
-                                        <div class="reviews__item-author">Михайло</div>
-                                    </div>
-                                </div>
-                                <div class="reviews__item-text">
-                                    <p>Працювати з Chef’s shop було задоволенням. Вони не лише приймають кожен виклик,
-                                        який їм ставлять. Вони справляються з ним таким чином, що виконають усе, що
-                                        потрібно для створення унікального виробу. І вони надзвичайно швидкі на кожному
-                                        кроці процесу!</p>
-                                </div>
-                            </div>
-                            <div class="swiper-slide reviews__item">
-                                <div class="reviews__item-top">
-                                    <a href="./product.html" class="reviews__item-image">
-                                        <img src="./assets/product.jpg" alt="">
-                                    </a>
-                                    <div class="reviews__item-box">
-                                        <a href="./product.html" class="reviews__item-title">8982738210 Мост диодный с
-                                            реле регулятором 90А
-                                            NPR75</a>
-                                        <div class="reviews__item-stars rating-stars" data-rating="5">
-                                            <span></span>
-                                            <span></span>
-                                            <span></span>
-                                            <span></span>
-                                            <span></span>
-                                        </div>
-                                        <div class="reviews__item-author">Михайло</div>
-                                    </div>
-                                </div>
-                                <div class="reviews__item-text">
-                                    <p>Працювати з Chef’s shop було задоволенням. Вони не лише приймають кожен виклик,
-                                        який їм ставлять. Вони справляються з ним таким чином, що виконають усе, що
-                                        потрібно для створення унікального виробу. І вони надзвичайно швидкі на кожному
-                                        кроці процесу!</p>
-                                </div>
-                            </div>
-                            <div class="swiper-slide reviews__item">
-                                <div class="reviews__item-top">
-                                    <a href="./product.html" class="reviews__item-image">
-                                        <img src="./assets/product.jpg" alt="">
-                                    </a>
-                                    <div class="reviews__item-box">
-                                        <a href="./product.html" class="reviews__item-title">8982738210 Мост диодный с
-                                            реле регулятором 90А
-                                            NPR75</a>
-                                        <div class="reviews__item-stars rating-stars" data-rating="5">
-                                            <span></span>
-                                            <span></span>
-                                            <span></span>
-                                            <span></span>
-                                            <span></span>
-                                        </div>
-                                        <div class="reviews__item-author">Михайло</div>
-                                    </div>
-                                </div>
-                                <div class="reviews__item-text">
-                                    <p>Працювати з Chef’s shop було задоволенням. Вони не лише приймають кожен виклик,
-                                        який їм ставлять. Вони справляються з ним таким чином, що виконають усе, що
-                                        потрібно для створення унікального виробу. І вони надзвичайно швидкі на кожному
-                                        кроці процесу!</p>
-                                </div>
-                            </div>
-                            <div class="swiper-slide reviews__item">
-                                <div class="reviews__item-top">
-                                    <a href="./product.html" class="reviews__item-image">
-                                        <img src="./assets/product.jpg" alt="">
-                                    </a>
-                                    <div class="reviews__item-box">
-                                        <a href="./product.html" class="reviews__item-title">8982738210 Мост диодный с
-                                            реле регулятором 90А
-                                            NPR75</a>
-                                        <div class="reviews__item-stars rating-stars" data-rating="5">
-                                            <span></span>
-                                            <span></span>
-                                            <span></span>
-                                            <span></span>
-                                            <span></span>
-                                        </div>
-                                        <div class="reviews__item-author">Михайло</div>
-                                    </div>
-                                </div>
-                                <div class="reviews__item-text">
-                                    <p>Працювати з Chef’s shop було задоволенням. Вони не лише приймають кожен виклик,
-                                        який їм ставлять. Вони справляються з ним таким чином, що виконають усе, що
-                                        потрібно для створення унікального виробу. І вони надзвичайно швидкі на кожному
-                                        кроці процесу!</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-bottom">
-                            <div class="swiper-pagination"></div>
-                            <div class="swiper-buttons">
-                                <div class="swiper-button-prev"></div>
-                                <div class="swiper-pagination-pages"></div>
-                                <div class="swiper-button-next"></div>
-                            </div>
-                        </div>
                     </div>
-                </div>
-
-                <a href="#" target="_blank" rel="nofollow" class="reviews__btn btn btn-2 _mob">
-                    <span>Всі відгуки</span>
-                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="#231F20"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path d="M5 15L15 5" stroke="inherit" stroke-linecap="round" stroke-linejoin="round" />
-                        <path d="M6.875 5H15V13.125" stroke="inherit" stroke-linecap="round" stroke-linejoin="round" />
-                    </svg>
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <section class="seo">
-        <div class="container">
-            <div class="seo__wrapper">
-
-                <div class="seo__text">
-
-                    <h2>Каталог запасних частин ISUZU Україна</h2>
-                    <p><strong>Найкращі ціни на запчастини</strong> <em>оригінал ISUZU — вантажівки NQR</em> 70, NQR71,
-                        NQR
-                        90M, NLR 85, NMR85H,
-                        <a href="#">NPR75K/M, FVR34M, а також запчастини</a> до автобусів ATAMAN (колишній Богдан).
-                        Дивіться
-                        нижче каталог
-                        запчастин на двигун Ісузу, КПП та ін. Замовити та купити оригінальні запчастини до вантажівок
-                        ISUZU
-                        та автобусів ATAMAN ви можете у нашому інтернет магазині (див. каталог запчастин Ісузу зліва)
-                        або
-                        зателефонувавши за телефоном у Києві. Наші менеджери завжди готові проконсультувати Вас з
-                        будь-яких
-                        питань вибору та вартості деталі для вантажівок ISUZU та автобусів ATAMAN. Купуйте запчастини
-                        Ісузу
-                        за найкращою ціною від офіційного дистриб'ютора в Україні! Найкращі ціни на запчастини оригінал
-                        ISUZU — вантажівки NQR 70, NQR71, NQR 90M, NLR 85, NMR85H, NPR75K/M, FVR34M, а також запчастини
-                        до
-                        автобусів ATAMAN (колишній Богдан). Дивіться нижче каталог запчастин на двигун Ісузу, КПП та ін.
-                        Замовити та купити оригінальні запчастини до вантажівок ISUZU та автобусів ATAMAN ви можете у
-                        нашому
-                        інтернет магазині (див. каталог запчастин Ісузу зліва) або зателефонувавши за телефоном у Києві.
-                        Наші менеджери завжди готові проконсультувати Вас з будь-яких питань вибору та вартості деталі
-                        для
-                        вантажівок ISUZU та автобусів ATAMAN. Купуйте запчастини Ісузу за найкращою ціною від офіційного
-                        дистриб'ютора в Україні!
-                    </p>
-
-                    <p>Найкращі ціни на запчастини оригінал ISUZU — вантажівки NQR 70, NQR71, NQR 90M, NLR 85, NMR85H,
-                        NPR75K/M, FVR34M, а також запчастини до автобусів ATAMAN (колишній Богдан). Дивіться нижче
-                        каталог
-                        запчастин на двигун Ісузу, КПП та ін. Замовити та купити оригінальні запчастини до вантажівок
-                        ISUZU
-                        та автобусів ATAMAN ви можете у нашому інтернет магазині (див. каталог запчастин Ісузу зліва)
-                        або
-                        зателефонувавши за телефоном у Києві. Наші менеджери завжди готові проконсультувати Вас з
-                        будь-яких
-                        питань вибору та вартості деталі для вантажівок ISUZU та автобусів ATAMAN. Купуйте запчастини
-                        Ісузу
-                        за найкращою ціною від офіційного дистриб'ютора в Україні!</p>
-
-                    <h3>Каталог запасних частин ISUZU Україна</h3>
-
-                    <p>Найкращі ціни на запчастини оригінал ISUZU — вантажівки NQR 70, NQR71, NQR 90M, NLR 85, NMR85H,
-                        NPR75K/M, FVR34M, а також запчастини до автобусів ATAMAN (колишній Богдан). Дивіться нижче
-                        каталог
-                        запчастин на двигун Ісузу, КПП та ін. Замовити та купити оригінальні запчастини до вантажівок
-                        ISUZU
-                        та автобусів ATAMAN ви можете у нашому інтернет магазині (див. каталог запчастин Ісузу зліва)
-                        або
-                        зателефонувавши за телефоном у Києві. Наші менеджери завжди готові проконсультувати Вас з
-                        будь-яких
-                        питань вибору та вартості деталі для вантажівок ISUZU та автобусів ATAMAN. Купуйте запчастини
-                        Ісузу
-                        за найкращою ціною від офіційного дистриб'ютора в Україні!</p>
-
-                    <ul>
-                        <li>Найкращі ціни на запчастини оригінал ISUZU</li>
-                        <li>запчастини до автобусів ATAMAN (колишній Богдан). Дивіться нижче каталог
-                            запчастин на двигун Ісузу, КПП та ін. Замовити та купити оригінальні запчастини до
-                            вантажівок
-                            ISUZU
-                            та автобусів ATAMAN ви можете у нашому інтернет магазині</li>
-                        <li>інтернет магазині (див. каталог запчастин Ісузу зліва) або
-                            зателефонувавши за телефоном у Києві</li>
-                        <li>КПП та ін. Замовити та купити оригінальні запчастини до вантажівок ISUZU
-                            та автобусів ATAMAN ви можете у нашому інтернет магазині (див. каталог запчастин Ісузу
-                            зліва)
-                            або
-                            зателефонувавши за телефоном у Києві. Наші менеджери завжди готові проконсультувати Вас з
-                            будь-яких
-                            питань вибору та вартості деталі для вантажівок ISUZU та автобусів ATAMAN. Купуйте
-                            запчастини
-                            Ісузу
-                            за найкращою ціною від офіційного дистриб'ютора</li>
-                        <li>Найкращі ціни на запчастини оригінал ISUZU</li>
-                    </ul>
-                    <ol>
-                        <li>Найкращі ціни на запчастини оригінал ISUZU</li>
-                        <li>запчастини до автобусів ATAMAN (колишній Богдан). Дивіться нижче каталог
-                            запчастин на двигун Ісузу, КПП та ін. Замовити та купити оригінальні запчастини до
-                            вантажівок
-                            ISUZU
-                            та автобусів ATAMAN ви можете у нашому інтернет магазині</li>
-                        <li>інтернет магазині (див. каталог запчастин Ісузу зліва) або
-                            зателефонувавши за телефоном у Києві</li>
-                        <li>КПП та ін. Замовити та купити оригінальні запчастини до вантажівок ISUZU
-                            та автобусів ATAMAN ви можете у нашому інтернет магазині (див. каталог запчастин Ісузу
-                            зліва)
-                            або
-                            зателефонувавши за телефоном у Києві. Наші менеджери завжди готові проконсультувати Вас з
-                            будь-яких
-                            питань вибору та вартості деталі для вантажівок ISUZU та автобусів ATAMAN. Купуйте
-                            запчастини
-                            Ісузу
-                            за найкращою ціною від офіційного дистриб'ютора</li>
-                        <li>Найкращі ціни на запчастини оригінал ISUZU</li>
-                    </ol>
-                </div>
-                <div rel="nofollow" class="seo__btn">
-                    <span>Детальніше</span>
-                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="#231F20"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path d="M5 15L15 5" stroke="inherit" stroke-linecap="round" stroke-linejoin="round" />
-                        <path d="M6.875 5H15V13.125" stroke="inherit" stroke-linecap="round" stroke-linejoin="round" />
-                    </svg>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <div class="subscribe">
-        <img src="./assets/subscribe.png" alt="" class="subscribe__bg">
-        <div class="container">
-            <div class="subscribe__wrapper">
-                <div class="subscribe__text">Підпишись на розсилку та дізнавайся першим про наші акції та новини</div>
-                <div class="subscribe__form">
-                    <form action="">
-                        <div class="subscribe__form-wrapper">
-                            <input type="email" placeholder="Ваш email">
-                            <input type="submit" value="Підписатись" class="btn">
-                        </div>
-                    </form>
                 </div>
             </div>
         </div>
     </div>
 
+
+
+
+
+
+
+    <div class="container">
+        <div class="reviews">
+
+            <h2 class="reviews__title">
+                Відгуки наших клієнтів про Міст діодний з реле регулятором 90A NPR75
+            </h2>
+
+            <div class="reviews__wrapper">
+
+                <!-- Левая часть -->
+
+                <aside class="reviews-summary">
+
+                    <div class="reviews-summary__card">
+
+                        <div class="reviews-summary__score">
+                            4.89
+                        </div>
+
+
+                        <div class="reviews-summary__rating productCard__rating">
+                            <div class="productCard__rating-stars rating-stars" data-rating="4">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                            <span class="reviews-summary__reviews-count">
+                                на основі <span>25 відгуків</span>
+                            </span>
+                        </div>
+
+                        <p class="reviews-summary__text">
+                            Середня оцінка наших клієнтів
+                        </p>
+
+                    </div>
+
+                    <button class="reviews-summary__button" type="submit">
+                        Написати відгук
+                    </button>
+
+                </aside>
+
+
+                <!-- Правая часть -->
+
+                <div class="reviews-content">
+
+                    <div class="reviews-list">
+
+                        <article class="review-card">
+
+                            <div class="review-card__left">
+
+                                <h4 class="review-card__author">
+                                    Михайло
+                                </h4>
+
+                                <div class="reviews-card__rating productCard__rating">
+                                    <div class="productCard__rating-stars rating-stars" data-rating="4">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="review-card__right">
+
+                                <p class="review-card__text">
+                                    Найкращі ціни на запчастини оригінал ISUZU — вантажівки NQR 70, NQR71, NQR 90M, NLR
+                                    85, NMR85H, NPR75K/M, FVR34M, а також запчастини до автобусів ATAMAN (колишній
+                                    Богдан). Дивіться нижче каталог запчастин на двигун Ісузу, КПП та ін. Замовити та
+                                    купити оригінальні запчастини до вантажівок ISUZU та автобусів ATAMAN ви можете у
+                                    нашому інтернет магазині (див. каталог запчастин Ісузу зліва) або зателефонувавши за
+                                    телефоном у Києві. Наші менеджери завжди готові проконсультувати Вас з будь-яких
+                                    питань вибору
+                                </p>
+
+                                <a href="#" class="review-card__more">
+                                    Детальніше
+                                </a>
+
+                                <div class="review-card__actions">
+
+                                    <button class="review-card__action review-card__action--like" type="button">
+                                        2
+                                    </button>
+
+                                    <button class="review-card__action review-card__action--dislike" type="button">
+                                        0
+                                    </button>
+
+                                </div>
+
+                            </div>
+
+                        </article>
+                        <article class="review-card">
+
+                            <div class="review-card__left">
+
+                                <h4 class="review-card__author">
+                                    Михайло
+                                </h4>
+
+                                <div class="reviews-card__rating productCard__rating">
+                                    <div class="productCard__rating-stars rating-stars" data-rating="4">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="review-card__right">
+
+                                <p class="review-card__text">
+                                    Найкращі ціни на запчастини оригінал ISUZU — вантажівки NQR 70, NQR71, NQR 90M, NLR
+                                    85, NMR85H, NPR75K/M, FVR34M, а також запчастини до автобусів ATAMAN (колишній
+                                    Богдан). Дивіться нижче каталог запчастин на двигун Ісузу, КПП та ін. Замовити та
+                                    купити оригінальні запчастини до вантажівок ISUZU та автобусів ATAMAN ви можете у
+                                    нашому інтернет магазині (див. каталог запчастин Ісузу зліва) або зателефонувавши за
+                                    телефоном у Києві. Наші менеджери завжди готові проконсультувати Вас з будь-яких
+                                    питань вибору
+                                </p>
+
+                                <a href="#" class="review-card__more">
+                                    Детальніше
+                                </a>
+
+                                <div class="review-card__actions">
+
+                                    <button class="review-card__action review-card__action--like" type="button">
+                                        2
+                                    </button>
+
+                                    <button class="review-card__action review-card__action--dislike" type="button">
+                                        0
+                                    </button>
+
+                                </div>
+
+                            </div>
+
+                        </article>
+                        <article class="review-card">
+
+                            <div class="review-card__left">
+
+                                <h4 class="review-card__author">
+                                    Михайло
+                                </h4>
+
+                                <div class="reviews-card__rating productCard__rating">
+                                    <div class="productCard__rating-stars rating-stars" data-rating="4">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="review-card__right">
+
+                                <p class="review-card__text">
+                                    Найкращі ціни на запчастини оригінал ISUZU — вантажівки NQR 70, NQR71, NQR 90M, NLR
+                                    85, NMR85H, NPR75K/M, FVR34M, а також запчастини до автобусів ATAMAN (колишній
+                                    Богдан). Дивіться нижче каталог запчастин на двигун Ісузу, КПП та ін. Замовити та
+                                    купити оригінальні запчастини до вантажівок ISUZU та автобусів ATAMAN ви можете у
+                                    нашому інтернет магазині (див. каталог запчастин Ісузу зліва) або зателефонувавши за
+                                    телефоном у Києві. Наші менеджери завжди готові проконсультувати Вас з будь-яких
+                                    питань вибору
+                                </p>
+
+                                <a href="#" class="review-card__more">
+                                    Детальніше
+                                </a>
+
+                                <div class="review-card__actions">
+
+                                    <button class="review-card__action review-card__action--like" type="button">
+                                        2
+                                    </button>
+
+                                    <button class="review-card__action review-card__action--dislike" type="button">
+                                        0
+                                    </button>
+
+                                </div>
+
+                            </div>
+
+                        </article>
+
+                    </div>
+
+
+                    <div class="reviews-pagination">
+
+                        <button class="reviews-pagination__button" type="button">
+                            ←
+                        </button>
+
+                        <button class="reviews-pagination__button active" type="button">
+                            1
+                        </button>
+
+                        <button class="reviews-pagination__button" type="button">
+                            2
+                        </button>
+
+                        <button class="reviews-pagination__button" type="button">
+                            3
+                        </button>
+
+                        <button class="reviews-pagination__button" type="button">
+                            →
+                        </button>
+
+                    </div>
+
+
+
+
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
 
     <footer class="footer">
         <div class="container">
@@ -1570,7 +1370,383 @@
             </div>
         </div>
     </footer>
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+
+    <div class="popup popup-cart" id="cartPopup">
+        <div class="popup__bg"></div>
+        <div class="popup__wrapper">
+            <div class="popup__content popup-cart__content">
+                <div class="popup-cart__header">
+                    <h2 class="popup-cart__title">
+                        В кошику <span>(2)</span> товари
+                    </h2>
+                    <button class="popup__close" type="button">
+
+                    </button>
+                </div>
+                <div class="popup-cart__body">
+                    <div class="popup-cart__item">
+                        <a href="#" class="popup-cart__image">
+                            <img src="./assets/product.jpg" alt="">
+                        </a>
+                        <div class="popup-cart__info">
+                            <a href="#" class="popup-cart__name">
+                                8982738210 Міст діодний з реле регулятором 90A NPR75
+                            </a>
+                            <div class="popup-cart__article">
+                                Артикул: <span>920</span>
+                            </div>
+                            <div class="popup-cart__price">
+                                5 954 грн
+                            </div>
+                            <div class="quantity">
+                                <button class="quantity__btn quantity__btn--minus" type="button"></button>
+                                <input type="number" min="1" value="1" class="quantity__input">
+                                <button class="quantity__btn quantity__btn--plus" type="button"></button>
+                            </div>
+                        </div>
+                        <button class="popup-cart__remove" type="button">
+                            Видалити
+                        </button>
+                    </div>
+                    <div class="popup-cart__item">
+                        <a href="#" class="popup-cart__image">
+                            <img src="./assets/product.jpg" alt="">
+                        </a>
+                        <div class="popup-cart__info">
+                            <a href="#" class="popup-cart__name">
+                                8982738210 Міст діодний з реле регулятором 90A NPR75
+                            </a>
+                            <div class="popup-cart__article">
+                                Артикул: <span>920</span>
+                            </div>
+                            <div class="popup-cart__price">
+                                5 954 грн
+                            </div>
+                            <div class="quantity">
+                                <button class="quantity__btn quantity__btn--minus" type="button"></button>
+                                <input type="number" min="1" value="1" class="quantity__input">
+                                <button class="quantity__btn quantity__btn--plus" type="button"></button>
+                            </div>
+                        </div>
+                        <button class="popup-cart__remove" type="button">
+                            Видалити
+                        </button>
+                    </div>
+                </div>
+
+                <div class="popup-cart__footer">
+                    <div class="popup-cart__total">
+                        <span>Всього:</span>
+                        <span>
+                            12 500 грн
+                        </span>
+                    </div>
+
+                    <div class="popup-cart__actions">
+                        <button class="popup-cart__continue" type="button">
+                            Продовжити покупки
+                        </button>
+                        <button class="popup-cart__checkout" type="button">
+                            Оформити замовлення
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="popup popup-quick-order" id="quickOrderPopup">
+
+        <div class="popup__bg"></div>
+
+        <div class="popup__wrapper">
+
+            <div class="popup__content popup-quick-order__content">
+
+                <button class="popup__close" type="button"></button>
+
+                <h2 class="popup-quick-order__title">
+                    Швидке замовлення
+                </h2>
+
+                <p class="popup-quick-order__subtitle">
+                    Наш менеджер зв'яжеться з вами за вказаним номером якнайшвидше, щоб уточнити всі деталі вашого
+                    замовлення
+                </p>
+
+                <form class="popup-quick-order__form">
+
+                    <input type="email" placeholder="Ваш email" class="popup-quick-order__input">
+
+                    <button type="submit" class="popup-quick-order__btn">
+                        Замовити
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+    <div class="review-popup" id="reviewPopup">
+
+        <div class="review-popup__bg"></div>
+
+        <div class="review-popup__wrapper">
+
+            <div class="review-popup__content">
+
+                <button class="review-popup__close" type="button">
+
+                </button>
+
+                <h2 class="review-popup__title">
+                    Залишити відгук
+                </h2>
+
+                <form class="review-popup__form">
+
+                    <div class="review-popup__form-wrapper">
+
+                        <div class="review-popup__rating">
+
+                            <div class="rating-stars review-popup__stars" data-rating="4">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+
+                            <input type="hidden" name="rating" value="4">
+
+                        </div>
+
+                        <input type="text" name="name" placeholder="Ім’я" required>
+
+                        <input type="text" name="contact" placeholder="Email або номер телефону" required>
+
+                        <textarea name="review" placeholder="Відгук" required></textarea>
+                        <div>
+                            <button class="review-popup__file" type="button">
+                                Додати зображення
+                            </button>
+                        </div>
+
+
+                        <input class="review-popup__submit" type="submit" value="Замовити">
+
+                    </div>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+    <!-- Log in popup -->
+
+    <div class="popup popup-auth active" id="loginPopup">
+        <div class="popup__bg"></div>
+
+        <div class="popup__wrapper">
+            <div class="popup__content popup-auth__content">
+
+                <button class="popup__close popup-auth__close" type="button" aria-label="Закрити">
+                </button>
+
+                <div class="popup-auth__top">
+                    <h2 class="popup-auth__title">
+                        Вхід
+                    </h2>
+
+                    <p class="popup-auth__subtitle">
+                        Увійдіть, щоб переглядати історію замовлень, зберігати товари в обране
+                        та отримувати персональні пропозиції
+                    </p>
+                </div>
+
+                <form class="popup-auth__form" action="#">
+                    <div class="popup-auth__fields">
+
+                        <label class="popup-auth__field">
+                            <span class="popup-auth__label">
+                                Email <span>*</span>
+                            </span>
+
+                            <input type="email" class="popup-auth__input" placeholder="Ваш email" required>
+                        </label>
+
+                        <label class="popup-auth__field">
+                            <span class="popup-auth__label">
+                                Пароль <span>*</span>
+                            </span>
+
+                            <input type="password" class="popup-auth__input" placeholder="Ваш пароль" required>
+                        </label>
+
+                        <div class="popup-auth__row">
+
+                            <label class="popup-auth__checkbox">
+
+                                <input type="checkbox">
+
+                                <span class="popup-auth__checkmark"></span>
+
+                                <span class="popup-auth__checkbox-text">
+                                    Запам’ятати мене
+                                </span>
+
+                            </label>
+
+                            <a href="#" class="popup-auth__forgot">
+                                Забули пароль?
+                            </a>
+
+                        </div>
+
+                        <button type="submit" class="popup-auth__submit">
+                            Увійти
+                        </button>
+
+                        <div class="popup-auth__bottom">
+                            <button>Відновити доступ</button>
+
+                            <div class="popup-auth__options">
+
+                                <span>
+                                    Ще не маєте акаунту?
+                                </span>
+
+                                <a href="#" class="sign-up">
+                                    Зареєструватися
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- sign up popup -->
+
+    <div id="registrationPopup" class="popup popup--registration">
+        <div class="popup__bg"></div>
+        <div class="popup__wrapper">
+            <div class="popup__content">
+                <button class="popup__close" aria-label="Закрити форму">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18 6L6 18M6 6L18 18" stroke="#A3A3A3" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </button>
+
+                <h2 class="popup__title">Реєстрація</h2>
+                <p class="popup__sub-login">Вже зареєстровані? <a href="#" class="login-btn">Увійти</a></p>
+
+                <form action="#" class="popup__form reg-form">
+
+                    <fieldset class="reg-form__section">
+                        <legend class="reg-form__title">1. Ваші контактні дані</legend>
+
+                        <div class="reg-form__field-group">
+                            <label class="reg-form__label">Ім'я <span class="reg-form__required">*</span></label>
+                            <input type="text" class="reg-form__input" placeholder="Ваше ім'я" required>
+                        </div>
+
+                        <div class="reg-form__field-group">
+                            <label class="reg-form__label">Прізвище <span class="reg-form__required">*</span></label>
+                            <input type="text" class="reg-form__input" placeholder="Введіть ваше прізвище" required>
+                        </div>
+
+                        <div class="reg-form__field-group">
+                            <label class="reg-form__label">Телефон <span class="reg-form__required">*</span></label>
+                            <input type="tel" class="reg-form__input" placeholder="Номер телефону" required>
+                        </div>
+
+                        <div class="reg-form__field-group">
+                            <label class="reg-form__label">Email</label>
+                            <input type="email" class="reg-form__input" placeholder="Електронна пошта">
+                        </div>
+                    </fieldset>
+
+                    <fieldset class="reg-form__section">
+                        <legend class="reg-form__title">2. Дані організації</legend>
+
+                        <div class="reg-form__field-group">
+                            <label class="reg-form__label">Організація</label>
+                            <input type="text" class="reg-form__input" placeholder="Введіть назву організації">
+                        </div>
+
+                        <div class="reg-form__field-group">
+                            <label class="reg-form__label">ЄДРПОУ</label>
+                            <input type="text" class="reg-form__input" placeholder="Введіть ЄДРПОУ">
+                        </div>
+
+                        <div class="reg-form__field-group">
+                            <label class="reg-form__label">Область</label>
+                            <input type="text" class="reg-form__input" placeholder="Введіть область">
+                        </div>
+
+                        <div class="reg-form__field-group">
+                            <label class="reg-form__label">Місто</label>
+                            <input type="text" class="reg-form__input" placeholder="Введіть місто">
+                        </div>
+
+                        <div class="reg-form__field-group">
+                            <label class="reg-form__label">Адреса</label>
+                            <input type="text" class="reg-form__input" placeholder="Адреса">
+                        </div>
+
+                        <div class="reg-form__field-group">
+                            <label class="reg-form__label">Установчі документи організації</label>
+                            <div class="reg-form__file-dropzone">
+                                <input type="file" id="regFormFile" class="reg-form__file-input"
+                                    accept=".jpg,.jpeg,.png,.pdf" multiple>
+                                <label for="regFormFile" class="reg-form__file-trigger">
+                                    <svg class="reg-form__file-icon" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M12 16V8M12 8L9 11M12 8L15 11M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z"
+                                            stroke="#E32213" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                    <span class="reg-form__file-text">Перетягніть або <span
+                                            class="reg-form__file-highlight">виберіть файл</span> для
+                                        завантаження</span>
+                                </label>
+                            </div>
+                            <p class="reg-form__file-hint">Підтримувані типи файлів: .jpg, .jpeg, .png, .pdf.</p>
+                        </div>
+                    </fieldset>
+
+                    <button type="submit" class="reg-form__submit-btn">Зареєструватися</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <script src="./js/script.js"></script>
     <script src="./js/catalog.js"></script>
