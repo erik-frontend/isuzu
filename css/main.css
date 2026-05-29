@@ -3664,4 +3664,41 @@ html:not(.v-mobile) .footer__dev a:focus-visible {
 }
 .grey-bg {
   background: var(--color-grey-200);
+}
+
+.productCard__favorite {
+  background: url(../assets/favourite.svg) no-repeat center;
+  width: 16px;
+  height: 16px;
+  margin-left: 74px;
+}
+
+.productCard__remove {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 30px;
+  height: 30px;
+  border: none;
+  background: var(--color-black);
+  cursor: pointer;
+  z-index: 2;
+  transition: 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom-left-radius: 10px;
+}
+.productCard__remove::before {
+  content: "";
+  width: 14px;
+  height: 14px;
+  background: url(../assets/cross.svg) no-repeat center;
+}
+.productCard__remove:hover {
+  background: var(--color-red);
+}
+
+.productCard {
+  transition: border 0.2s ease, box-shadow 0.2s ease, opacity 0.2s ease, transform 0.2s ease;
 }/*# sourceMappingURL=main.css.map */

@@ -158,17 +158,47 @@ const ordersAccordion = {
     }
 };
 
+
+const productCardRemove = {
+    buttons: document.querySelectorAll('.productCard__remove'),
+    init() {
+        this.buttons.forEach(button => {
+            button.addEventListener('click', (event) => {
+                event.preventDefault();
+                const card = button.closest('.productCard');
+                card.style.opacity = '0';
+                card.style.transform = 'scale(.9)';
+
+                setTimeout(() => {
+                    card.remove();
+                }, 200);
+
+            });
+
+        });
+
+    }
+};
+
+
+
+
+const favoriteButtons = {
+    buttons: document.querySelectorAll('.productCard__favorite'),
+    init() {
+        this.buttons.forEach(button => {
+            button.addEventListener('click', () => {
+                button.classList.toggle('active');
+            });
+
+        });
+
+    }
+};
+
+favoriteButtons.init();
+productCardRemove.init();
 ordersAccordion.init();
-
-
-
-
-
-
-
-
-
-
 accountTabs.init()
 // productRating.init();
 subcategories.init();
