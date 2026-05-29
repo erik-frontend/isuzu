@@ -170,8 +170,60 @@ const popup = {
 
 
 
+const popupCartRemove = {
+    buttons: document.querySelectorAll('.popup-cart__remove'),
+    init() {
+        this.buttons.forEach(button => {
+            button.addEventListener('click', () => {
+                const item = button.closest('.popup-cart__item');
+                if (item) {
+                    item.remove();
+                }
+            })
+        })
+    }
+}
 
 
+
+const quickOrderPopup = {
+    popup: document.querySelector('#quickOrderPopup'),
+    openBtns: document.querySelectorAll('.productPage__quickOrder'),
+
+    init() {
+
+        if (!this.popup) return
+
+        const closeBtn = this.popup.querySelector('.popup__close')
+        const popupContent = this.popup.querySelector('.popup__content') || this.popup.firstElementChild
+
+        this.openBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                this.popup.classList.add('active')
+            })
+        })
+
+        if (closeBtn) {
+            closeBtn.addEventListener('click', () => {
+                this.popup.classList.remove('active')
+            })
+        }
+        this.popup.addEventListener('click', (e) => {
+            if (this.popup.classList.contains('active') && !popupContent.contains(e.target)) {
+                this.popup.classList.remove('active')
+            }
+        });
+
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && this.popup.classList.contains('active')) {
+                this.popup.classList.remove('active')
+            }
+        })
+    }
+}
+
+quickOrderPopup.init();
+popupCartRemove.init();
 popup.init();
 productTabs.init()
 quantityCounter.init();
