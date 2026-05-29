@@ -2710,13 +2710,14 @@ html:not(.v-mobile) .footer__dev a:focus-visible {
     justify-content: center;
   }
 }
-.catalog-subcategories__item {
-  flex: 0 0 calc(20% - 16px);
-}
-@media (max-width: 1650px) {
-  .catalog-subcategories__item {
-    flex: 0 0 calc(30% - 10px);
+@media (max-width: 748px) {
+  .catalog-subcategories__list {
+    max-width: 500px;
   }
+}
+.catalog-subcategories__item {
+  width: 194px;
+  flex: 0 0 194px;
 }
 @media (max-width: 375px) {
   .catalog-subcategories__item {

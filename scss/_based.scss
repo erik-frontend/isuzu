@@ -3302,32 +3302,31 @@ html:not(.v-mobile) .footer__dev a:focus-visible {
 .catalog-subcategories {
     padding-bottom: 30px;
 
-
-
     &__list {
         display: flex;
         flex-wrap: wrap;
         gap: 20px;
 
+
         @media (max-width: 1650px) {
             justify-content: center;
 
         }
+
+
+        @media (max-width: 748px) {
+            max-width: 500px;
+        }
     }
 
     &__item {
-        // flex: 1;
-        flex: 0 0 calc(20% - 16px);
-
-        @media (max-width: 1650px) {
-            flex: 0 0 calc(30% - 10px);
-        }
+        width: 194px;
+        flex: 0 0 194px;
 
         @media (max-width: 375px) {
             flex: 0 0 calc(51% - 10px);
             gap: 10px;
         }
-
 
     }
 
