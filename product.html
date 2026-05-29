@@ -1505,7 +1505,7 @@
             <div class="review-popup__content">
 
                 <button class="review-popup__close" type="button">
-                    
+
                 </button>
 
                 <h2 class="review-popup__title">
@@ -1553,6 +1553,199 @@
         </div>
 
     </div>
+
+
+
+
+
+
+    <!-- Log in popup -->
+
+    <div class="popup popup-auth active" id="loginPopup">
+        <div class="popup__bg"></div>
+
+        <div class="popup__wrapper">
+            <div class="popup__content popup-auth__content">
+
+                <button class="popup__close popup-auth__close" type="button" aria-label="Закрити">
+                </button>
+
+                <div class="popup-auth__top">
+                    <h2 class="popup-auth__title">
+                        Вхід
+                    </h2>
+
+                    <p class="popup-auth__subtitle">
+                        Увійдіть, щоб переглядати історію замовлень, зберігати товари в обране
+                        та отримувати персональні пропозиції
+                    </p>
+                </div>
+
+                <form class="popup-auth__form" action="#">
+                    <div class="popup-auth__fields">
+
+                        <label class="popup-auth__field">
+                            <span class="popup-auth__label">
+                                Email <span>*</span>
+                            </span>
+
+                            <input type="email" class="popup-auth__input" placeholder="Ваш email" required>
+                        </label>
+
+                        <label class="popup-auth__field">
+                            <span class="popup-auth__label">
+                                Пароль <span>*</span>
+                            </span>
+
+                            <input type="password" class="popup-auth__input" placeholder="Ваш пароль" required>
+                        </label>
+
+                        <div class="popup-auth__row">
+
+                            <label class="popup-auth__checkbox">
+
+                                <input type="checkbox">
+
+                                <span class="popup-auth__checkmark"></span>
+
+                                <span class="popup-auth__checkbox-text">
+                                    Запам’ятати мене
+                                </span>
+
+                            </label>
+
+                            <a href="#" class="popup-auth__forgot">
+                                Забули пароль?
+                            </a>
+
+                        </div>
+
+                        <button type="submit" class="popup-auth__submit">
+                            Увійти
+                        </button>
+
+                        <div class="popup-auth__bottom">
+                            <button>Відновити доступ</button>
+
+                            <div class="popup-auth__options">
+
+                                <span>
+                                    Ще не маєте акаунту?
+                                </span>
+
+                                <a href="#" class="sign-up">
+                                    Зареєструватися
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- sign up popup -->
+
+    <div id="registrationPopup" class="popup popup--registration">
+        <div class="popup__bg"></div>
+        <div class="popup__wrapper">
+            <div class="popup__content">
+                <button class="popup__close" aria-label="Закрити форму">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18 6L6 18M6 6L18 18" stroke="#A3A3A3" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </button>
+
+                <h2 class="popup__title">Реєстрація</h2>
+                <p class="popup__sub-login">Вже зареєстровані? <a href="#" class="login-btn">Увійти</a></p>
+
+                <form action="#" class="popup__form reg-form">
+
+                    <fieldset class="reg-form__section">
+                        <legend class="reg-form__title">1. Ваші контактні дані</legend>
+
+                        <div class="reg-form__field-group">
+                            <label class="reg-form__label">Ім'я <span class="reg-form__required">*</span></label>
+                            <input type="text" class="reg-form__input" placeholder="Ваше ім'я" required>
+                        </div>
+
+                        <div class="reg-form__field-group">
+                            <label class="reg-form__label">Прізвище <span class="reg-form__required">*</span></label>
+                            <input type="text" class="reg-form__input" placeholder="Введіть ваше прізвище" required>
+                        </div>
+
+                        <div class="reg-form__field-group">
+                            <label class="reg-form__label">Телефон <span class="reg-form__required">*</span></label>
+                            <input type="tel" class="reg-form__input" placeholder="Номер телефону" required>
+                        </div>
+
+                        <div class="reg-form__field-group">
+                            <label class="reg-form__label">Email</label>
+                            <input type="email" class="reg-form__input" placeholder="Електронна пошта">
+                        </div>
+                    </fieldset>
+
+                    <fieldset class="reg-form__section">
+                        <legend class="reg-form__title">2. Дані організації</legend>
+
+                        <div class="reg-form__field-group">
+                            <label class="reg-form__label">Організація</label>
+                            <input type="text" class="reg-form__input" placeholder="Введіть назву організації">
+                        </div>
+
+                        <div class="reg-form__field-group">
+                            <label class="reg-form__label">ЄДРПОУ</label>
+                            <input type="text" class="reg-form__input" placeholder="Введіть ЄДРПОУ">
+                        </div>
+
+                        <div class="reg-form__field-group">
+                            <label class="reg-form__label">Область</label>
+                            <input type="text" class="reg-form__input" placeholder="Введіть область">
+                        </div>
+
+                        <div class="reg-form__field-group">
+                            <label class="reg-form__label">Місто</label>
+                            <input type="text" class="reg-form__input" placeholder="Введіть місто">
+                        </div>
+
+                        <div class="reg-form__field-group">
+                            <label class="reg-form__label">Адреса</label>
+                            <input type="text" class="reg-form__input" placeholder="Адреса">
+                        </div>
+
+                        <div class="reg-form__field-group">
+                            <label class="reg-form__label">Установчі документи організації</label>
+                            <div class="reg-form__file-dropzone">
+                                <input type="file" id="regFormFile" class="reg-form__file-input"
+                                    accept=".jpg,.jpeg,.png,.pdf" multiple>
+                                <label for="regFormFile" class="reg-form__file-trigger">
+                                    <svg class="reg-form__file-icon" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M12 16V8M12 8L9 11M12 8L15 11M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z"
+                                            stroke="#E32213" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                    <span class="reg-form__file-text">Перетягніть або <span
+                                            class="reg-form__file-highlight">виберіть файл</span> для
+                                        завантаження</span>
+                                </label>
+                            </div>
+                            <p class="reg-form__file-hint">Підтримувані типи файлів: .jpg, .jpeg, .png, .pdf.</p>
+                        </div>
+                    </fieldset>
+
+                    <button type="submit" class="reg-form__submit-btn">Зареєструватися</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <script src="./js/script.js"></script>

@@ -301,7 +301,123 @@ const reviewPopup = {
 
 
 
+const authPopup = {
+    popup: document.querySelector('.popup-auth'),
+    openButtons: document.querySelectorAll('.header__buttons-item.cabinet'),
 
+    init() {
+        if (!this.popup) return;
+
+        this.bg = this.popup.querySelector('.popup__bg');
+        this.closeBtn = this.popup.querySelector('.popup__close');
+        this.signUpBtn = this.popup.querySelector('.sign-up');
+
+        this.popup.classList.remove('active');
+        document.body.classList.remove('no-scroll');
+
+        // Открытие авторизации
+        this.openButtons.forEach(button => {
+            button.addEventListener('click', (e) => {
+                e.preventDefault();
+                this.open();
+            });
+        });
+
+        // Клик на Регистрацию -> Закрываем Авторизацию, открываем Регистрацию
+        if (this.signUpBtn) {
+            this.signUpBtn.addEventListener('click', (e) => {
+                e.preventDefault();
+                this.close();
+
+                if (typeof registrationPopup !== 'undefined') {
+                    registrationPopup.open();
+                }
+            });
+        }
+
+        // Закрытие
+        if (this.closeBtn) this.closeBtn.addEventListener('click', () => this.close());
+        if (this.bg) this.bg.addEventListener('click', () => this.close());
+
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && this.popup.classList.contains('active')) {
+                this.close();
+            }
+        });
+    },
+
+    open() {
+        this.popup.classList.add('active');
+        document.body.classList.add('no-scroll');
+    },
+
+    close() {
+        this.popup.classList.remove('active');
+        document.body.classList.remove('no-scroll');
+    }
+};
+
+const registrationPopup = {
+    openBtns: document.querySelectorAll('.trigger-registration'),
+    popup: document.getElementById('registrationPopup'),
+
+    init() {
+        if (!this.popup) return;
+
+        this.closeBtn = this.popup.querySelector('.popup__close');
+        this.bgOverlay = this.popup.querySelector('.popup__bg');
+        // Находим кнопку "Увійти" внутри попапа регистрации
+        this.loginBtn = this.popup.querySelector('.login-btn');
+
+        // Открытие по обычным кнопкам
+        if (this.openBtns.length) {
+            this.openBtns.forEach(btn => {
+                btn.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    this.open();
+                });
+            });
+        }
+
+        // Клик на Вход -> Закрываем Регистрацию, открываем Авторизацию
+        if (this.loginBtn) {
+            this.loginBtn.addEventListener('click', (e) => {
+                e.preventDefault();
+                this.close();
+
+                if (typeof authPopup !== 'undefined') {
+                    authPopup.open();
+                }
+            });
+        }
+
+        // Закрытие
+        if (this.closeBtn) this.closeBtn.addEventListener('click', () => this.close());
+        if (this.bgOverlay) this.bgOverlay.addEventListener('click', () => this.close());
+
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && this.popup.classList.contains('active')) {
+                this.close();
+            }
+        });
+    },
+
+    open() {
+        this.popup.classList.add('active');
+        document.body.classList.add('no-scroll');
+    },
+
+    close() {
+        this.popup.classList.remove('active');
+        document.body.classList.remove('no-scroll');
+    }
+};
+
+// Вызовы для твоего скрипта
+authPopup.init();
+registrationPopup.init();
+
+authPopup.init();
 reviewPopup.init();
 quickOrderPopup.init();
 cart.init();
