@@ -72,6 +72,7 @@ const priceRange = {
             this.input.value =
                 Math.round(values[1]) + ' грн';
         });
+<<<<<<< HEAD
     }
 };
 
@@ -146,13 +147,47 @@ const checkoutTabs = {
 
         });
 
+=======
+>>>>>>> parent of 93b460b (Merge branch 'catalog')
     }
+};
 
+<<<<<<< HEAD
 };
 
 
 checkoutTabs.init();
 quantityCounter.init()
+=======
+// const productRating = {
+
+//     ratings: document.querySelectorAll('.rating-stars'),
+
+//     init() {
+
+//         this.ratings.forEach(rating => {
+
+//             const stars =
+//                 rating.querySelectorAll('span');
+
+//             stars.forEach((star, index) => {
+
+//                 star.addEventListener('click', () => {
+
+//                     rating.dataset.rating = index + 1;
+
+//                 });
+
+//             });
+
+//         });
+
+//     }
+// };
+
+
+// productRating.init();
+>>>>>>> parent of 93b460b (Merge branch 'catalog')
 subcategories.init();
 categoryList.init();
 filterGroup.init();
