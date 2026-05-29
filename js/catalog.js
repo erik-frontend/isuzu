@@ -101,7 +101,10 @@ const priceRange = {
 
 //     }
 // };
+
+
 // productRating.init();
+<<<<<<< HEAD
 
 
 
@@ -188,6 +191,8 @@ quantityCounter.init()
 
 // productRating.init();
 >>>>>>> parent of 93b460b (Merge branch 'catalog')
+=======
+>>>>>>> parent of a6c54e6 (Merge branch 'order')
 subcategories.init();
 categoryList.init();
 filterGroup.init();
