@@ -1473,7 +1473,8 @@
                 </h2>
 
                 <p class="popup-quick-order__subtitle">
-                    Наш менеджер зв'яжеться з вами за вказаним номером якнайшвидше, щоб уточнити всі деталі вашого замовлення
+                    Наш менеджер зв'яжеться з вами за вказаним номером якнайшвидше, щоб уточнити всі деталі вашого
+                    замовлення
                 </p>
 
                 <form class="popup-quick-order__form">
@@ -1492,6 +1493,66 @@
 
     </div>
 
+
+
+
+    <div class="review-popup" id="reviewPopup">
+
+        <div class="review-popup__bg"></div>
+
+        <div class="review-popup__wrapper">
+
+            <div class="review-popup__content">
+
+                <button class="review-popup__close" type="button">
+                    
+                </button>
+
+                <h2 class="review-popup__title">
+                    Залишити відгук
+                </h2>
+
+                <form class="review-popup__form">
+
+                    <div class="review-popup__form-wrapper">
+
+                        <div class="review-popup__rating">
+
+                            <div class="rating-stars review-popup__stars" data-rating="4">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+
+                            <input type="hidden" name="rating" value="4">
+
+                        </div>
+
+                        <input type="text" name="name" placeholder="Ім’я" required>
+
+                        <input type="text" name="contact" placeholder="Email або номер телефону" required>
+
+                        <textarea name="review" placeholder="Відгук" required></textarea>
+                        <div>
+                            <button class="review-popup__file" type="button">
+                                Додати зображення
+                            </button>
+                        </div>
+
+
+                        <input class="review-popup__submit" type="submit" value="Замовити">
+
+                    </div>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <script src="./js/script.js"></script>

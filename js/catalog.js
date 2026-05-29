@@ -146,85 +146,165 @@ const productTabs = {
 
 
 
-
-
-const popup = {
+const cart = {
     element: document.querySelector('#cartPopup'),
     openBtn: document.querySelector('.open-cart'),
-    closeBtn: document.querySelector('.popup__close'),
-    bg: document.querySelector('.popup__bg'),
+    closeBtn: document.querySelector('#cartPopup .popup__close'),
+    bg: document.querySelector('#cartPopup .popup__bg'),
+    removeBtns: document.querySelectorAll('.popup-cart__remove'),
 
     init() {
         if (!this.element) return;
-        this.openBtn?.addEventListener('click', () => {
-            this.element.classList.add('active')
-        });
-        this.closeBtn?.addEventListener('click', () => {
-            this.element.classList.remove('active')
-        });
-        this.bg?.addEventListener('click', () => {
-            this.element.classList.remove('active')
-        });
-    }
-}
 
+        this.openBtn?.addEventListener('click', (e) => {
+            e.preventDefault();
+            this.open();
+        });
 
+        this.closeBtn?.addEventListener('click', () => this.close());
+        this.bg?.addEventListener('click', () => this.close());
 
-const popupCartRemove = {
-    buttons: document.querySelectorAll('.popup-cart__remove'),
-    init() {
-        this.buttons.forEach(button => {
+        window.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && this.element.classList.contains('active')) {
+                this.close();
+            }
+        });
+
+        this.removeBtns.forEach(button => {
             button.addEventListener('click', () => {
                 const item = button.closest('.popup-cart__item');
-                if (item) {
-                    item.remove();
-                }
-            })
-        })
+                if (item) item.remove();
+            });
+        });
+    },
+
+    open() {
+        this.element.classList.add('active');
+        document.body.style.overflow = 'hidden';
+    },
+
+    close() {
+        this.element.classList.remove('active');
+        document.body.style.overflow = '';
     }
-}
+};
+
+
 
 
 
 const quickOrderPopup = {
-    popup: document.querySelector('#quickOrderPopup'),
     openBtns: document.querySelectorAll('.productPage__quickOrder'),
+    popup: document.getElementById('quickOrderPopup'),
+    closeBtn: document.querySelector('#quickOrderPopup .popup__close'),
+
+    init() {
+        if (!this.openBtns.length || !this.popup) return;
+
+        this.openBtns.forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                e.preventDefault();
+                this.open();
+            });
+        });
+
+        if (this.closeBtn) {
+            this.closeBtn.addEventListener('click', () => this.close());
+        }
+
+        window.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && this.popup.classList.contains('active')) {
+                this.close();
+            }
+        });
+    },
+
+    open() {
+        this.popup.classList.add('active');
+        document.body.style.overflow = 'hidden';
+    },
+
+    close() {
+        this.popup.classList.remove('active');
+        document.body.style.overflow = '';
+    }
+};
+
+
+
+
+const reviewPopup = {
+    popup: document.querySelector('#reviewPopup'),
+    openButtons: document.querySelectorAll('.reviews-summary__button'),
 
     init() {
 
-        if (!this.popup) return
+        if (!this.popup) return;
 
-        const closeBtn = this.popup.querySelector('.popup__close')
-        const popupContent = this.popup.querySelector('.popup__content') || this.popup.firstElementChild
+        this.bg = this.popup.querySelector('.review-popup__bg');
+        this.closeBtn = this.popup.querySelector('.review-popup__close');
 
-        this.openBtns.forEach(btn => {
-            btn.addEventListener('click', () => {
-                this.popup.classList.add('active')
-            })
-        })
+        this.starsWrapper = this.popup.querySelector('.review-popup__stars');
+        this.stars = this.popup.querySelectorAll('.review-popup__stars span');
+        this.ratingInput = this.popup.querySelector('input[name="rating"]');
 
-        if (closeBtn) {
-            closeBtn.addEventListener('click', () => {
-                this.popup.classList.remove('active')
-            })
-        }
-        this.popup.addEventListener('click', (e) => {
-            if (this.popup.classList.contains('active') && !popupContent.contains(e.target)) {
-                this.popup.classList.remove('active')
-            }
+        this.openButtons.forEach(button => {
+            button.addEventListener('click', (e) => {
+                e.preventDefault();
+
+                this.open();
+            });
+        });
+
+        this.closeBtn.addEventListener('click', () => {
+            this.close();
+        });
+
+        this.bg.addEventListener('click', () => {
+            this.close();
         });
 
         document.addEventListener('keydown', (e) => {
-            if (e.key === 'Escape' && this.popup.classList.contains('active')) {
-                this.popup.classList.remove('active')
-            }
-        })
-    }
-}
 
+            if (e.key === 'Escape') {
+                this.close();
+            }
+
+        });
+
+        this.stars.forEach((star, index) => {
+
+            star.addEventListener('click', () => {
+
+                const rating = index + 1;
+
+                this.starsWrapper.setAttribute('data-rating', rating);
+                this.ratingInput.value = rating;
+
+            });
+
+        });
+
+    },
+
+    open() {
+        this.popup.classList.add('active');
+        document.body.style.overflow = 'hidden';
+    },
+
+    close() {
+        this.popup.classList.remove('active');
+        document.body.style.overflow = '';
+    }
+};
+
+
+
+
+
+reviewPopup.init();
 quickOrderPopup.init();
-popupCartRemove.init();
-popup.init();
+cart.init();
 productTabs.init()
 quantityCounter.init();
 productGallery.init();
