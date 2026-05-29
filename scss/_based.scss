@@ -2907,7 +2907,7 @@ html:not(.v-mobile) .footer__dev a:focus-visible {
         flex-direction: column;
         align-items: center;
         padding: 34px 0 0;
-        gap: 23px;
+        gap:16px;
     }
 
     &__apply {
@@ -2959,6 +2959,14 @@ html:not(.v-mobile) .footer__dev a:focus-visible {
 
 
 .filter-group {
+    &:first-child {
+
+        .filter-group__header {
+            padding: 0;
+        }
+
+    }
+
 
 
     .price-filter {
@@ -3033,7 +3041,11 @@ html:not(.v-mobile) .footer__dev a:focus-visible {
 
     &__body {
         display: none;
-        
+
+    }
+
+    &__filter {
+        display: flex;
     }
 
     &.active {
@@ -3062,8 +3074,9 @@ html:not(.v-mobile) .footer__dev a:focus-visible {
         background: transparent;
         border: none;
         cursor: pointer;
-        
+
         @include transition;
+
 
         &:hover {
 
@@ -3072,6 +3085,27 @@ html:not(.v-mobile) .footer__dev a:focus-visible {
             }
         }
 
+    }
+
+    &__reset {
+        display: flex;
+        gap: 5px;
+        border: none;
+        background: rgba(0, 0, 0, 0);
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1;
+        color: var(--color-red);
+        cursor: pointer;
+
+        &::after {
+            content: "";
+            display: block;
+            width: 16px;
+            height: 16px;
+            background: url(../assets/reset-icon.svg) center no-repeat;
+
+        }
     }
 
     &__title {
@@ -3126,7 +3160,7 @@ html:not(.v-mobile) .footer__dev a:focus-visible {
         justify-content: space-between;
         padding: 14px 16px;
 
-        
+
         transition:
             background .2s linear,
             color .2s linear;
@@ -3474,17 +3508,17 @@ html:not(.v-mobile) .footer__dev a:focus-visible {
         .rating {
             display: flex;
             align-items: center;
-            @include transition;
+            // @include transition;
 
             .star {
                 background: url(../assets/grey_star.svg) no-repeat center;
                 width: 16px;
                 height: 16px;
-                cursor: pointer;
-                @include transition;
+                // cursor: pointer;
+                // @include transition;
 
                 &:hover {
-                    transform: scale(1.1);
+                    // transform: scale(1.1);
                 }
 
                 &.active {

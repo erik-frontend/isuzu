@@ -2417,7 +2417,7 @@ html:not(.v-mobile) .footer__dev a:focus-visible {
   flex-direction: column;
   align-items: center;
   padding: 34px 0 0;
-  gap: 23px;
+  gap: 16px;
 }
 .catalog-sidebar__apply {
   display: flex;
@@ -2461,6 +2461,9 @@ html:not(.v-mobile) .footer__dev a:focus-visible {
   background: url(../assets/reset-icon.svg) center no-repeat;
 }
 
+.filter-group:first-child .filter-group__header {
+  padding: 0;
+}
 .filter-group .price-filter__range {
   margin-bottom: 20px;
 }
@@ -2513,6 +2516,9 @@ html:not(.v-mobile) .footer__dev a:focus-visible {
 .filter-group__body {
   display: none;
 }
+.filter-group__filter {
+  display: flex;
+}
 .filter-group.active .filter-group__header {
   padding: 0;
 }
@@ -2532,17 +2538,35 @@ html:not(.v-mobile) .footer__dev a:focus-visible {
   background: transparent;
   border: none;
   cursor: pointer;
-  transition: 0.2s linear;
+  transition: 0.2 linear;
 }
 .filter-group__header:hover .filter-group__title {
   color: var(--color-red);
+}
+.filter-group__reset {
+  display: flex;
+  gap: 5px;
+  border: none;
+  background: rgba(0, 0, 0, 0);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1;
+  color: var(--color-red);
+  cursor: pointer;
+}
+.filter-group__reset::after {
+  content: "";
+  display: block;
+  width: 16px;
+  height: 16px;
+  background: url(../assets/reset-icon.svg) center no-repeat;
 }
 .filter-group__title {
   font-weight: 600;
   font-size: 16px;
   line-height: 1.2;
   color: var(--color-black);
-  transition: 0.2s linear;
+  transition: 0.2 linear;
 }
 .filter-group__arrow {
   width: 16px;
@@ -2737,7 +2761,7 @@ html:not(.v-mobile) .footer__dev a:focus-visible {
   border-radius: 5px;
   padding: 30px 0 14px;
   gap: 12px;
-  transition: 0.2s linear;
+  transition: 0.2 linear;
 }
 .catalog-subcategories__link.active {
   border: 1px solid var(--color-red);
@@ -2825,17 +2849,11 @@ html:not(.v-mobile) .footer__dev a:focus-visible {
 .product-card .rating-container .rating {
   display: flex;
   align-items: center;
-  transition: 0.2s linear;
 }
 .product-card .rating-container .rating .star {
   background: url(../assets/grey_star.svg) no-repeat center;
   width: 16px;
   height: 16px;
-  cursor: pointer;
-  transition: 0.2s linear;
-}
-.product-card .rating-container .rating .star:hover {
-  transform: scale(1.1);
 }
 .product-card .rating-container .rating .star.active {
   background: url(../assets/yellow-star.svg) no-repeat center;
